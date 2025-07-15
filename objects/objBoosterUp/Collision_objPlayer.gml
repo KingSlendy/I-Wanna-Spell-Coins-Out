@@ -1,0 +1,1 @@
+p_vspd(-(other.jump_height[0] * sign(global.grav)));

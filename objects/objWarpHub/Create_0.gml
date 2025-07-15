@@ -1,0 +1,1 @@
+level = ord(letter) - 65;

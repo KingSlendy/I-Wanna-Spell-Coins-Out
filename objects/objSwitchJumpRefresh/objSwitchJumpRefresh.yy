@@ -1,0 +1,46 @@
+{
+  "$GMObject":"",
+  "%Name":"objSwitchJumpRefresh",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"objSwitchJumpRefresh",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"Go The Jumple Refrenture",
+    "path":"folders/Objects/Packages/Go The Jumple Refrenture.yy",
+  },
+  "parentObjectId":{
+    "name":"objJumpleRefrensh",
+    "path":"objects/objJumpleRefrensh/objJumpleRefrensh.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"key","filters":[],"listItems":[],"multiselect":false,"name":"key","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"null","varType":4,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"sprSwitchJumpRefresh",
+    "path":"sprites/sprSwitchJumpRefresh/sprSwitchJumpRefresh.yy",
+  },
+  "spriteMaskId":null,
+  "tags":[
+    "refresher",
+  ],
+  "visible":true,
+}
