@@ -17,6 +17,10 @@ with (objBlock) {
 	draw_self();
 }
 
+with (objFakeWall) {
+	draw_self();
+}
+
 with (objWarpHub) {
 	event_perform(ev_draw, 0);
 }

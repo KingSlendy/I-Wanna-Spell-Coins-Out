@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"objCherry",
+  "%Name":"objTriggerRed",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objCherry",
+  "name":"objTriggerRed",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fruits",
-    "path":"folders/Objects/Killers/Fruits.yy",
+    "name":"D",
+    "path":"folders/Objects/Game/Stages/D.yy",
   },
   "parentObjectId":{
-    "name":"objPlayerKiller",
-    "path":"objects/objPlayerKiller/objPlayerKiller.yy",
+    "name":"objTriggerTouch",
+    "path":"objects/objTriggerTouch/objTriggerTouch.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprCherry",
-    "path":"sprites/sprCherry/sprCherry.yy",
+    "name":"sprTriggerNotice",
+    "path":"sprites/sprTriggerNotice/sprTriggerNotice.yy",
   },
   "spriteMaskId":null,
   "tags":[
-    "cherry",
+    "trigger",
   ],
   "visible":true,
 }

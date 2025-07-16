@@ -1,11 +1,12 @@
-function Stage(name, coins) constructor {
+function Stage(name, secret, coins) constructor {
 	self.name = name;
+	self.secret = secret;
 	self.coins = coins;
 }
 
 global.stage_info = [
-	new Stage("Amazing", [0]),
-	new Stage("Backtrack", [1]),
-	new Stage("Cherry", [2]),
-	new Stage("Dive", [3])
+	new Stage("Amazing", "", [0]),
+	new Stage("Below", "Back", [1]),
+	new Stage("Cycle", "Cover", [2]),
+	new Stage("Dive", "Discover", [3])
 ];
