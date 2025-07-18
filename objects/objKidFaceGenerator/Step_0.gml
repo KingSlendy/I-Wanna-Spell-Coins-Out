@@ -1,4 +1,11 @@
 if (!instance_exists(objPlayer)) {
+	with (objKidFace) {
+		if (image_index == 0) {
+			image_blend = c_red;
+			break;
+		}
+	}
+	
 	exit;
 }
 
