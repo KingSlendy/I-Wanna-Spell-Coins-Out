@@ -26,6 +26,7 @@
     {"name":"inst_4303C137","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_6AC18568","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_2B61DCD4","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_1D2D50F2","path":"rooms/rHub/rHub.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -95,6 +96,9 @@
             {"$GMRInstance":"v1","%Name":"inst_2B61DCD4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B61DCD4","objectId":{"name":"objWarpHub","path":"objects/objWarpHub/objWarpHub.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objWarpHub","path":"objects/objWarpHub/objWarpHub.yy",},"propertyId":{"name":"letter","path":"objects/objWarpHub/objWarpHub.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"E\"",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":256.0,},
+            {"$GMRInstance":"v1","%Name":"inst_1D2D50F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D2D50F2","objectId":{"name":"objWarpHub","path":"objects/objWarpHub/objWarpHub.yy",},"properties":[
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objWarpHub","path":"objects/objWarpHub/objWarpHub.yy",},"propertyId":{"name":"letter","path":"objects/objWarpHub/objWarpHub.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"F\"",},
+              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":256.0,},
           ],"layers":[],"name":"Misc","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Shadows","depth":2000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v1","%Name":"inst_5CCC8C87","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CCC8C87","objectId":{"name":"objDropShadows","path":"objects/objDropShadows/objDropShadows.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
