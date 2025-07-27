@@ -124,3 +124,4 @@ draw_funcs[$ objSpikeRotate] = function() {
 #endregion
 
 draw_func = draw_funcs[$ object_index];
+event_inherited();

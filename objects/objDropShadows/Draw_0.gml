@@ -17,12 +17,16 @@ with (objBlock) {
 	draw_self();
 }
 
-with (objFakeWall) {
+with (objWarpHub) {
+	event_perform(ev_draw, 0);
+}
+
+with (objSave) {
 	draw_self();
 }
 
-with (objWarpHub) {
-	event_perform(ev_draw, 0);
+with (objFakeWall) {
+	draw_self();
 }
 
 with (objPlayerKiller) {

@@ -10,8 +10,8 @@
   "name":"objDropShadows",
   "overriddenProperties":[],
   "parent":{
-    "name":"Stages",
-    "path":"folders/Objects/Game/Stages.yy",
+    "name":"Game",
+    "path":"folders/Objects/Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,
