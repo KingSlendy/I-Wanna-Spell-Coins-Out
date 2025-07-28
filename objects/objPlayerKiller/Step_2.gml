@@ -1,4 +1,4 @@
-if (room == rStageG) {
+if (room == rStageG && x > 800) {
 	xprev = x;
 	yprev = y;
 	x = x div 32 * 32 + ((object_index != objCherry) ? 0 : 16);

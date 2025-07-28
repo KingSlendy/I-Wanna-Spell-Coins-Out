@@ -1,4 +1,4 @@
-if (room == rStageG) {
+if (room == rStageG && x > 800) {
 	x = xprev;
 	y = yprev;
 }

@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"pthStageG_6",
+  "closed":false,
+  "kind":0,
+  "name":"pthStageG_6",
+  "parent":{
+    "name":"G",
+    "path":"folders/Paths/Game/G.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":80.0,"y":432.0,},
+    {"speed":100.0,"x":80.0,"y":464.0,},
+    {"speed":100.0,"x":656.0,"y":464.0,},
+    {"speed":100.0,"x":656.0,"y":432.0,},
+    {"speed":100.0,"x":80.0,"y":432.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

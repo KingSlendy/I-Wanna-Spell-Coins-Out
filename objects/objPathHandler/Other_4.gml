@@ -3,7 +3,7 @@ for (var i = 0; i < num; i++) {
         path_start(other.pth, other.spd, other.act, other.abt);
 		
 		if (other.uniform) {
-			path_position = other.offset + i * 1 / other.num;
+			path_position = (other.offset + i * 1 / other.num) % 1;
 		} else {
 			path_position = (other.offset + other.separation * i) % 1;
 		}
