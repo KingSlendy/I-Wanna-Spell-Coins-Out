@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fntHub",
+  "%Name":"fntStageG_Gate",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":48,
@@ -112,7 +112,7 @@
   "hinting":0,
   "includeTTF":false,
   "interpreter":0,
-  "italic":false,
+  "italic":true,
   "kerningPairs":[
     {"amount":-6,"first":33,"second":238,},
     {"amount":-6,"first":33,"second":239,},
@@ -306,10 +306,10 @@
   "last":0,
   "lineHeight":64,
   "maintainGms1Font":false,
-  "name":"fntHub",
+  "name":"fntStageG_Gate",
   "parent":{
-    "name":"Game",
-    "path":"folders/Fonts/Game.yy",
+    "name":"G",
+    "path":"folders/Fonts/Game/Stages/G.yy",
   },
   "pointRounding":0,
   "ranges":[
