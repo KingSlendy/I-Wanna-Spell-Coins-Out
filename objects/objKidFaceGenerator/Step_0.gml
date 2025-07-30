@@ -1,7 +1,7 @@
-if (!instance_exists(objPlayer)) {
+if (!instance_exists(objPlayer) || is_active_trigger("fake2")) {
 	with (objKidFace) {
 		if (image_index == 0) {
-			image_blend = c_red;
+			image_blend = (is_active_trigger("fake2")) ? c_lime : c_red;
 			break;
 		}
 	}

@@ -1,13 +1,15 @@
 timer = -1;
+spike_number = 0;
 ask_spikes = false;
 ask_number = [0, 0, 0];
 ask_select = 2;
+ask_accept = false;
 
 function gate_start() {
 	alarm[0] = seconds_to_frames(random_range(1, 2));
 	alarm[1] = seconds_to_frames(random_range(1, 2));
 	alarm[2] = seconds_to_frames(random_range(1, 2));
-	alarm[3] = seconds_to_frames(1);
+	alarm[3] = seconds_to_frames(45);
 }
 
 function gate_spawn(section) {
@@ -38,14 +40,18 @@ function gate_spawn(section) {
 	var hspd = irandom_range(3, 5) * ((spawn_left) ? 1 : -1);
 	
 	with (instance_create_layer(spawn_x, spawn_y, "Spikes", objSpikeDown)) {
-		image_blend = (irandom(1) == 0) ? c_white : c_red;
+		var is_red = (irandom(1) == 0);
+		image_blend = (is_red) ? c_red : c_white;
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
+		other.spike_number += (is_red) ? 1 : 0;
 	}
 	
 	with (instance_create_layer(spawn_x, spawn_y + 64, "Spikes", objSpikeUp)) {
-		image_blend = (irandom(1) == 0) ? c_white : c_red;
+		var is_red = (irandom(1) == 0);
+		image_blend = (is_red) ? c_red : c_white;
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
+		other.spike_number += (is_red) ? 1 : 0;
 	}
 }

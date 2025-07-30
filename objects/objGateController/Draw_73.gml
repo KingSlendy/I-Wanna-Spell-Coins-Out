@@ -14,7 +14,7 @@ if (ask_spikes) {
 	for (var i = 0; i < array_length(ask_number); i++) {
 		draw_text(598 + 40 * i, 460, ask_number[i]);
 		
-		if (i == ask_select) {
+		if (!ask_accept && i == ask_select) {
 			draw_sprite(sprGateArrowUp, 0, 600 + 40 * i, 439);
 			draw_sprite(sprGateArrowDown, 0, 600 + 40 * i, 513);
 		}
