@@ -1,10 +1,13 @@
 timer = -1;
+ask_spikes = false;
+ask_number = [0, 0, 0];
+ask_select = 2;
 
 function gate_start() {
 	alarm[0] = seconds_to_frames(random_range(1, 2));
 	alarm[1] = seconds_to_frames(random_range(1, 2));
 	alarm[2] = seconds_to_frames(random_range(1, 2));
-	alarm[3] = seconds_to_frames(59);
+	alarm[3] = seconds_to_frames(1);
 }
 
 function gate_spawn(section) {

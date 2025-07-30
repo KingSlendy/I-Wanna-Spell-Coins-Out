@@ -12,4 +12,5 @@ if (!spikes_gone) {
 	exit;
 }
 
-show_message("Spikes gone");
+ask_spikes = true;
+objPlayer.frozen = true;
