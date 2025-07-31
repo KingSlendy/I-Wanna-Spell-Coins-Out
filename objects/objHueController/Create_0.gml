@@ -68,5 +68,6 @@ for (var r = 0; r < rows; r++) {
 	}
 }*/
 
-hue = c_red;
-layer_fx = layer_get_fx("Background");
+hue = c_white;
+layer_fx_background = layer_get_fx("Background");
+layer_fx_tiles = layer_get_fx("Tiles");
