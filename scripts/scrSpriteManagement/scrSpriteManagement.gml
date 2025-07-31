@@ -189,7 +189,11 @@ function fruit_sprite(me = true) {
 			break;
 		*//////////////////
 		
-		
+		case rStageH:
+			type = "White";
+			fruit_speed = 1;
+			fruit_image = 0;
+			break;
 		
 		default: //Always keep this at the bottom
 			type = "";

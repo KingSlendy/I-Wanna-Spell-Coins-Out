@@ -9,8 +9,8 @@
   "name":"objItemCoin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Main",
-    "path":"folders/Objects/Items/Main.yy",
+    "name":"Game",
+    "path":"folders/Objects/Items/Game.yy",
   },
   "parentObjectId":{
     "name":"objItemTemplate",

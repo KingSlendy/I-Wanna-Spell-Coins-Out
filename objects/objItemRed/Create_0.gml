@@ -1,1 +1,2 @@
 type = "reds";
+snd = sndCoin;
