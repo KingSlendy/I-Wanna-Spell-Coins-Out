@@ -71,3 +71,4 @@ for (var r = 0; r < rows; r++) {
 hue = c_white;
 layer_fx_background = layer_get_fx("Background");
 layer_fx_tiles = layer_get_fx("Tiles");
+layer_fx_fake = layer_get_fx("Fake"); 

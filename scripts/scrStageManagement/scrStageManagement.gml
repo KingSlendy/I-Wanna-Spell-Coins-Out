@@ -1,36 +1,35 @@
-function Stage(name, secret, coins) constructor {
+function Stage(name, secret) constructor {
 	self.name = name;
 	self.secret = secret;
-	self.coins = coins;
 }
 
 global.stage_info = [
-	new Stage("Amazing", "Ascend", [0]),
-	new Stage("Below", "Back", [1]),
-	new Stage("Cycle", "Cover", [2]),
-	new Stage("Dive", "Detect", [3]),
-	new Stage("Elevate", "Effort", [4]),
-	new Stage("Flare", "Fleeting", [5]),
-	new Stage("Grid", "Gate", [6]),
-	new Stage("Hue", "Hex", [7]),
-	new Stage("", "", [8]),
-	new Stage("", "", [9]),
-	new Stage("", "", [10]),
-	new Stage("", "", [11]),
-	new Stage("", "", [12]),
-	new Stage("", "", [13]),
-	new Stage("", "", [14]),
-	new Stage("", "", [15]),
-	new Stage("", "", [16]),
-	new Stage("", "", [17]),
-	new Stage("", "", [18]),
-	new Stage("", "", [19]),
-	new Stage("", "", [20]),
-	new Stage("", "", [21]),
-	new Stage("", "", [22]),
-	new Stage("", "", [23]),
-	new Stage("", "", [24]),
-	new Stage("", "", [25])
+	new Stage("Amazing", "Ascend"),
+	new Stage("Below", "Back"),
+	new Stage("Cycle", "Cover"),
+	new Stage("Dive", "Detect"),
+	new Stage("Elevate", "Effort"),
+	new Stage("Flare", "Fleeting"),
+	new Stage("Grid", "Gate"),
+	new Stage("Hue", "Hex"),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", ""),
+	new Stage("", "")
 ];
 
 #region H

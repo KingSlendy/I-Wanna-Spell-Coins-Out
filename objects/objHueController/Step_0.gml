@@ -9,3 +9,9 @@ if (layer_fx_tiles != -1) {
         fx_set_parameter(layer_fx_tiles, "g_TintCol", [color_get_red(hue) / 255, color_get_green(hue) / 255, color_get_blue(hue) / 255, 1]);
     }
 }
+
+if (layer_fx_fake != -1) {
+    if (fx_get_name(layer_fx_fake) == "_filter_tintfilter") {
+        fx_set_parameter(layer_fx_fake, "g_TintCol", [color_get_red(hue) / 255, color_get_green(hue) / 255, color_get_blue(hue) / 255, 1]);
+    }
+}

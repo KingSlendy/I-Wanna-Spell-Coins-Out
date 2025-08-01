@@ -441,6 +441,8 @@
     {"name":"pthStageG_6","order":5,"path":"paths/pthStageG_6/pthStageG_6.yy",},
     {"name":"pthStageH_2","order":1,"path":"paths/pthStageH_2/pthStageH_2.yy",},
     {"name":"pthStageH_3","order":2,"path":"paths/pthStageH_3/pthStageH_3.yy",},
+    {"name":"pthStageH_4","order":3,"path":"paths/pthStageH_4/pthStageH_4.yy",},
+    {"name":"pthStageH_5","order":4,"path":"paths/pthStageH_5/pthStageH_5.yy",},
     {"name":"rFiles","order":2,"path":"rooms/rFiles/rFiles.yy",},
     {"name":"rHub","order":3,"path":"rooms/rHub/rHub.yy",},
     {"name":"rOptions","order":3,"path":"rooms/rOptions/rOptions.yy",},
