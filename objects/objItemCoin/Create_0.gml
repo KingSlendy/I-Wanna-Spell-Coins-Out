@@ -1,2 +1,0 @@
-type = "coins";
-snd = sndCoin;

@@ -377,6 +377,10 @@ if (!frozen || on_auto) {
 #endregion
 
 #region Physics and Collision
+if (still) {
+	exit;
+}
+
 //Storing the previous x and y
 xprevious = x;
 yprevious = y;

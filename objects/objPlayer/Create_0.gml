@@ -69,6 +69,7 @@ skin = "Normal";
 #region Actions
 lunar_start = false;
 frozen = false;
+still = false;
 
 reset_jumps();
 

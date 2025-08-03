@@ -8,10 +8,11 @@ if (room == rHub) {
 	draw_set_valign(fa_bottom);
 	draw_set_color((!letter) ? c_white : c_yellow);
 
-	var coin = (global.items.coins[level]);
+	var yellow = (global.items.yellows[level]);
 	var red = (global.items.reds[level]);
+	var green = (global.items.greens[level]);
 	
-	if (!coin && !red) {
+	if (!yellow && !red) {
 		draw_text_outline(x + sprite_width / 2, y - 30, stage.name, c_black);
 	} else {
 		draw_text_outline(x + sprite_width / 2 - 3, y - 30, "|", c_black);
@@ -22,16 +23,30 @@ if (room == rHub) {
 		draw_set_halign(fa_center);
 	}
 	
-	if (coin) {
-		draw_sprite(sprItemCoin, 0, x - 55, y - 33);
+	if (yellow) {
+		draw_sprite(sprItemYellow, 0, x - 59, y - 33);
 	}
 
 	if (red) {
 		draw_sprite(sprItemRed, 0, x + 59, y - 33);
 	}
+	
+	if (green) {
+		draw_sprite(sprItemGreen, 0, x, y - 32);
+	}
 
-	draw_set_color((!coin || !red) ? c_white : c_yellow);
-	draw_text_outline(x + sprite_width / 2, y, $"[{(coin) ? 1 : 0}/1]", c_black);
+	draw_set_color((!yellow || !red || !green) ? c_white : c_yellow);
+	//draw_text_outline(x + sprite_width / 2, y, $"[{(yellow) ? 1 : 0}/1]", c_black);
+	draw_text_outline(x - 72, y, "[", c_black);
+	draw_text_outline(x + 100, y, "]", c_black);
+	
+	if (green) {
+		draw_text_outline(x + 42, y, "|", c_black);
+		draw_text_outline(x - 16, y, "|", c_black);
+	} else {
+		draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
+	}
+	
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 }

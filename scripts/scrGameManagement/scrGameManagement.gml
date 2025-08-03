@@ -138,8 +138,9 @@ function cleanup_game() {
 	
 	global.items = {
 		letters: array_create(26, false),
-		coins: array_create(100, false),
+		yellows: array_create(26, false),
 		reds: array_create(26, false),
+		greens: array_create(26, false),
 		secrets: array_create(8, false),
 		bosses: array_create(8, false)
 	};

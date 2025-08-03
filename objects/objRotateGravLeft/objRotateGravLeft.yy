@@ -11,8 +11,8 @@
   "name":"objRotateGravLeft",
   "overriddenProperties":[],
   "parent":{
-    "name":"WTC Gravity",
-    "path":"folders/Objects/Packages/Walk The Ceiling/WTC Gravity.yy",
+    "name":"I",
+    "path":"folders/Objects/Game/Stages/I.yy",
   },
   "parentObjectId":null,
   "persistent":false,

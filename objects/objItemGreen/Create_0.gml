@@ -1,0 +1,2 @@
+type = "greens";
+snd = sndCoin;
