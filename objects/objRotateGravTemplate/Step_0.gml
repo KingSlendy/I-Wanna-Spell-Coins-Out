@@ -7,15 +7,11 @@ if (spin) {
 	if (angle == view_target) {
 		flip_grav(grav);
 		
-		with (objPlayer) {
-			still = false;
-            frozen = false;
-        }
-		
 		with (objRotateGravTemplate) {
 			angle = other.angle;
 		}
 		
         spin = false;
+		alarm[0] = seconds_to_frames(0.5);
 	}
 }

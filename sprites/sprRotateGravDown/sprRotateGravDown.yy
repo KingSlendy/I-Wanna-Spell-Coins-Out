@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"WTC Gravity",
-    "path":"folders/Sprites/Objects/Packages/Walk The Ceiling/WTC Gravity.yy",
+    "name":"I",
+    "path":"folders/Sprites/Objects/Game/Stages/I.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

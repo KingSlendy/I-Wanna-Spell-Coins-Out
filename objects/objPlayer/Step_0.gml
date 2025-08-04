@@ -378,6 +378,7 @@ if (!frozen || on_auto) {
 
 #region Physics and Collision
 if (still) {
+	player_sprite("Fall");
 	exit;
 }
 

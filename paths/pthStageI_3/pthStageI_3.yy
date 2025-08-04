@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pthStageI_3",
+  "closed":true,
+  "kind":1,
+  "name":"pthStageI_3",
+  "parent":{
+    "name":"I",
+    "path":"folders/Paths/Game/I.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":272.0,"y":160.0,},
+    {"speed":100.0,"x":272.0,"y":0.0,},
+    {"speed":100.0,"x":112.0,"y":160.0,},
+    {"speed":100.0,"x":112.0,"y":0.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

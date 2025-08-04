@@ -6,3 +6,4 @@ if (room != rHub) {
 }
 
 global.auto_save = true;
+global.grav = 1;
