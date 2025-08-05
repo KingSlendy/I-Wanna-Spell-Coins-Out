@@ -19,9 +19,14 @@ if (!ask_accept && ask_spikes) {
 		}
 		
 		print(real(number));
-		if (real(number) == spike_number) {
+		if (real(number) == spike_red || real(number) == spike_green) {
 			deactivate_trigger("fake2");
 			activate_trigger("fake3");
+			
+			if (real(number) == spike_green) {
+				
+			}
+			
 			objPlayer.frozen = false;
 		} else {
 			kill_player();
