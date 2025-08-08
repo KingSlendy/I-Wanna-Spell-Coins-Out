@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"G",
-    "path":"folders/Sprites/Backgrounds/Game/Stages/G.yy",
+    "name":"Game",
+    "path":"folders/Sprites/Backgrounds/Game.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

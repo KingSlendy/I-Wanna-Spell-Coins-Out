@@ -1,4 +1,4 @@
-if (!ask_accept && ask_spikes) {
+objif (!ask_accept && ask_spikes) {
 	var move = (is_pressed(global.controls.right) - is_pressed(global.controls.left));
 	
 	if (move != 0) {

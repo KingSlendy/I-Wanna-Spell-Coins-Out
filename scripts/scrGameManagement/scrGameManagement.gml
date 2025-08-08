@@ -30,6 +30,7 @@ function save_game(position, save_x = -1, save_y = -1) {
 		#endregion
 		
 		items: global.items,
+		section: global.section
 	};
 	
 	var json = json_stringify(data);
@@ -70,6 +71,7 @@ function load_game(position) {
 	global.difficulty = data.info.difficulty;
 	global.clear = data.info.clear;
 	global.items = data.items;
+	global.section = data.section;
 	
 	#region ADDED BY MAGIC TOWER PACKAGE
 	global.stats_mtg = data.mtg.stats;
@@ -145,6 +147,7 @@ function cleanup_game() {
 		bosses: array_create(8, false)
 	};
 	
+	global.section = 0;
 	package_MTG("cleanup");
 	make_particles("vines");
 }

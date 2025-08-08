@@ -12,19 +12,23 @@ if (room == rHub) {
 	var red = (global.items.reds[level]);
 	var green = (global.items.greens[level]);
 	
-	if (!yellow && !red) {
+	if (!red) {
 		draw_text_outline(x + sprite_width / 2, y - 30, stage.name, c_black);
 	} else {
 		draw_text_outline(x + sprite_width / 2 - 3, y - 30, "|", c_black);
 		draw_set_halign(fa_right);
 		draw_text_outline(x + sprite_width / 2 - 10, y - 30, stage.name, c_black);
 		draw_set_halign(fa_left);
-		draw_text_outline(x + sprite_width / 2 + 9, y - 30, (!red) ? "???" : stage.secret, c_black);
+		draw_text_outline(x + sprite_width / 2 + 9, y - 30, stage.secret, c_black);
 		draw_set_halign(fa_center);
 	}
 	
 	if (yellow) {
-		draw_sprite(sprItemYellow, 0, x - 59, y - 33);
+		if (red) {
+			draw_sprite(sprItemYellow, 0, x - 59, y - 33);
+		} else {
+			draw_sprite(sprItemYellow, 0, x, y - 33);
+		}
 	}
 
 	if (red) {
@@ -43,7 +47,7 @@ if (room == rHub) {
 	if (green) {
 		draw_text_outline(x + 42, y, "|", c_black);
 		draw_text_outline(x - 16, y, "|", c_black);
-	} else {
+	} else if (red) {
 		draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
 	}
 	
