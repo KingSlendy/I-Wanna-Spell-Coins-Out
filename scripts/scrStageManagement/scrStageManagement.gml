@@ -13,7 +13,7 @@ global.stage_info = [
 	new Stage("Grid", "Gate"),
 	new Stage("Hue", "Hex"),
 	new Stage("Invert", "Intense"),
-	new Stage("Jigsaw", "Joker"),
+	new Stage("Jigsaw", "Jumble"),
 	new Stage("", ""),
 	new Stage("", ""),
 	new Stage("", ""),

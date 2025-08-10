@@ -44,7 +44,7 @@ if (mouse_check_button_pressed(mb_left)) {
 				frozen = false;
 			}
 			
-			pieces_all_placed();
+			pieces_all_placed(true);
 		} else {
 			x = xstart;
 			y = ystart;

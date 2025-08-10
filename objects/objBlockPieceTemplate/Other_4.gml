@@ -53,4 +53,8 @@ for (var i = 0; i < array_length(global.pieces_j); i++) {
 	}
 }
 
-pieces_all_placed();
+pieces_all_placed(false);
+
+add_trigger_key("pieces", {
+	image_alpha: new TriggerVariable(0, 0.05)
+});

@@ -21,7 +21,7 @@ function piece_is_placeable() {
 	return true;
 }
 
-function pieces_all_placed() {
+function pieces_all_placed(snd) {
 	with (objBlock) {
 		if (sprite_index == sprBlockage && image_alpha == 0) {
 			return;
@@ -42,7 +42,9 @@ function pieces_all_placed() {
 				image_alpha = 0;
 			}
 		}
-				
-		audio_play_sound(sndBlockChange, 0, false);
+		
+		if (snd) {
+			audio_play_sound(sndBlockChange, 0, false);
+		}
 	}
 }
