@@ -1,3 +1,7 @@
+if (image_alpha < 0.5) {
+	exit;
+}
+
 if (num > -1) {
 	global.items[$ type][num] = true;
 }

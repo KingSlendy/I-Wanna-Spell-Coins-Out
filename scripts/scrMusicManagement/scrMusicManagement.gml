@@ -28,12 +28,15 @@ function get_music() {
 			case rStageD:
 			case rStageE:
 			case rStageF:
+			    music = bgmTrack1;
+			    break;
+				
 			case rStageG:
 			case rStageH:
 			case rStageI:
 			case rStageJ:
-			    music = bgmMain;
-			    break;
+				music = bgmTrack2;
+				break;
 		}
 	} else {
 		with (objPlayMusic) {

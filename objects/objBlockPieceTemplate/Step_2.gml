@@ -1,41 +1,50 @@
+if (!instance_exists(objPlayer)) {
+	exit;
+}
+
 if (mouse_check_button_pressed(mb_left)) {
 	if (!selected) {
 		if (selectable && collision_point(mouse_x, mouse_y, self, true, false) != noone) {
-			selected_x = mouse_x - x;
-			selected_y = mouse_y - y;
+			var player_is_outside = true;
 			
-			with (objBlockPieceTemplate) {
-				selectable = false;
+			with (objPlayer) {
+				if (place_meeting(x, y, objBlockPieceRegion) || place_meeting(x, y, objBlock)) {
+					player_is_outside = false;
+				}
 			}
 			
-			selected = true;
-		}
-	} else {
-		if (piece_is_placeable()) {
-			var all_placed = false;
+			if (player_is_outside) {
+				selected_x = mouse_x - x;
+				selected_y = mouse_y - y;
 			
-			with (objBlockPieceTemplate) {
-				if (!piece_is_placeable()) {
-					all_placed = false;
+				with (objBlockPieceTemplate) {
+					selectable = false;
 				}
 				
-				alarm[0] = 1;
-			}
-			
-			if (all_placed) {
-				with (objBlockPieceTemplate) {
-					alarm[0] = false;
-					selectable = false;
+				with (objPlayer) {
+					frozen = true;
 				}
 				
 				with (objBlock) {
 					if (sprite_index == sprBlockage) {
-						instance_destroy();
+						image_alpha = 1;
 					}
 				}
-				
-				audio_play_sound(sndBlockChange, 0, false);
+			
+				selected = true;
 			}
+		}
+	} else {
+		if (piece_is_placeable()) {
+			with (objBlockPieceTemplate) {
+				alarm[0] = 1;
+			}
+			
+			with (objPlayer) {
+				frozen = false;
+			}
+			
+			pieces_all_placed();
 		} else {
 			x = xstart;
 			y = ystart;
@@ -49,6 +58,10 @@ if (mouse_check_button_pressed(mb_left)) {
 			
 			with (objBlockPieceTemplate) {
 				alarm[0] = 1;
+			}
+			
+			with (objPlayer) {
+				frozen = false;
 			}
 		}
 		

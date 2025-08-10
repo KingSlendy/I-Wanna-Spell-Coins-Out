@@ -14,9 +14,35 @@ function piece_is_placeable() {
 		return false;
 	}
 	
-	/*if (bbox_left < min_x || bbox_right > max_x || bbox_top < min_y || bbox_bottom > max_y) {
+	if (bbox_left < min_x || bbox_right > max_x || bbox_top < min_y || bbox_bottom > max_y) {
 		return false;
-	}*/
+	}
 	
 	return true;
+}
+
+function pieces_all_placed() {
+	with (objBlock) {
+		if (sprite_index == sprBlockage && image_alpha == 0) {
+			return;
+		}
+	}
+	
+	var all_placed = true;
+			
+	with (objBlockPieceTemplate) {
+		if (!piece_is_placeable()) {
+			all_placed = false;
+		}
+	}
+			
+	if (all_placed) {
+		with (objBlock) {
+			if (sprite_index == sprBlockage) {
+				image_alpha = 0;
+			}
+		}
+				
+		audio_play_sound(sndBlockChange, 0, false);
+	}
 }

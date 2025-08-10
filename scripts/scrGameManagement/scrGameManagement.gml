@@ -10,6 +10,14 @@ function save_game(position, save_x = -1, save_y = -1) {
 		global.save_player.sforms = global.forms;
 	}
 	
+	if (room == rStageJ) {
+		global.pieces_j = [];
+		
+		with (objBlockPieceTemplate) {
+			array_push(global.pieces_j, { xstart, ystart, x, y });
+		}
+	}
+	
 	var data = {
 		player: global.save_player,
 		
@@ -30,7 +38,9 @@ function save_game(position, save_x = -1, save_y = -1) {
 		#endregion
 		
 		items: global.items,
-		section: global.section
+		
+		section: global.section,
+		pieces_j: global.pieces_j
 	};
 	
 	var json = json_stringify(data);
@@ -71,7 +81,9 @@ function load_game(position) {
 	global.difficulty = data.info.difficulty;
 	global.clear = data.info.clear;
 	global.items = data.items;
+	
 	global.section = data.section;
+	global.pieces_j = data.pieces_j;
 	
 	#region ADDED BY MAGIC TOWER PACKAGE
 	global.stats_mtg = data.mtg.stats;
@@ -148,6 +160,7 @@ function cleanup_game() {
 	};
 	
 	global.section = 0;
+	global.pieces_j = [];
 	package_MTG("cleanup");
 	make_particles("vines");
 }

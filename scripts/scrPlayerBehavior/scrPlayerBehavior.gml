@@ -106,6 +106,15 @@ function get_skin_sprite(action) {
 
 function kill_player() {
 	if (instance_exists(objPlayer)) {
+		if (room == rStageJ) {
+			with (objPlayer) {
+				if (!place_meeting(x, y, objBlockPieceRegion)) {
+					return;
+				}
+			}
+		}
+		
+		
 	    if (!global.debug_god_mode) {
 	        with (objPlayer) {
 				instance_create_layer(x, y, "Player", objBloodEmitter);
