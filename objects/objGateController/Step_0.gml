@@ -1,4 +1,4 @@
-objif (!ask_accept && ask_spikes) {
+if (!ask_accept && ask_spikes) {
 	var move = (is_pressed(global.controls.right) - is_pressed(global.controls.left));
 	
 	if (move != 0) {
@@ -18,7 +18,6 @@ objif (!ask_accept && ask_spikes) {
 			number += string(ask_number[i]);
 		}
 		
-		print(real(number));
 		if (real(number) == spike_red || real(number) == spike_green) {
 			deactivate_trigger("fake2");
 			activate_trigger("fake3");

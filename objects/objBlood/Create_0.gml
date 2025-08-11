@@ -4,3 +4,5 @@ direction = irandom(35) * 10;
 speed = random(6);
 gravity_direction = (abs(global.grav) == 1) ? 270 : 0;
 gravity = (0.1 + random(0.2)) * sign(global.grav);
+
+alarm[0] = seconds_to_frames(random_range(1, 3));

@@ -104,6 +104,7 @@ options = [
 		"Shoot",
 		"Restart",
 		"Pause",
+		"Warp",
 		
 		new Option("Reset Defaults", function() {
 			scrControlsConfig();

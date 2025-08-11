@@ -21,6 +21,9 @@ function get_music() {
 			case rTitle:
 			case rFiles:
 			case rOptions:
+				music = bgmMain;
+				break;
+				
 			case rHub:
 			case rStageA:
 			case rStageB:
@@ -35,6 +38,7 @@ function get_music() {
 			case rStageH:
 			case rStageI:
 			case rStageJ:
+			case rStageK:
 				music = bgmTrack2;
 				break;
 		}

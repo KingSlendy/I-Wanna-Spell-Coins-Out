@@ -16,5 +16,5 @@ field = function() {
 			
 			return false;
 		})
-	})
+	});
 }

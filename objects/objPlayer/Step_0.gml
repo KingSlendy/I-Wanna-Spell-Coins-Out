@@ -369,10 +369,6 @@ if (!frozen || on_auto) {
 	if (is_pressed(global.controls.shoot) && !global.controls_lock.shoot) {
 		player_shoot();
 	}
-	
-	if (is_pressed(global.controls.suicide) && !global.controls_lock.suicide) {
-		kill_player();
-	}
 }
 #endregion
 

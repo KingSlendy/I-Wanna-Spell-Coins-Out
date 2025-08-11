@@ -21,7 +21,7 @@ global.controls_lock = { //Keeping track of which controls are unusable
 	shoot: false,
 	restart: false,
 	pause: false,
-	suicide: true
+	warp: false
 }
 
 global.current_music = -1; //The current music playing

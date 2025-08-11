@@ -47,6 +47,16 @@ if (global.game_started) {
 	
 		pause_delay = 0;
 	}
+	
+	if (room != rHub && instance_exists(objPlayer) && is_pressed(global.controls.warp)) {
+		restart_game();
+		
+		with (objPlayer) {
+			instance_destroy();
+		}
+		
+		room_goto(rHub);
+	}
 }
 #endregion
 

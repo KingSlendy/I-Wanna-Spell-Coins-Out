@@ -8,7 +8,7 @@ global.controls = {
 	shoot: ord("Z"),
 	restart: ord("R"),
 	pause: ord("P"),
-	suicide: ord("Q")
+	warp: ord("W")
 };
 
 //Default menu controls
