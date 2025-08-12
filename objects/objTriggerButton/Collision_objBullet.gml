@@ -20,4 +20,4 @@ if (event_trigger != null) {
 	event_trigger();
 }
 
-image_index = 0;
+image_index = 1;

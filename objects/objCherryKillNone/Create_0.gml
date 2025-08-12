@@ -1,2 +1,2 @@
 image_alpha = 0;
-number = instance_number(objCherryKill);
+number = 0;

@@ -20,7 +20,7 @@ switch (menu) {
 	    select[menu] %= global.total_saves;
     
 	    if (is_pressed(global.controls_menu.accept)) {
-	        select[1] = (file_exists($"Data{select[menu] + 1}")) ? length - 1 : 0;
+	        select[1] = (file_exists($"Data{select[menu] + 1}")) ? length - 1 : 1;
 	        menu = 1;
 	        audio_play_sound(sndJump, 0, false);
 	    }

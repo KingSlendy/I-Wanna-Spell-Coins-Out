@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objSaveMedium",
+  "%Name":"objSaveEasy",
   "eventList":[],
   "managed":true,
-  "name":"objSaveMedium",
+  "name":"objSaveEasy",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objSave","path":"objects/objSave/objSave.yy",},"propertyId":{"name":"difficulty","path":"objects/objSave/objSave.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSaveMedium",
-    "path":"sprites/sprSaveMedium/sprSaveMedium.yy",
+    "name":"sprSaveEasy",
+    "path":"sprites/sprSaveEasy/sprSaveEasy.yy",
   },
   "spriteMaskId":{
     "name":"sprSaveMask",

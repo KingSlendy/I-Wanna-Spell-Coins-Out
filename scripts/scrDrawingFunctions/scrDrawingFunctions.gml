@@ -12,6 +12,20 @@ function draw_text_outline(x, y, text, border_color) {
 	draw_text(x, y, text);
 }
 
+function draw_text_transformed_outline(x, y, text, xscale, yscale, angle, border_color) {
+	var color = draw_get_color();
+	draw_set_color(border_color);
+
+	for (var i = -1; i < 2; i++) {
+	    for (var j = -1; j < 2; j++) {
+	        draw_text_transformed(x + j, y + i, text, xscale, yscale, angle);
+	    }
+	}
+
+	draw_set_colour(color);
+	draw_text_transformed(x, y, text, xscale, yscale, angle);
+}
+
 function draw_rectangle_ext(x, y, w, h, rot, outline) {
     matrix_set(matrix_world, matrix_build(x, y, 0, 0, 0, rot, 1, 1, 1));
     draw_rectangle(-w / 2, -h / 2, w / 2, h / 2, outline);
