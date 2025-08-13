@@ -15,7 +15,7 @@ global.stage_info = [
 	new Stage("Invert", "Intense"),
 	new Stage("Jigsaw", "Jumble"),
 	new Stage("Kill", "Kind"),
-	new Stage("", ""),
+	new Stage("Little", "Large"),
 	new Stage("", ""),
 	new Stage("", ""),
 	new Stage("", ""),

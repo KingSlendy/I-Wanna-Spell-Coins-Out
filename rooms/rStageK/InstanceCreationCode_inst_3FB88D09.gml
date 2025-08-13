@@ -1,6 +1,6 @@
 field = function() {
 	add_trigger_key("apple6", {
-		y: new TriggerVariable(self.y + 32, 3, attribute_loop_reverse,, function() {
+		y: new TriggerVariable(self.y + 32, 2, attribute_loop_reverse,, function() {
 			if (!variable_instance_exists(self, "timer")) {
 				self.timer = 0;
 			}
