@@ -28,8 +28,12 @@ function toggle_light() {
 	}
 	
 	if (all_bulbs) {
-		activate_trigger((x < 800) ? "fake1" : "fake2");
-		audio_play_sound(sndBlockChange, 0, false);
+		var trg = (x < 800) ? "fake1" : "fake2";
+		
+		if (!is_active_trigger(trg)) {
+			activate_trigger(trg);
+			audio_play_sound(sndBlockChange, 0, false);
+		}
 	}
 	
 	active = false;

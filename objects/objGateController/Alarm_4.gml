@@ -12,6 +12,5 @@ if (!spikes_gone) {
 	exit;
 }
 
-print(spike_number);
 ask_spikes = true;
 objPlayer.frozen = true;

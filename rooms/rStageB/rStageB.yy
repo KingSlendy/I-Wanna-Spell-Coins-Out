@@ -9,7 +9,6 @@
     {"name":"inst_44368905_1","path":"rooms/rStageB/rStageB.yy",},
     {"name":"inst_B67CDD1_1","path":"rooms/rStageB/rStageB.yy",},
     {"name":"inst_6C585BF_1","path":"rooms/rStageB/rStageB.yy",},
-    {"name":"inst_1E20834A_1","path":"rooms/rStageB/rStageB.yy",},
     {"name":"inst_15F6B24D_1","path":"rooms/rStageB/rStageB.yy",},
     {"name":"inst_3BD34817_1","path":"rooms/rStageB/rStageB.yy",},
     {"name":"inst_5616BD44_1","path":"rooms/rStageB/rStageB.yy",},
@@ -259,9 +258,6 @@
           ],"layers":[],"name":"Spikes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Fruits_2","depth":1400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Fruits_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Fruits","depth":1500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"$GMRInstance":"v1","%Name":"inst_1E20834A_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E20834A_1","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objPlayerKiller","path":"objects/objPlayerKiller/objPlayerKiller.yy",},"propertyId":{"name":"bounce","path":"objects/objPlayerKiller/objPlayerKiller.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":1168.0,},
             {"$GMRInstance":"v1","%Name":"inst_676CF6FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_676CF6FC","objectId":{"name":"objPathHandler","path":"objects/objPathHandler/objPathHandler.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objPathHandler","path":"objects/objPathHandler/objPathHandler.yy",},"propertyId":{"name":"obj","path":"objects/objPathHandler/objPathHandler.yy",},"resource":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"objCherry",},
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objPathHandler","path":"objects/objPathHandler/objPathHandler.yy",},"propertyId":{"name":"num","path":"objects/objPathHandler/objPathHandler.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},

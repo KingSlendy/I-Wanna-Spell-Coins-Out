@@ -25,6 +25,9 @@ function get_music() {
 				break;
 				
 			case rHub:
+				music = bgmHub;
+				break;
+				
 			case rStageA:
 			case rStageB:
 			case rStageC:
@@ -40,6 +43,10 @@ function get_music() {
 			case rStageJ:
 			case rStageK:
 				music = bgmTrack2;
+				break;
+				
+			case rStageL:
+				music = bgmTrack3;
 				break;
 		}
 	} else {

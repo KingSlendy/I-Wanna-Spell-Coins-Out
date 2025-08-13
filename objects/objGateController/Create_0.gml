@@ -41,20 +41,24 @@ function gate_spawn(section) {
 	var hspd = irandom_range(3, 5) * ((spawn_left) ? 1 : -1);
 	
 	with (instance_create_layer(spawn_x, spawn_y, "Spikes", objSpikeDown)) {
-		var is_red = (irandom(1) == 0);
-		image_blend = (is_red) ? c_red : c_lime;
+		var rng = irandom(2);
+		var is_red = (rng == 0);
+		var is_green = (rng == 1);
+		image_blend = (is_red) ? c_red : ((is_green) ? c_lime : c_white);
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
-		other.spike_green += (!is_red) ? 1 : 0;
+		other.spike_green += (is_green) ? 1 : 0;
 	}
 	
 	with (instance_create_layer(spawn_x, spawn_y + 64, "Spikes", objSpikeUp)) {
-		var is_red = (irandom(1) == 0);
-		image_blend = (is_red) ? c_red : c_lime;
+		var rng = irandom(2);
+		var is_red = (rng == 0);
+		var is_green = (rng == 1);
+		image_blend = (is_red) ? c_red : ((is_green) ? c_lime : c_white);
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
-		other.spike_green += (!is_red) ? 1 : 0;
+		other.spike_green += (is_green) ? 1 : 0;
 	}
 }
