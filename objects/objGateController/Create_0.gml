@@ -1,4 +1,4 @@
-timer = -1;
+sprtimer = -1;
 spike_red = 0;
 spike_green = 0;
 ask_spikes = false;
