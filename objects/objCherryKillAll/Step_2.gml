@@ -1,7 +1,7 @@
 var all_normal_killed = true;
 
 with (objCherryKill) {
-	if (x < 800 && sprite_index == sprCherryGray) {
+	if (x < 800) {
 		all_normal_killed = false;
 		break;
 	}

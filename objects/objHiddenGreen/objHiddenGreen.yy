@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objSparkleGreen",
+  "%Name":"objHiddenGreen",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objSparkleGreen",
+  "name":"objHiddenGreen",
   "overriddenProperties":[],
   "parent":{
     "name":"Stages",
     "path":"folders/Objects/Game/Stages.yy",
   },
-  "parentObjectId":{
-    "name":"objTriggerTouch",
-    "path":"objects/objTriggerTouch/objTriggerTouch.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,12 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSparkleGreen",
-    "path":"sprites/sprSparkleGreen/sprSparkleGreen.yy",
+    "name":"sprTriggerGreen",
+    "path":"sprites/sprTriggerGreen/sprTriggerGreen.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "trigger",
-  ],
-  "visible":true,
+  "visible":false,
 }

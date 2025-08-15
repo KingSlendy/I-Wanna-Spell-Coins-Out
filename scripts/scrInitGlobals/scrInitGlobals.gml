@@ -31,3 +31,13 @@ global.overlay = false; //Sets if the information overlay is currently visible
 global.connected = false; //Checks if you're currently connected to the online
 
 randomize(); //Sets a random seed
+
+global.part_system = part_system_create();
+
+global.part_type_green = part_type_create();
+var ptg = global.part_type_green;
+part_type_sprite(ptg, sprSparkleGreen, false, false, false);
+part_type_alpha3(ptg, 0, 1, 0);
+part_type_size(ptg, 0, 0, 0.02, false);
+part_type_orientation(ptg, 0, 359, 1, false, false);
+part_type_life(ptg, 50, 100);

@@ -1,9 +1,7 @@
 var total = 0;
 
 with (objCherryKill) {
-	if (sprite_index == sprCherryGray) {
-		total++;
-	}
+	total++;
 }
 
 if (number != total && !place_meeting(x, y, objPlayer)) {
