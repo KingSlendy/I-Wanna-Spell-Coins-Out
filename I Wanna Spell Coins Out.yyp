@@ -725,6 +725,7 @@
     {"id":{"name":"sndGainTriple","path":"sounds/sndGainTriple/sndGainTriple.yy",},},
     {"id":{"name":"sndGlass","path":"sounds/sndGlass/sndGlass.yy",},},
     {"id":{"name":"sndItem","path":"sounds/sndItem/sndItem.yy",},},
+    {"id":{"name":"sndItemGreenAppear","path":"sounds/sndItemGreenAppear/sndItemGreenAppear.yy",},},
     {"id":{"name":"sndJump","path":"sounds/sndJump/sndJump.yy",},},
     {"id":{"name":"sndLoseStar","path":"sounds/sndLoseStar/sndLoseStar.yy",},},
     {"id":{"name":"sndLoseTriple","path":"sounds/sndLoseTriple/sndLoseTriple.yy",},},

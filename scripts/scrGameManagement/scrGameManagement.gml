@@ -40,6 +40,7 @@ function save_game(position, save_x = -1, save_y = -1) {
 		items: global.items,
 		
 		section: global.section,
+		hidden_greens: global.hidden_greens,
 		pieces_j: global.pieces_j
 	};
 	
@@ -83,6 +84,7 @@ function load_game(position) {
 	global.items = data.items;
 	
 	global.section = data.section;
+	global.hidden_greens = data.hidden_greens;
 	global.pieces_j = data.pieces_j;
 	
 	#region ADDED BY MAGIC TOWER PACKAGE
@@ -159,7 +161,8 @@ function cleanup_game() {
 		bosses: array_create(8, false)
 	};
 	
-	global.section = 0;
+	global.section = -1;
+	global.hidden_greens = [];
 	global.pieces_j = [];
 	package_MTG("cleanup");
 	make_particles("vines");

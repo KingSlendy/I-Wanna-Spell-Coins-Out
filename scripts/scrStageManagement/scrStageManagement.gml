@@ -7,7 +7,7 @@ global.stage_info = [
 	new Stage("Amazing", "Ascend"),
 	new Stage("Below", "Back"),
 	new Stage("Cycle", "Cover"),
-	new Stage("Dive", "Detect"),
+	new Stage("Dive", "Deep"),
 	new Stage("Elevate", "Effort"),
 	new Stage("Flare", "Fleeting"),
 	new Stage("Grid", "Gate"),

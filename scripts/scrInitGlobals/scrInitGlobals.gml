@@ -38,6 +38,6 @@ global.part_type_green = part_type_create();
 var ptg = global.part_type_green;
 part_type_sprite(ptg, sprSparkleGreen, false, false, false);
 part_type_alpha3(ptg, 0, 1, 0);
-part_type_size(ptg, 0, 0, 0.02, false);
+part_type_size(ptg, 0, 0, 0.03, false);
 part_type_orientation(ptg, 0, 359, 1, false, false);
 part_type_life(ptg, 50, 100);

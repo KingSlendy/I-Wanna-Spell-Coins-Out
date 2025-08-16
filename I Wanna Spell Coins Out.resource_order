@@ -543,6 +543,7 @@
     {"name":"sndGainForm","order":5,"path":"sounds/sndGainForm/sndGainForm.yy",},
     {"name":"sndGlass","order":4,"path":"sounds/sndGlass/sndGlass.yy",},
     {"name":"sndItem","order":5,"path":"sounds/sndItem/sndItem.yy",},
+    {"name":"sndItemGreenAppear","order":1,"path":"sounds/sndItemGreenAppear/sndItemGreenAppear.yy",},
     {"name":"sndLoseStar","order":1,"path":"sounds/sndLoseStar/sndLoseStar.yy",},
     {"name":"sndLoseTriple","order":1,"path":"sounds/sndLoseTriple/sndLoseTriple.yy",},
     {"name":"sndMTGLevelGain","order":1,"path":"sounds/sndMTGLevelGain/sndMTGLevelGain.yy",},
