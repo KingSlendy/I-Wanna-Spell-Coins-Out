@@ -45,6 +45,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			}
 			
 			pieces_all_placed(true);
+			save_game(false);
 		} else {
 			x = xstart;
 			y = ystart;
