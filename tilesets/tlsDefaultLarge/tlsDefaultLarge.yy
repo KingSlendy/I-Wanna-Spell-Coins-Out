@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tlsDefaultBig",
+  "%Name":"tlsDefaultLarge",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"Brown","closed_edge":false,"name":"Brown","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,6,6,6,7,7,7,7,7,7,7,7,7,6,6,6,6,6,7,7,7,7,6,6,7,6,6,
@@ -22,7 +22,7 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tlsDefaultBig",
+  "name":"tlsDefaultLarge",
   "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -33,8 +33,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprTlsDefaultBig",
-    "path":"sprites/sprTlsDefaultBig/sprTlsDefaultBig.yy",
+    "name":"sprTlsDefaultLarge",
+    "path":"sprites/sprTlsDefaultLarge/sprTlsDefaultLarge.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{

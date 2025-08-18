@@ -2,7 +2,7 @@ event_inherited();
 fruit_sprite();
 
 if (room == rStageL) {
-	if (x < 1600) {
+	if (x > 1600) {
 		image_xscale = 2;
 		image_yscale = 2;
 	} else {
