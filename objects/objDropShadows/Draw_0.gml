@@ -42,5 +42,19 @@ surface_reset_target();
 matrix_set(matrix_world, matrix_build_identity());
 
 draw_set_alpha(0.6);
+
+var offset_x = 3;
+var offset_y = 3;
+
+if (room == rStageL) {
+	if (cam.view_x >= 1600) {
+		offset_x = 6;
+		offset_y = 6;
+	} else {
+		offset_x = 1;
+		offset_y = 1;
+	}
+}
+
 draw_surface(surf, cam.view_x + 3, cam.view_y + 3);
 draw_set_alpha(1);
