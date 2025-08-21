@@ -10,6 +10,7 @@ if (room == rHub) {
 	global.section = -1;
 	global.hidden_greens = [];
 	global.pieces_j = [];
+	global.cards_m = [];
 } else {
 	room_to = rHub;
 }

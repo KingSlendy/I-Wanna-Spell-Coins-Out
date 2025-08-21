@@ -18,6 +18,14 @@ function save_game(position, save_x = -1, save_y = -1) {
 		}
 	}
 	
+	if (room == rStageM) {
+		global.cards_m = [];
+		
+		with (objMemoryCard) {
+			array_push(global.cards_m, { xstart, ystart, image_index, checked, memory_index, memory_mate_xstart: memory_mate.xstart, memory_mate_ystart: memory_mate.ystart });
+		}
+	}
+	
 	var data = {
 		player: global.save_player,
 		
@@ -41,7 +49,8 @@ function save_game(position, save_x = -1, save_y = -1) {
 		
 		section: global.section,
 		hidden_greens: global.hidden_greens,
-		pieces_j: global.pieces_j
+		pieces_j: global.pieces_j,
+		cards_m: global.cards_m
 	};
 	
 	var json = json_stringify(data);
@@ -86,6 +95,7 @@ function load_game(position) {
 	global.section = data.section;
 	global.hidden_greens = data.hidden_greens;
 	global.pieces_j = data.pieces_j;
+	global.cards_m = data.cards_m;
 	
 	#region ADDED BY MAGIC TOWER PACKAGE
 	global.stats_mtg = data.mtg.stats;
@@ -164,6 +174,8 @@ function cleanup_game() {
 	global.section = -1;
 	global.hidden_greens = [];
 	global.pieces_j = [];
+	global.cards_m = [];
+	
 	package_MTG("cleanup");
 	make_particles("vines");
 }
