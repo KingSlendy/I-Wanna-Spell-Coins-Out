@@ -14,8 +14,10 @@ if (rotating != 0) {
 			rotating = 0;
 			
 			with (objMemoryCard) {
-				rotateable = true;
+				rotateable = !other.init;
 			}
+			
+			init = false;
 			
 			if (!checked && image_index != 0) {
 				var card_same = false;
@@ -53,8 +55,40 @@ if (rotating != 0) {
 							}
 						}
 						
+						var all_cards_red = false;
+						
+						if (red) {
+							if (memory_index == 12) {
+								var cards_not_red = [];
+								
+								with (objMemoryCard) {
+									if (memory_index != 12) {
+										array_push(cards_not_red, id);
+									}
+								}
+								
+								if (array_length(cards_not_red) > 0) {
+									array_shuffle_ext(cards_not_red);
+									var card_not_red = array_pop(cards_not_red);
+									card_not_red.memory_index = 12;
+									card_not_red.memory_mate.memory_index = 12;
+								} else {
+									all_cards_red = true;
+								}
+							} else {
+								with (objMemoryCard) {
+									red = false;
+								}
+							}
+						}
+						
 						if (all_cards_checked) {
-							activate_trigger($"fake1");
+							activate_trigger("fake1");
+							
+							if (all_cards_red) {
+								activate_trigger("fake2");
+							}
+							
 							audio_play_sound(sndBlockChange, 0, false);
 						}
 					} else {

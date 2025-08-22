@@ -9,7 +9,9 @@ if (array_length(global.cards_m) == 0) {
 		choices[i] = i + 2;
 	}
 	
+	array_delete(choices, 10, 1);
 	array_shuffle_ext(choices);
+	array_insert(choices, array_length(choices) - 1, 12);
 	array_shuffle_ext(memory_cards);
 	
 	for (var i = 0; i < array_length(memory_cards) / 2; i++) {
@@ -46,8 +48,32 @@ if (array_length(global.cards_m) == 0) {
 				}
 				
 				memory_mate = mate;
-				rotating = -1;
+				red = card.red;
+				
+				if (!checked && image_index != 0) {
+					rotating = -1;
+					var card_rotated = false;
+					
+					with (objMemoryCard) {
+						if (id == other.id) {
+							continue;
+						}
+						
+						if (!checked && image_index != 0) {
+							card_rotated = true;
+							break;
+						}
+					}
+					
+					if (card_rotated) {
+						init = true;
+					}
+				}
+				
+				break;
 			}
 		}
 	}
+	
+	alarm[0] = 1;
 }

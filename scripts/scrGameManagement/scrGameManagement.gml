@@ -22,7 +22,7 @@ function save_game(position, save_x = -1, save_y = -1) {
 		global.cards_m = [];
 		
 		with (objMemoryCard) {
-			array_push(global.cards_m, { xstart, ystart, image_index, checked, memory_index, memory_mate_xstart: memory_mate.xstart, memory_mate_ystart: memory_mate.ystart });
+			array_push(global.cards_m, { xstart, ystart, image_index, checked, memory_index, memory_mate_xstart: memory_mate.xstart, memory_mate_ystart: memory_mate.ystart, red });
 		}
 	}
 	
