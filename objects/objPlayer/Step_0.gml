@@ -288,6 +288,45 @@ if (!global.forms.lunarkid) {
 		p_vspd(max_vspd * sign(VSPD));
 	}
 	#endregion
+	
+	if (room == rStageO) {
+		var planet_near = noone;
+		var planet_dist_record = infinity;
+		
+		with (objPlanetMask) {
+			var dist = point_distance(x, y, other.x, other.y) - field;
+			
+			if (dist < planet_dist_record) {
+				planet_dist_record = dist;
+				planet_near = id;
+			}
+		}
+		
+		if (planet_near != noone && (planet_current == noone || planet_current != planet_near)) {
+			planet_current = planet_near;
+			planet_dist = point_distance(planet_current.x, planet_current.y, x, y);
+			planet_dir = point_direction(planet_current.x, planet_current.y, x, y);
+			vspd = 0;
+		}
+	
+		if (planet_current != noone) {
+			vspd += grav;
+			planet_dir = (planet_dir - ((((max_hspd / (2 * pi)) * 360) * sign(hspd)) / planet_dist) + 360) % 360;
+			planet_dist -= vspd + grav;
+			var planet_size = planet_current.size / 2 + 9;
+			
+			if (planet_dist <= planet_size) {
+				on_block = planet_current;
+				planet_dist = planet_size;
+				vspd = 0;
+				grav = 0;
+			}
+			
+			x = planet_current.x + lengthdir_x(planet_dist, planet_dir);
+			y = planet_current.y + lengthdir_y(planet_dist, planet_dir);
+			image_angle = (planet_dir + 270) % 360;
+		}
+	}
 
 	#region Player Actions
 	if (!frozen || on_auto) {
@@ -375,6 +414,10 @@ if (!frozen || on_auto) {
 #region Physics and Collision
 if (still) {
 	player_sprite("Fall");
+	exit;
+}
+
+if (room == rStageO) {
 	exit;
 }
 
