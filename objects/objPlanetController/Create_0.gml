@@ -56,3 +56,5 @@ layer_script_end("Tiles", method(id, function() {
 	surface_reset_target();
 	matrix_set(matrix_world, matrix_build_identity());
 }));
+
+sprite_set_offset(sprSpikeUp, 16, 31);

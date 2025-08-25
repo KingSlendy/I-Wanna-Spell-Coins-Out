@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objPlanetMask",
+  "%Name":"objPlanetSpike",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPlanetMask",
+  "name":"objPlanetSpike",
   "overriddenProperties":[],
   "parent":{
     "name":"O",
     "path":"folders/Objects/Game/Stages/O.yy",
   },
   "parentObjectId":{
-    "name":"objBlock",
-    "path":"objects/objBlock/objBlock.yy",
+    "name":"objPlayerKiller",
+    "path":"objects/objPlayerKiller/objPlayerKiller.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlanetMask",
-    "path":"sprites/sprPlanetMask/sprPlanetMask.yy",
+    "name":"sprPlanetSpike",
+    "path":"sprites/sprPlanetSpike/sprPlanetSpike.yy",
   },
   "spriteMaskId":null,
   "visible":true,
