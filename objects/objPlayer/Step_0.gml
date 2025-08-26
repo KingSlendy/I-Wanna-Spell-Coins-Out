@@ -322,6 +322,27 @@ if (!global.forms.lunarkid) {
 				planet_dist = planet_size;
 				vspd = 0;
 				grav = 0;
+				
+				if (!is_active_trigger("circle4")) {
+					planet_current.ground = true;
+					var planet_all_ground = true;
+				
+					with (objPlanetMask) {
+						if (!has_ground) {
+							continue;
+						}
+					
+						if (!ground) {
+							planet_all_ground = false;
+							break;
+						}
+					}
+				
+					if (planet_all_ground) {
+						activate_trigger("circle4");
+						audio_play_sound(sndBlockChange, 0, false);
+					}
+				}
 			}
 			
 			x = planet_current.x + lengthdir_x(planet_dist, planet_dir);
