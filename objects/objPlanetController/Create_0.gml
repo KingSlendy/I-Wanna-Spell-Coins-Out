@@ -1,60 +1,27 @@
 surf = noone;
 
-layer_script_begin("Blocks", method(id, function() {
-	if (event_type != ev_draw && event_number != ev_draw_normal) {
-		return;
-	}
-	
-	var cam = camera_properties(0);
-	
-	if (!surface_exists(surf)) {
-		surf = surface_create(cam.view_w, cam.view_h);
-	}
-	
-	matrix_set(matrix_world, matrix_build(-cam.view_x, -cam.view_y, 0, 0, 0, 0, 1, 1, 1));
-	surface_set_target(surf);
-	draw_clear_alpha(c_black, 0);
-}));
+var surf_tiles = surface_create(room_width, room_height);
+surface_set_target(surf_tiles);
+var tilemap_id = layer_tilemap_get_id(layer_get_id("Tiles"));
+var tilemap_w = tilemap_get_width(tilemap_id);
+var tilemap_h = tilemap_get_height(tilemap_id);
+var tile_w = tilemap_get_tile_width(tilemap_id);
+var tile_h = tilemap_get_tile_height(tilemap_id);
 
-layer_script_begin("Tiles", method(id, function() {
-	if (event_type != ev_draw && event_number != ev_draw_normal) {
-		return;
-	}
-	
-	gpu_set_colorwriteenable(true, true, true, false);
-	
-	var layer_id = layer_get_id("Tiles");
-    var tilemap_id = layer_tilemap_get_id(layer_id);
-
-    var w  = tilemap_get_width(tilemap_id);
-    var h  = tilemap_get_height(tilemap_id);
-    var tw = tilemap_get_tile_width(tilemap_id);
-    var th = tilemap_get_tile_height(tilemap_id);
-
-    for (var tx = 0; tx < w; tx++) {
-        for (var ty = 0; ty < h; ty++) {
-            var t = tilemap_get(tilemap_id, tx, ty);
+for (var tx = 0; tx < tilemap_w; tx++) {
+    for (var ty = 0; ty < tilemap_h; ty++) {
+        var t = tilemap_get(tilemap_id, tx, ty);
 			
-            if (t != 0) {
-                draw_tile(tlsDefault, t, 0, tx * tw, ty * th);
-            }
+        if (t != 0) {
+			var tile_pos_x = tx * tile_w;
+			var tile_pos_y = ty * tile_h;
+            draw_tile(tlsDefault, t, 0, tile_pos_x, tile_pos_y);
         }
     }
-}));
+}
 
-layer_script_end("Tiles", method(id, function() {
-	if (event_type != ev_draw && event_number != ev_draw_normal) {
-		return;
-	}
-	
-	gpu_set_colorwriteenable(true, true, true, true);
-	
-	with (objPlanetMask) {
-		draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-	}
-	
-	surface_reset_target();
-	matrix_set(matrix_world, matrix_build_identity());
-}));
+surface_reset_target();
+sprite_tiles = sprite_create_from_surface(surf_tiles, 0, 0, room_width, room_height, false, false, 0, 0);
+surface_free(surf_tiles);
 
-sprite_set_offset(sprSpikeUp, 16, 31);
+layer_set_visible("Tiles", false);

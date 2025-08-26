@@ -294,7 +294,9 @@ if (!global.forms.lunarkid) {
 		var planet_dist_record = infinity;
 		
 		with (objPlanetMask) {
-			var dist = point_distance(x, y, other.x, other.y) - field;
+			var dir = point_direction(x, y, other.x, other.y);
+			var rad = size / 2 + 9 + field;
+			var dist = point_distance(x + lengthdir_x(rad, dir), y + lengthdir_y(rad, dir), other.x, other.y);
 			
 			if (dist < planet_dist_record) {
 				planet_dist_record = dist;

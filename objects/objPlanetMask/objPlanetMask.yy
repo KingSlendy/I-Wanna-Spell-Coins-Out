@@ -37,5 +37,5 @@
     "path":"sprites/sprPlanetMask/sprPlanetMask.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
