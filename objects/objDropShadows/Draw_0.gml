@@ -13,6 +13,10 @@ with (objPlayer) {
 	event_perform(ev_draw, 0);
 }
 
+with (objPhantomPlayer) {
+	draw_self();
+}
+
 with (objBlock) {
 	draw_self();
 }
