@@ -3,7 +3,7 @@ if (array_contains(global.hidden_greens, $"{xstart},{ystart}")) {
 	
 	var all_visible = true;
 		
-	with (objHiddenGreen) {
+	with (objItemGreenHidden) {
 		if (!visible) {
 			all_visible = false;
 			break;

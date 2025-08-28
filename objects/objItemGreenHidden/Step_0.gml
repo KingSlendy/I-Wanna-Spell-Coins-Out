@@ -17,7 +17,7 @@ if (place_meeting(x, y, objPlayer)) {
 		
 		var all_visible = true;
 		
-		with (objHiddenGreen) {
+		with (objItemGreenHidden) {
 			if (!visible) {
 				all_visible = false;
 				break;
@@ -27,6 +27,8 @@ if (place_meeting(x, y, objPlayer)) {
 		if (all_visible) {
 			activate_trigger("green");
 			audio_play_sound(sndItemGreenAppear, 0, false);
+		} else {
+			audio_play_sound(sndItemGreenHidden, 0, false);
 		}
 	}
 }
