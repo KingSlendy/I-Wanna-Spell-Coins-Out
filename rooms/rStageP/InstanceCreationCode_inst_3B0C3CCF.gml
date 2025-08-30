@@ -1,7 +1,7 @@
 add_trigger_key("phantom1", {
 	attribute_event: new TriggerEvent(function() {
 		track_info = true;
-		alarm[0] = seconds_to_frames(1);
+		alarm[0] = seconds_to_frames(3);
 	}, 1)
 });
 
