@@ -1,3 +1,3 @@
 add_trigger_key("apple1", {
-	x: new TriggerVariable(self.x + 1376, 4)
+	x: new TriggerVariable(self.x + 1376, 1)
 });
