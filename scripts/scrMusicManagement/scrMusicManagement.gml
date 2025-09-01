@@ -52,6 +52,10 @@ function get_music() {
 			case rStageP:
 				music = bgmTrack3;
 				break;
+				
+			case rStageQ:
+				music = bgmTrack4;
+				break;
 		}
 	} else {
 		with (objPlayMusic) {

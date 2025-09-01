@@ -591,8 +591,8 @@
   ],
   "name":"rStageE",
   "parent":{
-    "name":"Game",
-    "path":"folders/Rooms/Game.yy",
+    "name":"Stages",
+    "path":"folders/Rooms/Game/Stages.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
