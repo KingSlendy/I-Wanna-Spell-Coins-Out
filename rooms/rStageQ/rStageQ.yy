@@ -355,6 +355,7 @@
     {"name":"inst_77AEAAF4","path":"rooms/rStageQ/rStageQ.yy",},
     {"name":"inst_11DD952C","path":"rooms/rStageQ/rStageQ.yy",},
     {"name":"inst_461C2FF1","path":"rooms/rStageQ/rStageQ.yy",},
+    {"name":"inst_60AE51FA","path":"rooms/rStageQ/rStageQ.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -418,6 +419,7 @@
             {"$GMRInstance":"v1","%Name":"inst_80DBBD7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_80DBBD7","objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":64.0,"y":160.0,},
             {"$GMRInstance":"v1","%Name":"inst_4349E69C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4349E69C","objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":128.0,"y":64.0,},
             {"$GMRInstance":"v1","%Name":"inst_20B5F881","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20B5F881","objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":224.0,"y":64.0,},
+            {"$GMRInstance":"v1","%Name":"inst_60AE51FA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60AE51FA","objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":768.0,"y":64.0,},
           ],"layers":[],"name":"Blocks","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Collisions","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Design","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
@@ -578,11 +580,11 @@
             {"$GMRInstance":"v1","%Name":"inst_5FDFE745","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":8,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5FDFE745","objectId":{"name":"objFakeWall","path":"objects/objFakeWall/objFakeWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":128.0,},
           ],"layers":[],"name":"Fake","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRTileLayer":"","%Name":"Tiles","depth":1000,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":19,"SerialiseWidth":50,"TileCompressedData":[
-              1,17,-48,16,2,17,12,-26,0,-20,-2147483648,-2,0,-2,12,2,16,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,
-              -4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-6,0,-2,12,2,11,12,-4,0,1,12,-4,0,1,12,-4,0,1,12,-4,0,1,12,-4,
-              0,1,12,-4,0,1,12,-4,0,1,12,-4,0,1,12,-6,0,-2,12,2,11,12,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,
-              1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,8,17,0,12,12,11,17,16,17,-21,0,-23,-2147483648,-2,12,-3,11,1,
-              12,-21,0,-23,-2147483648,-2,12,-3,11,1,12,-21,0,-8,-2147483648,7,17,16,17,-2147483648,17,-2147483648,
+              1,17,-48,16,2,17,12,-26,0,-20,-2147483648,-2,0,-2,12,2,16,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,6,17,
+              0,17,17,0,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-6,0,-2,12,2,11,12,-4,0,1,12,-4,0,1,12,-4,0,1,12,-4,0,6,12,
+              0,17,17,0,12,-4,0,1,12,-4,0,1,12,-4,0,1,12,-6,0,-2,12,2,11,12,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,
+              -4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,1,17,-4,0,8,17,0,12,12,11,17,16,17,-21,0,-23,-2147483648,-2,12,-3,
+              11,1,12,-21,0,-23,-2147483648,-2,12,-3,11,1,12,-21,0,-8,-2147483648,7,17,16,17,-2147483648,17,-2147483648,
               17,-3,-2147483648,7,17,16,16,17,-2147483648,12,12,-3,11,1,12,-8,0,9,17,0,17,0,17,0,17,0,17,-3,16,5,17,
               0,-2147483648,17,17,-3,-2147483648,-2,17,-6,16,10,17,-2147483648,-2147483648,17,16,12,-2147483648,-2147483648,
               12,12,-3,11,1,12,-8,0,1,12,-7,0,1,12,-3,11,5,12,0,-2147483648,-2147483648,12,-3,-2147483648,-2,12,-7,
@@ -823,7 +825,7 @@
         {"$GMRInstanceLayer":"","%Name":"Fields","depth":2000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v1","%Name":"inst_459354E9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_459354E9","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"propertyId":{"name":"apply_layer","path":"objects/objTriggerField/objTriggerField.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Fake\"",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":48.0,"scaleY":4.0,"x":32.0,"y":32.0,},
+              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":48.0,"scaleY":5.0,"x":32.0,"y":32.0,},
             {"$GMRInstance":"v1","%Name":"inst_461C2FF1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_461C2FF1","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"propertyId":{"name":"apply_layer","path":"objects/objTriggerField/objTriggerField.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Fruits\"",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":1504.0,"y":-32.0,},
