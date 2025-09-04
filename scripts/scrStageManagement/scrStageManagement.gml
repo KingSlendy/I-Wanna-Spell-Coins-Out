@@ -21,7 +21,7 @@ global.stage_info = [
 	new Stage("Orbit", "Orion"),
 	new Stage("Phantom", "Path"),
 	new Stage("Quick", "Quirk"),
-	new Stage("", ""),
+	new Stage("Ring", ""),
 	new Stage("", ""),
 	new Stage("", ""),
 	new Stage("", ""),
