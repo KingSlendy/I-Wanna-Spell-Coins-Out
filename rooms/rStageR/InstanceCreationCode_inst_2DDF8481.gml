@@ -1,7 +1,5 @@
 field = function() {
-	add_trigger_key("spike3", {
-		attribute_event: new TriggerEvent(function() {
-			instance_destroy();
-		})
+	add_trigger_key("fake1", {
+		image_alpha: new TriggerVariable(0, 0.05)
 	});
 }
