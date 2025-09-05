@@ -8,6 +8,11 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
     
     var cr = my div slide_h;
     var cc = mx div slide_w;
+	
+	if (cr == 1 && cc == 1) {
+		exit;
+	}
+	
 	var cx = cc * slide_w;
 	var cy = cr * slide_h;
 	
