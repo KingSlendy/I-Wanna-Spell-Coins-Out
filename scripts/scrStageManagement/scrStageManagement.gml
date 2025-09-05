@@ -22,7 +22,7 @@ global.stage_info = [
 	new Stage("Phantom", "Path"),
 	new Stage("Quick", "Quirk"),
 	new Stage("Ring", "Radial"),
-	new Stage("Slide", "Style"),
+	new Stage("Swap", "Style"),
 	new Stage("", ""),
 	new Stage("", ""),
 	new Stage("", ""),

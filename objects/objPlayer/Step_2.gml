@@ -51,7 +51,7 @@ if (!global.forms.lunarkid) {
 #region Collision with killers
 var killer = p_instance_place(0, 0, objPlayerKiller);
 
-if (killer != null && killer.visible) {
+if (killer != null && killer.visible && (killer.object_index != objSlidePieceSpikes || killer.active)) {
 	kill_player();
 }
 
