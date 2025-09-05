@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"objTriggerRed",
+  "%Name":"objItemRedTrigger",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objTriggerRed",
+  "name":"objItemRedTrigger",
   "overriddenProperties":[],
   "parent":{
-    "name":"D",
-    "path":"folders/Objects/Game/Stages/D.yy",
+    "name":"Stages",
+    "path":"folders/Objects/Game/Stages.yy",
   },
   "parentObjectId":{
     "name":"objTriggerTouch",

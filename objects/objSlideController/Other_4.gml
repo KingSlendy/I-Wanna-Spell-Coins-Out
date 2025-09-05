@@ -42,7 +42,9 @@ draw_clear_alpha(c_black, 0);
 draw_set_color(c_white);
 
 with (objSpikeController) {
-	draw_self();
+	if (x < 800) {
+		draw_self();
+	}
 }
 
 surface_reset_target();
@@ -64,5 +66,29 @@ surface_free(surf_spikes);
 layer_set_visible("Tiles", false);
 
 with (objSpikeController) {
-	instance_destroy();
+	if (x < 800) {
+		instance_destroy();
+	}
+}
+
+with (objItemRedTrigger) {
+	var piece_x = x div other.slide_w * other.slide_w;
+	var piece_y = y div other.slide_h * other.slide_h;
+	piece = collision_rectangle(piece_x, piece_y, piece_x + (other.slide_w - 1), piece_y + (other.slide_h - 1), objSlidePieceBlocks, false, true);
+	
+	if (piece != noone) {
+		piece_offset_x = x - piece.x;
+		piece_offset_y = y - piece.y;
+	}
+}
+
+with (objItemGreenHidden) {
+	var piece_x = x div other.slide_w * other.slide_w;
+	var piece_y = y div other.slide_h * other.slide_h;
+	piece = collision_rectangle(piece_x, piece_y, piece_x + (other.slide_w - 1), piece_y + (other.slide_h - 1), objSlidePieceBlocks, false, true);
+	
+	if (piece != noone) {
+		piece_offset_x = x - piece.x;
+		piece_offset_y = y - piece.y;
+	}
 }

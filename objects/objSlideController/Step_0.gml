@@ -9,7 +9,7 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
     var cr = my div slide_h;
     var cc = mx div slide_w;
 	
-	if (cr == 1 && cc == 1) {
+	if (cr < 0 || cr >= slide_n || cc < 0 || cc >= slide_n || (cr == 1 && cc == 1)) {
 		exit;
 	}
 	
@@ -79,5 +79,9 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 	    cells = [noone, noone];
 		objPlayer.frozen = true;
 		changing = true;
+		
+		with (objSave) {
+			instance_destroy();
+		}
 	}
 }
