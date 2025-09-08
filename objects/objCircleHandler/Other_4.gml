@@ -4,5 +4,6 @@ for (var i = 0; i < num; i++) {
 		x = other.x + lengthdir_x(other.dist, sep + other.offset);
 		y = other.y + lengthdir_y(other.dist, sep + other.offset);
 		array_push(other.objs, id);
+		created_handler = true;
 	}
 }

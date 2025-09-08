@@ -6,4 +6,5 @@ for (var i = 0; i < num; i++) {
 	}
 }
 
+prev_angle = angle;
 angle = (angle + 360 + spd) % 360;

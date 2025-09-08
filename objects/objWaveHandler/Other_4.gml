@@ -5,5 +5,6 @@ for (var i = 0; i < num; i++) {
 		xstart = x;
 		ystart = y;
 		array_push(other.objs, id);
+		created_handler = true;
 	}
 }
