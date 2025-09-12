@@ -49,6 +49,12 @@ if (!global.forms.lunarkid) {
 #endregion
  
 #region Collision with killers
+if (room == rStageT) {
+	with (objTimeStone) {
+		stone_reposition();
+	}
+}
+
 var killer = p_instance_place(0, 0, objPlayerKiller);
 
 if (killer != null && killer.visible && (killer.object_index != objSlidePieceSpikes || killer.active)) {

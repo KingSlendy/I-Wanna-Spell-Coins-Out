@@ -101,40 +101,19 @@ function move_bounce() {
 	//Simple block bounce that will preserve height
 	
 	//Detect horizontal collision
-	if (instance_place_check(x + hspeed, y, objBlock, tangible_collision) != null) {
+	if (instance_place_check(x + hspeed, y, [objBlock, objBlockCherry], tangible_collision) != null) {
 		x -= hspeed;
 	    hspeed *= -1;
 	} 
 	
 	//Detect vertical collision
-	if (instance_place_check(x, y + vspeed, objBlock, tangible_collision) != null) {
+	if (instance_place_check(x, y + vspeed, [objBlock, objBlockCherry], tangible_collision) != null) {
 		y -= vspeed;
 		vspeed *= -1;
 	}
 	
 	//Detect diagonal collision
-	if (instance_place_check(x + hspeed, y + vspeed, objBlock, tangible_collision) != null) {
-		x -= hspeed;
-		hspeed *= -1;
-			
-		y -= vspeed;
-		vspeed *= -1;
-	}
-	
-	//Detect horizontal collision
-	if (instance_place_check(x + hspeed, y, objBlockCherry, tangible_collision) != null) {
-		x -= hspeed;
-	    hspeed *= -1;
-	} 
-	
-	//Detect vertical collision
-	if (instance_place_check(x, y + vspeed, objBlockCherry, tangible_collision) != null) {
-		y -= vspeed;
-		vspeed *= -1;
-	}
-	
-	//Detect diagonal collision
-	if (instance_place_check(x + hspeed, y + vspeed, objBlockCherry, tangible_collision) != null) {
+	if (instance_place_check(x + hspeed, y + vspeed, [objBlock, objBlockCherry], tangible_collision) != null) {
 		x -= hspeed;
 		hspeed *= -1;
 			

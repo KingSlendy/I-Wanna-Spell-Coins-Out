@@ -16,25 +16,23 @@ with (objTimeStone) {
 draw_set_circle_precision(24);
 gpu_set_colorwriteenable(true, true, true, false);
 draw_set_color(#C0C0C0);
-draw_rectangle(0, 0, 800, 608, false);
+draw_rectangle(0, 0, room_width, room_height, false);
 
-var draw_old = function(obj) {
-	with (obj) {
-		var name = sprite_get_name(sprite_index);
-		draw_sprite_ext(asset_get_index($"{name}Old"), image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-	}
+var draw_old = function() {
+	var name = sprite_get_name(sprite_index);
+	draw_sprite_ext(asset_get_index($"{name}Old"), image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
 
 with (objPlayerKiller) {
-	draw_old(id);
+	method(id, draw_old)();
 }
 
 with (objSave) {
-	draw_old(id);
+	method(id, draw_old)();
 }
 
 with (objWarpHub) {
-	draw_old(id);
+	method(id, draw_old)();
 }
 
 draw_sprite(sprite_tiles, 0, 0, 0);
