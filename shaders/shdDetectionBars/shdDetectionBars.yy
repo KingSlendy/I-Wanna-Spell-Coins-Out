@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdDetectionBars",
+  "name":"shdDetectionBars",
+  "parent":{
+    "name":"U",
+    "path":"folders/Shaders/Stages/U.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

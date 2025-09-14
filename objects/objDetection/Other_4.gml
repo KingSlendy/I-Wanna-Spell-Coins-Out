@@ -1,0 +1,1 @@
+follow = instance_place(x, y, objCherry);
