@@ -1,0 +1,1 @@
+alarm_spd = seconds_to_frames(1);

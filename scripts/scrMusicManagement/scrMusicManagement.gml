@@ -60,6 +60,10 @@ function get_music() {
 			case rStageU:
 				music = bgmTrack4;
 				break;
+				
+			case rStageV:
+				music = bgmTrack5;
+				break;
 		}
 	} else {
 		with (objPlayMusic) {

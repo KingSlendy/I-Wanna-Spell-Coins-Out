@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndGauntletRed",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.945488,
+  "name":"sndGauntletRed",
+  "parent":{
+    "name":"V",
+    "path":"folders/Sounds/SFX/Game/Stages/V.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndGauntletRed.wav",
+  "type":0,
+  "volume":1.0,
+}

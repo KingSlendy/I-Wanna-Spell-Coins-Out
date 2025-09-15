@@ -25,11 +25,11 @@ global.stage_info = [
 	new Stage("Swap", "Swop"),
 	new Stage("Time", "Thrill"),
 	new Stage("Unseen", "Unknown"),
-	new Stage("", ""),
-	new Stage("", ""),
-	new Stage("", ""),
-	new Stage("", ""),
-	new Stage("", "")
+	new Stage("Vigor", "Vital"),
+	new Stage("W", "W"),
+	new Stage("X", "X"),
+	new Stage("Y", "Y"),
+	new Stage("Z", "Z")
 ];
 
 #region H

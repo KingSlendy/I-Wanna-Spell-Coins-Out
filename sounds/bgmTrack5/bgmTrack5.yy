@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgmTrack5",
+  "audioGroupId":{
+    "name":"audiogroup_BGM",
+    "path":"audiogroups/audiogroup_BGM",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":218.67102,
+  "name":"bgmTrack5",
+  "parent":{
+    "name":"BGM",
+    "path":"folders/Sounds/BGM.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgmTrack5.mp3",
+  "type":0,
+  "volume":0.5,
+}
