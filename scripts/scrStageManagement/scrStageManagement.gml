@@ -26,7 +26,7 @@ global.stage_info = [
 	new Stage("Time", "Thrill"),
 	new Stage("Unseen", "Unknown"),
 	new Stage("Vigor", "Vital"),
-	new Stage("W", "W"),
+	new Stage("Wave", "Words"),
 	new Stage("X", "X"),
 	new Stage("Y", "Y"),
 	new Stage("Z", "Z")
