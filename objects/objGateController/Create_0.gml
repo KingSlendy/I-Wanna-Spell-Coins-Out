@@ -1,4 +1,4 @@
-sprtimer = -1;
+timer = -1;
 spike_red = 0;
 ask_spikes = false;
 ask_number = [0, 0, 0];

@@ -17,6 +17,18 @@ function array_pick(array) {
 }
 #endregion
 
+#region Strings
+function string_reverse(str) {
+	var newstr = "";
+	
+	for (var i = string_length(str); i >= 1; i--) {
+		newstr += string_char_at(str, i);
+	}
+	
+	return newstr;
+}
+#endregion
+
 #region Structs
 function struct_all(struct) {
     var names = variable_struct_get_names(struct);
