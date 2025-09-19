@@ -28,7 +28,7 @@ global.stage_info = [
 	new Stage("Vigor", "Vital"),
 	new Stage("Wave", "Words"),
 	new Stage("Xpress", "Xtreme"),
-	new Stage("Y", "Y"),
+	new Stage("Ying", "Yang"),
 	new Stage("Z", "Z")
 ];
 

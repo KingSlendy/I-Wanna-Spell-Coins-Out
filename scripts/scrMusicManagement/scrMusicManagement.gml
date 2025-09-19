@@ -64,6 +64,7 @@ function get_music() {
 			case rStageV:
 			case rStageW:
 			case rStageX:
+			case rStageY:
 				music = bgmTrack5;
 				break;
 		}
