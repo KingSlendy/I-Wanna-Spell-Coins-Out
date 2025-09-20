@@ -29,7 +29,7 @@ global.stage_info = [
 	new Stage("Wave", "Words"),
 	new Stage("Xpress", "Xtreme"),
 	new Stage("Ying", "Yang"),
-	new Stage("Z", "Z")
+	new Stage("Zero", "Zone")
 ];
 
 #region H
