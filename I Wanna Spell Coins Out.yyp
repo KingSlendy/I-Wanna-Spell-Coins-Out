@@ -631,6 +631,7 @@
     {"id":{"name":"objTriggerButtonR","path":"objects/objTriggerButtonR/objTriggerButtonR.yy",},},
     {"id":{"name":"objTriggerController","path":"objects/objTriggerController/objTriggerController.yy",},},
     {"id":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},},
+    {"id":{"name":"objTriggerLand","path":"objects/objTriggerLand/objTriggerLand.yy",},},
     {"id":{"name":"objTriggerTouch","path":"objects/objTriggerTouch/objTriggerTouch.yy",},},
     {"id":{"name":"objTurnJumpRefresh","path":"objects/objTurnJumpRefresh/objTurnJumpRefresh.yy",},},
     {"id":{"name":"objTurnVine","path":"objects/objTurnVine/objTurnVine.yy",},},

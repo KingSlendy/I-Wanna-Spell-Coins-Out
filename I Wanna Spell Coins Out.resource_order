@@ -486,6 +486,7 @@
     {"name":"objTriggerButtonL","order":1,"path":"objects/objTriggerButtonL/objTriggerButtonL.yy",},
     {"name":"objTriggerButtonR","order":2,"path":"objects/objTriggerButtonR/objTriggerButtonR.yy",},
     {"name":"objTriggerField","order":2,"path":"objects/objTriggerField/objTriggerField.yy",},
+    {"name":"objTriggerLand","order":1,"path":"objects/objTriggerLand/objTriggerLand.yy",},
     {"name":"objTurnVine","order":3,"path":"objects/objTurnVine/objTurnVine.yy",},
     {"name":"objTwinBlackVine","order":1,"path":"objects/objTwinBlackVine/objTwinBlackVine.yy",},
     {"name":"objVaporDown","order":1,"path":"objects/objVaporDown/objVaporDown.yy",},

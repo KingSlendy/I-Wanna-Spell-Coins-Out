@@ -184,6 +184,7 @@
     {"name":"inst_30946516","path":"rooms/rStageD/rStageD.yy",},
     {"name":"inst_4A1D8376","path":"rooms/rStageD/rStageD.yy",},
     {"name":"inst_317AD723","path":"rooms/rStageD/rStageD.yy",},
+    {"name":"inst_113BC7EF","path":"rooms/rStageD/rStageD.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -509,6 +510,7 @@
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":528.0,"y":496.0,},
             {"$GMRInstance":"v1","%Name":"inst_530ED4BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_530ED4BC","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":848.0,"y":496.0,},
             {"$GMRInstance":"v1","%Name":"inst_59C30C07","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59C30C07","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":816.0,"y":496.0,},
+            {"$GMRInstance":"v1","%Name":"inst_113BC7EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_113BC7EF","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":880.0,"y":496.0,},
           ],"layers":[],"name":"Fruits","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Other","depth":1700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Other","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Killers","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -552,7 +554,7 @@
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":768.0,"y":512.0,},
             {"$GMRInstance":"v1","%Name":"inst_71584D9F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71584D9F","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"propertyId":{"name":"apply_layer","path":"objects/objTriggerField/objTriggerField.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Fruits\"",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":800.0,"y":480.0,},
+              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":800.0,"y":480.0,},
             {"$GMRInstance":"v1","%Name":"inst_6B5739E0","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B5739E0","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTriggerField","path":"objects/objTriggerField/objTriggerField.yy",},"propertyId":{"name":"apply_layer","path":"objects/objTriggerField/objTriggerField.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Fake\"",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":864.0,"y":512.0,},
