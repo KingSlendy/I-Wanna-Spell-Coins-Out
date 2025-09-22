@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pthStageZ_2",
+  "closed":false,
+  "kind":0,
+  "name":"pthStageZ_2",
+  "parent":{
+    "name":"Z",
+    "path":"folders/Paths/Game/Z.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":272.0,"y":176.0,},
+    {"speed":100.0,"x":240.0,"y":176.0,},
+    {"speed":100.0,"x":272.0,"y":176.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

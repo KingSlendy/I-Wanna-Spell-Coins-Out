@@ -1,0 +1,2 @@
+type = "platinums";
+snd = sndCoin;

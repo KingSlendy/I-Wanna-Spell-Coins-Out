@@ -48,7 +48,11 @@ if (global.game_started) {
 		pause_delay = 0;
 	}
 	
-	if (room != rHub && instance_exists(objPlayer) && is_pressed(global.controls.warp)) {
+	if (instance_exists(objPlayer) && is_pressed(global.controls.warp)) {
+		if (room == rHub) {
+			global.section = 1;
+		}
+		
 		restart_game();
 		
 		with (objPlayer) {

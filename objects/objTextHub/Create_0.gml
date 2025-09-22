@@ -1,0 +1,1 @@
+text = $"You can return here\nby pressing {control_bind(global.controls.warp)} key";

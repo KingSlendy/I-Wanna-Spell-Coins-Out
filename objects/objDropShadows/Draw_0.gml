@@ -25,6 +25,20 @@ with (objWarpHub) {
 	event_perform(ev_draw, 0);
 }
 
+with (objTextHub) {
+	event_perform(ev_draw, 0);
+}
+
+with (objAchHub) {
+	if (visible) {
+		event_perform(ev_draw, 0);
+	}
+}
+
+with (objStatsHub) {
+	event_perform(ev_draw, 0);
+}
+
 with (objSave) {
 	draw_self();
 }

@@ -25,30 +25,29 @@ if (room == rHub) {
 	
 	if (yellow) {
 		if (green) {
-			draw_sprite(sprItemYellow, 0, x - 59, y - 33);
+			draw_sprite(sprItemYellow, timer * sprite_get_speed(sprItemYellow) / game_get_speed(gamespeed_fps), x - 59, y - 33);
 		} else {
 			if (red) {
-				draw_sprite(sprItemYellow, 0, x - 29, y - 33);
+				draw_sprite(sprItemYellow, timer * sprite_get_speed(sprItemYellow) / game_get_speed(gamespeed_fps), x - 29, y - 33);
 			} else {
-				draw_sprite(sprItemYellow, 0, x, y - 33);
+				draw_sprite(sprItemYellow, timer * sprite_get_speed(sprItemYellow) / game_get_speed(gamespeed_fps), x, y - 33);
 			}
 		}
 	}
 
 	if (red) {
 		if (green) {
-			draw_sprite(sprItemRed, 0, x + 59, y - 33);
+			draw_sprite(sprItemRed, timer * sprite_get_speed(sprItemRed) / game_get_speed(gamespeed_fps), x + 59, y - 33);
 		} else {
-			draw_sprite(sprItemRed, 0, x + 29, y - 33);
+			draw_sprite(sprItemRed, timer * sprite_get_speed(sprItemRed) / game_get_speed(gamespeed_fps), x + 29, y - 33);
 		}
 	}
 	
 	if (green) {
-		draw_sprite(sprItemGreen, 0, x, y - 32);
+		draw_sprite(sprItemGreen, timer * sprite_get_speed(sprItemGreen) / game_get_speed(gamespeed_fps), x, y - 32);
 	}
 
 	draw_set_color((!yellow || !red || !green) ? c_white : c_yellow);
-	//draw_text_outline(x + sprite_width / 2, y, $"[{(yellow) ? 1 : 0}/1]", c_black);
 	
 	if (green) {
 		draw_text_outline(x - 72, y, "[", c_black);

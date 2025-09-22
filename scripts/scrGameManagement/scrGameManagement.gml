@@ -26,6 +26,42 @@ function save_game(position, save_x = -1, save_y = -1) {
 		}
 	}
 	
+	if (item_count(global.items.letters) > 0) {
+		achievement_obtain(ACHIEVEMENTS.A_LETTER);
+	}
+	
+	if (item_all(global.items.letters)) {
+		achievement_obtain(ACHIEVEMENTS.ALL_LETTERS);
+	}
+	
+	if (item_count(global.items.yellows) > 0) {
+		achievement_obtain(ACHIEVEMENTS.A_YELLOW);
+	}
+	
+	if (item_all(global.items.yellows)) {
+		achievement_obtain(ACHIEVEMENTS.ALL_YELLOWS);
+	}
+	
+	if (item_count(global.items.greens) > 0) {
+		achievement_obtain(ACHIEVEMENTS.A_GREEN);
+	}
+	
+	if (item_all(global.items.greens)) {
+		achievement_obtain(ACHIEVEMENTS.ALL_GREENS);
+	}
+	
+	if (item_count(global.items.reds) > 0) {
+		achievement_obtain(ACHIEVEMENTS.A_RED);
+	}
+	
+	if (item_all(global.items.reds)) {
+		achievement_obtain(ACHIEVEMENTS.ALL_REDS);
+	}
+	
+	/*if (item_count(global.items.achievements) == item_total(global.items.achievements) - 1) {
+		achievement_obtain(ACHIEVEMENTS.ALL_ACHIEVEMENTS);
+	}*/
+	
 	var data = {
 		player: global.save_player,
 		
@@ -36,21 +72,21 @@ function save_game(position, save_x = -1, save_y = -1) {
 			clear: global.clear
 		},
 		
+		items: global.items,
+		
+		section: global.section,
+		hidden_greens: global.hidden_greens,
+		pieces_j: global.pieces_j,
+		cards_m: global.cards_m,
+		
 		#region ADDED BY MAGIC TOWER PACKAGE
 		mtg: {
 			stats: global.stats_mtg,
 			items: global.items_mtg,
 			keys: global.keys_mtg,
 			monsters: global.monsters_mtg,
-		},
+		}
 		#endregion
-		
-		items: global.items,
-		
-		section: global.section,
-		hidden_greens: global.hidden_greens,
-		pieces_j: global.pieces_j,
-		cards_m: global.cards_m
 	};
 	
 	var json = json_stringify(data);
@@ -165,8 +201,10 @@ function cleanup_game() {
 	global.items = {
 		letters: array_create(26, false),
 		yellows: array_create(26, false),
-		reds: array_create(26, false),
 		greens: array_create(26, false),
+		reds: array_create(26, false),
+		achievements: array_create(40, false),
+		platinums: array_create(5, false),
 		secrets: array_create(8, false),
 		bosses: array_create(8, false)
 	};

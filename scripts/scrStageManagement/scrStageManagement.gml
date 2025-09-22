@@ -1,3 +1,4 @@
+#region Stages
 function Stage(name, secret) constructor {
 	self.name = name;
 	self.secret = secret;
@@ -31,35 +32,35 @@ global.stage_info = [
 	new Stage("Ying", "Yang"),
 	new Stage("Zero", "Zone")
 ];
+#endregion
 
-#region H
-function Pattern(sprite_a, sprite_b, colors) constructor {
-	self.sprite_a = sprite_a;
-	self.sprite_b = sprite_b;
-	self.index = irandom(sprite_get_number(self.sprite_a) - 1);
-	var choose_colors = array_shuffle(colors);
-	self.color_a = (self.sprite_a != sprHueNothing) ? array_pop(choose_colors) : -1;
-	self.color_b = (self.sprite_b != sprHueNothing) ? array_pop(choose_colors) : -1;
-	
-	static equals = function(pattern) {
-		return (
-			self.index == pattern.index &&
-			self.color_a == pattern.color_a &&
-			self.color_b == pattern.color_b
-		);
-	}
-	
-	static draw = function(x, y) {
-		if (self.color_a != -1) {
-			draw_sprite_ext(self.sprite_a, self.index, x, y, 1, 1, 0, self.color_a, 1);
-		}
-		
-		if (self.color_b != -1) {
-			draw_sprite_ext(self.sprite_b, self.index, x, y, 1, 1, 0, self.color_b, 1);
-		}
-		
-		draw_set_color(c_black);
-		draw_rectangle(x, y, x + 31, y + 31, true);
-	}
+#region Items
+function item_count(array) {
+	return array_length(array_filter(array, function(x) { return (x); }));
+}
+
+function item_total(array) {
+	return (array_length(array));
+}
+
+function item_all(array) {
+	return (item_count(array) == item_total(array));
+}
+#endregion
+
+#region Achievements
+enum ACHIEVEMENTS {
+	A_LETTER,
+	ALL_LETTERS,
+	A_YELLOW,
+	ALL_YELLOWS,
+	A_GREEN,
+	ALL_GREENS,
+	A_RED,
+	ALL_REDS
+}
+
+function achievement_obtain(num) {
+	global.items.achievements[num] = true;
 }
 #endregion

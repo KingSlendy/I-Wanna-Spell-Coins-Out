@@ -1,0 +1,1 @@
+visible = (global.items.achievements[num]);
