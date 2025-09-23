@@ -18,11 +18,15 @@ with (objPhantomPlayer) {
 }
 
 with (objBlock) {
-	draw_self();
+	if (object_index != objBlockM9 || visible) {
+		draw_self();
+	}
 }
 
 with (objWarpHub) {
-	event_perform(ev_draw, 0);
+	if (visible) {
+		event_perform(ev_draw, 0);
+	}
 }
 
 with (objTextHub) {

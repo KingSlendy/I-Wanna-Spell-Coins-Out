@@ -29,17 +29,3 @@ enum MENU_FILES {
 menu = MENU_FILES.DATA;
 select = array_create(2, 0);
 spacing = 16 * 10;
-
-#region Item Images
-images_secrets = [];
-
-for (var i = 0; i < array_length(global.items.secrets); i++) {
-	images_secrets[i] = asset_get_index($"sprItemSecret{i + 1}");
-}
-
-images_bosses = [];
-
-for (var i = 0; i < array_length(global.items.bosses); i++) {
-	images_bosses[i] = asset_get_index($"sprItemBoss{i + 1}");
-}
-#endregion

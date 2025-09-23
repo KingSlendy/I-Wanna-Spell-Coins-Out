@@ -203,10 +203,9 @@ function cleanup_game() {
 		yellows: array_create(26, false),
 		greens: array_create(26, false),
 		reds: array_create(26, false),
+		bosses: array_create(5, false),
 		achievements: array_create(40, false),
-		platinums: array_create(5, false),
-		secrets: array_create(8, false),
-		bosses: array_create(8, false)
+		platinums: array_create(5, false)
 	};
 	
 	global.section = -1;

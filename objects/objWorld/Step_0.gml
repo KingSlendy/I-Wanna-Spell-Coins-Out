@@ -49,11 +49,18 @@ if (global.game_started) {
 	}
 	
 	if (instance_exists(objPlayer) && is_pressed(global.controls.warp)) {
+		var section = -1;
+		
 		if (room == rHub) {
-			global.section = 1;
+			section = objPlayer.x div 800;
 		}
 		
 		restart_game();
+		
+		if (room == rHub) {
+			global.section = (section + 1) % 7;
+			global.section = max(global.section, 1);
+		}
 		
 		with (objPlayer) {
 			instance_destroy();

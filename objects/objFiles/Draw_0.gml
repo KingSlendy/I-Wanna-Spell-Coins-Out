@@ -29,19 +29,10 @@ for (var i = 0; i < global.total_saves; i++) {
 	draw_sprite(sprDeathTime, 1, x, y + 100 + spacing * i);
     draw_text_transformed_outline(x + 20, y + 96 + spacing * i, formatted_time(data.time), 0.75, 0.75, 0, c_black);
     
-	//Secrets and Bosses
-    /*for (var j = 0; j < array_length(global.items.secrets); j++) {
-        draw_sprite_ext(images_secrets[j], 0, x + 160 + 32 * j, y + 16 + spacing * i, 1, 1, 0, (data.items.secrets[j]) ? c_white : c_black, 1);
-    }
-    
-    for (var j = 0; j < array_length(global.items.bosses); j++) {
-        draw_sprite_ext(images_bosses[j], 0, x + 160 + 32 * j, y + 48 + spacing * i, 1, 1, 0, (data.items.bosses[j]) ? c_white : c_black, 1);
-    }*/
-      
 	//Clear
     if (data.clear) {
 		draw_set_font(fntMenu4);
-        draw_set_halign(fa_cefnter);
+        draw_set_halign(fa_center);
         draw_text(x + 284, y + 92 + spacing * i, "Clear!");
     }
         
