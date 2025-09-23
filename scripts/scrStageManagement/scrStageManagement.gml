@@ -48,6 +48,19 @@ function item_all(array) {
 }
 #endregion
 
+#region Bosses
+function create_cherry(x, y, blend = c_white, dir = 0, spd = 0, grav = 0, grav_dir = 270) {
+	var f = instance_create_layer(x, y, "Fruits", objCherry);
+	f.image_blend = blend;
+	f.direction = dir;
+	f.speed = spd;
+	f.gravity = grav;
+	f.gravity_direction = grav_dir;
+	
+	return f;
+}
+#endregion
+
 #region Achievements
 enum ACHIEVEMENTS {
 	A_LETTER,

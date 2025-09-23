@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_44368905_1_1_12_1_13","path":"rooms/rStageBoss1/rStageBoss1.yy",},
     {"name":"inst_B67CDD1_1_1_12_1_13","path":"rooms/rStageBoss1/rStageBoss1.yy",},
-    {"name":"inst_6C585BF_1_1_10_1_13","path":"rooms/rStageBoss1/rStageBoss1.yy",},
     {"name":"inst_15F6B24D_1_1_12_1_13","path":"rooms/rStageBoss1/rStageBoss1.yy",},
     {"name":"inst_38A6B3CF_1_1_12_1_12","path":"rooms/rStageBoss1/rStageBoss1.yy",},
     {"name":"inst_41758150","path":"rooms/rStageBoss1/rStageBoss1.yy",},
@@ -59,7 +58,6 @@
       ],"name":"Triggers","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Instances","depth":2000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRInstanceLayer":"","%Name":"Misc","depth":2100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"$GMRInstance":"v1","%Name":"inst_6C585BF_1_1_10_1_13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C585BF_1_1_10_1_13","objectId":{"name":"objSave","path":"objects/objSave/objSave.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":704.0,},
             {"$GMRInstance":"v1","%Name":"inst_15F6B24D_1_1_12_1_13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15F6B24D_1_1_12_1_13","objectId":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
             {"$GMRInstance":"v1","%Name":"inst_38A6B3CF_1_1_12_1_12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38A6B3CF_1_1_12_1_12","objectId":{"name":"objWarpHub","path":"objects/objWarpHub/objWarpHub.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":544.0,},
             {"$GMRInstance":"v1","%Name":"inst_1155CD79","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1155CD79","objectId":{"name":"objBoss1","path":"objects/objBoss1/objBoss1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":416.0,},

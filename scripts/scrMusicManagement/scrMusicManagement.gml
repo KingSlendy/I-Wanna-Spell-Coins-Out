@@ -72,6 +72,14 @@ function get_music() {
 			case rStageBoss1:
 				music = bgmBoss1;
 				break;
+				
+			case rStageBoss2:
+				music = bgmBoss2;
+				break;
+				
+			case rStageBoss3:
+				music = bgmBoss3;
+				break;
 		}
 	} else {
 		with (objPlayMusic) {

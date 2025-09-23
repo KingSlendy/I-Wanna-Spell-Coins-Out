@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprWarp",
-    "path":"sprites/sprWarp/sprWarp.yy",
+    "name":"sprWarpHub",
+    "path":"sprites/sprWarpHub/sprWarpHub.yy",
   },
   "spriteMaskId":null,
   "tags":[

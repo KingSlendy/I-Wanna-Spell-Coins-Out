@@ -93,14 +93,10 @@ if (room == rHub) {
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		draw_set_color(c_white);
-		var letters_obtained = item_count(global.items.letters);
 		var yellows_obtained = item_count(global.items.yellows);
-		draw_text_outline(x - 29, y - 66, "AZ", c_black);
-		draw_set_color((letters_obtained >= letters_need) ? c_yellow : c_white);
-		draw_text_outline(x - 29 + 34, y - 66, $"[{letters_obtained}/{letters_need}]", c_black);
-		draw_sprite(sprItemYellow, yellow_index, x - 29, y - 33);
+		draw_sprite(sprItemYellow, yellow_index, x - 55, y - 33);
 		draw_set_color((yellows_obtained >= yellows_need) ? c_yellow : c_white);
-		draw_text_outline(x - 29 + 34, y - 33, $"[{yellows_obtained}/{yellows_need}]", c_black);
+		draw_text_outline(x - 55 + 34, y - 33, $"[{yellows_obtained}/{yellows_need}]", c_black);
 		
 		draw_set_valign(fa_top);
 		draw_set_halign(fa_left);

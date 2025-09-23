@@ -13,6 +13,14 @@ if (room == rHub) {
 		global.pieces_j = [];
 		global.cards_m = [];
 	}
+	
+	if (string_count("Boss", letter_level) > 0) {
+		var yellows_obtained = item_count(global.items.yellows);
+		
+		if (yellows_obtained < yellows_need) {
+			image_alpha = 0.5;
+		}
+	}
 } else {
 	if (instance_exists(objBossTemplate)) {
 		visible = false;

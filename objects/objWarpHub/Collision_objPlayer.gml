@@ -1,4 +1,4 @@
-if (!visible) {
+if (!visible || image_alpha < 1) {
 	exit;
 }
 
