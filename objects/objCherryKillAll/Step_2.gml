@@ -12,5 +12,5 @@ if (all_normal_killed) {
 }
 
 if (instance_number(objCherryKill) <= 0) {
-	//Achievement
+	activate_trigger("ach1");
 }

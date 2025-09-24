@@ -14,3 +14,4 @@ if (!spikes_gone) {
 
 ask_spikes = true;
 objPlayer.frozen = true;
+print(spike_gray);

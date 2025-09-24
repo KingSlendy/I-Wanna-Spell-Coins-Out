@@ -1,9 +1,7 @@
-repeat (3) {
-	create_cherry(origin_x, origin_y, c_blue, spiral_dir, 7);
-	spiral_dir += 360 / 3;
-	spiral_dir %= 360;
+var rnd = irandom(359);
+
+for (var i = 0; i < 360; i += 360 / 10) {
+	create_cherry(origin_x, origin_y, c_red, i + rnd, 5);
 }
 
-spiral_dir += 12.4989443058;
-spiral_dir %= 360;
-alarm[1] = 7;
+alarm[1] = 25;

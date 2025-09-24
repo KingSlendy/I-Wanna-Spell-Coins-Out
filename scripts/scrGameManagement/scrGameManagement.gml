@@ -58,9 +58,9 @@ function save_game(position, save_x = -1, save_y = -1) {
 		achievement_obtain(ACHIEVEMENTS.ALL_REDS);
 	}
 	
-	/*if (item_count(global.items.achievements) == item_total(global.items.achievements) - 1) {
+	if (item_count(global.items.achievements) == item_total(global.items.achievements) - 1) {
 		achievement_obtain(ACHIEVEMENTS.ALL_ACHIEVEMENTS);
-	}*/
+	}
 	
 	var data = {
 		player: global.save_player,
@@ -263,6 +263,12 @@ function end_game() {
 		save_game(false);
 		save_config();
 		global.game_started = false;
+		
+		with (objAchievement) {
+			instance_destroy(id, false);
+		}
+		
+		global.achievement_stack = [];
 	}
 }
 

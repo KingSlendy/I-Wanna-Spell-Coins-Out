@@ -21,10 +21,19 @@ if (!ask_accept && ask_spikes) {
 		if (real(number) == spike_red) {
 			deactivate_trigger("fake2");
 			activate_trigger("fake3");
+			activate_trigger("fake4");
 
 			objPlayer.frozen = false;
 		} else {
-			kill_player();
+			if (real(number) == spike_gray) {
+				activate_trigger("ach1");
+				deactivate_trigger("fake2");
+				activate_trigger("fake3");
+				
+				objPlayer.frozen = false;
+			} else {
+				kill_player();
+			}
 		}
 		
 		ask_accept = true;

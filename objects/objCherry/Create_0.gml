@@ -10,3 +10,5 @@ if (room == rStageL) {
 		image_yscale = 0.5;
 	}
 }
+
+dir = 0;

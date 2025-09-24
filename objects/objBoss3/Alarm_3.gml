@@ -1,6 +1,7 @@
-repeat (irandom_range(1, 3)) {
-	create_cherry(32, 32, c_red, irandom(359), irandom_range(4, 7));
-	create_cherry(32, 576, c_red, irandom(359), irandom_range(4, 7));
+with (create_cherry(origin_x, origin_y, c_blue, irandom_range(45, 135), irandom_range(8, 12), 0.2)) {
+	image_xscale = 2;
+	image_yscale = 2;
+	alarm[2] = seconds_to_frames(1);
 }
 
-alarm[3] = 8;
+alarm[3] = seconds_to_frames(0.5);

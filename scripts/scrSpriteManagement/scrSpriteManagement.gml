@@ -204,6 +204,8 @@ function fruit_sprite(me = true) {
 		case rStageBoss1:
 		case rStageBoss2:
 		case rStageBoss3:
+		case rStageBoss4:
+		case rStageBoss5:
 			type = "White";
 			fruit_speed = 1;
 			fruit_image = 0;

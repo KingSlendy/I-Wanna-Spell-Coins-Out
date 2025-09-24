@@ -1,5 +1,6 @@
 timer = -1;
 spike_red = 0;
+spike_gray = 0;
 ask_spikes = false;
 ask_number = [0, 0, 0];
 ask_select = 2;
@@ -45,6 +46,7 @@ function gate_spawn(section) {
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
+		other.spike_gray += (!is_red) ? 1 : 0;
 	}
 	
 	with (instance_create_layer(spawn_x, spawn_y + 64, "Spikes", objSpikeUp)) {
@@ -53,5 +55,6 @@ function gate_spawn(section) {
 		hspeed = hspd;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
+		other.spike_gray += (!is_red) ? 1 : 0;
 	}
 }

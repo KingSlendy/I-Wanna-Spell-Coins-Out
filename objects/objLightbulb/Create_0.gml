@@ -14,6 +14,8 @@ function toggle_light() {
 	
 	if (x > 800) {
 		alarm[0] = seconds_to_frames(1);
+	} else {
+		deactivate_trigger("ach1");
 	}
 	
 	var all_bulbs = true;

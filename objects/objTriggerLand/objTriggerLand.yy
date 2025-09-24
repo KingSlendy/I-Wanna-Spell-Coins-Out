@@ -3,7 +3,6 @@
   "%Name":"objTriggerLand",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objTriggerLand",
@@ -29,14 +28,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"key","filters":[],"listItems":[],"multiselect":false,"name":"key","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"null","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"need_keys","filters":[],"listItems":[],"multiselect":false,"name":"need_keys","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"sound","filters":[
-        "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"null","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"sound_loop","filters":[],"listItems":[],"multiselect":false,"name":"sound_loop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

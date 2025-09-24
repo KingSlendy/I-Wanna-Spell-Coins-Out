@@ -12,3 +12,41 @@ if (global.auto_save_items) {
 
 audio_play_sound(snd, 0, false);
 instance_destroy();
+
+if (object_index == objItemYellow) {
+	switch (room) {
+		case rStageF:
+			if (is_active_trigger("ach1")) {
+				activate_trigger("ach2");
+			}
+			break;
+			
+		case rStageJ:
+			activate_trigger("ach1");
+			break;
+	}
+}
+
+if (object_index == objItemRed) {
+	switch (room) {
+		case rStageB: deactivate_trigger("ach1"); break;
+		
+		case rStageD:
+			if (is_active_trigger("ach1")) {
+				activate_trigger("ach2");
+			}
+			break;
+			
+		case rStageJ:
+			activate_trigger("ach2");
+			break;
+	}
+}
+
+if (object_index == objItemRed) {
+	switch (room) {
+		case rStageJ:
+			activate_trigger("ach3");
+			break;
+	}
+}

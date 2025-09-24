@@ -1,5 +1,5 @@
 global.game_name = "I Wanna Spell Coins Out"; //The name displayed on the window
-global.difficulties = ["Easy", "Normal", "Load"]; //Every difficulty name your game will have, "Load" should always be the last one
+global.difficulties = ["Game", "Load"]; //Every difficulty name your game will have, "Load" should always be the last one
 global.total_saves = 3; //The number of total save files to use
 global.start_room = rHub; //The room to start in
 global.auto_save_items = false; //If the items should be saved when picked up
