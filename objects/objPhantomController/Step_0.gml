@@ -1,3 +1,7 @@
+if (phantom_track && instance_number(objPhantomPlayer) >= 15) {
+	activate_trigger("ach1");
+}
+
 if (!track_info) {
 	exit;
 }
@@ -11,4 +15,8 @@ with (objPlayer) {
 		image_xscale: xscale,
 		image_yscale
 	});
+	
+	if (y > 608) {
+		other.phantom_track = false;
+	}
 }

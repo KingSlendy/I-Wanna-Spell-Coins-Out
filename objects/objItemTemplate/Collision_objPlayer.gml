@@ -24,6 +24,12 @@ if (object_index == objItemYellow) {
 		case rStageJ:
 			activate_trigger("ach1");
 			break;
+			
+		case rStageN:
+			if (is_active_trigger("ach1")) {
+				activate_trigger("ach2");
+			}
+			break;
 	}
 }
 

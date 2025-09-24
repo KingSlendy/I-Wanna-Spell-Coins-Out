@@ -1,1 +1,1 @@
-//Nothing
+image_alpha = 0;

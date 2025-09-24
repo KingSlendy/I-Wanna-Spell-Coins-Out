@@ -444,6 +444,10 @@ if (room == rStageO) {
 	exit;
 }
 
+if (room == rStageZ && hspd < 0) {
+	deactivate_trigger("ach1");
+}
+
 //Storing the previous x and y
 xprevious = x;
 yprevious = y;

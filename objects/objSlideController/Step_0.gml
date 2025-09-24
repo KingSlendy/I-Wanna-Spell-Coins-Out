@@ -80,6 +80,10 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 		objPlayer.frozen = true;
 		changing = true;
 		
+		if (++spawn_count > 7) {
+			deactivate_trigger("ach1");
+		}
+		
 		with (objSave) {
 			instance_destroy();
 		}

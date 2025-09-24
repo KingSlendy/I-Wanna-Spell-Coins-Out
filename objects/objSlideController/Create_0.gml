@@ -7,3 +7,5 @@ grid = ds_grid_create(slide_n, slide_n);
 ds_grid_clear(grid, false);
 changing = false;
 cells = [noone, noone];
+spawn_count = 0;
+activate_trigger("ach1");

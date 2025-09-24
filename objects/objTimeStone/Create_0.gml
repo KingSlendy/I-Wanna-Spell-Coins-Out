@@ -1,6 +1,7 @@
 radius = 0;
 radius_target = radius;
 radius_max = 100;
+active_before = false;
 
 function stone_reposition() {
 	with (objCircleHandler) {

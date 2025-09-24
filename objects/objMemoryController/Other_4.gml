@@ -29,6 +29,8 @@ if (array_length(global.cards_m) == 0) {
 			memory_mate = card1;
 		}
 	}
+	
+	memory_start = true;
 } else {
 	for (var i = 0; i < array_length(global.cards_m); i++) {
 		var card = global.cards_m[i];
@@ -76,4 +78,5 @@ if (array_length(global.cards_m) == 0) {
 	}
 	
 	alarm[0] = 1;
+	memory_start = false;
 }

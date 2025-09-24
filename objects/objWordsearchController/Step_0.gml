@@ -57,6 +57,10 @@ if (is_pressed(global.controls.shoot)) {
 						alarm[0] = 0;
 						activate_trigger("fake2");
 						audio_play_sound(sndBlockChange, 0, false);
+						
+						if (is_active_trigger("ach1")) {
+							activate_trigger("ach2");
+						}
 					}
 				}
 				

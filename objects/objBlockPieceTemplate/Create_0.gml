@@ -33,6 +33,7 @@ function pieces_all_placed(snd) {
 	with (objBlockPieceTemplate) {
 		if (!piece_is_placeable()) {
 			all_placed = false;
+			break;
 		}
 	}
 			

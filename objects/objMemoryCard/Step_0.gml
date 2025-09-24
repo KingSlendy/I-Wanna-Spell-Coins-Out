@@ -89,6 +89,12 @@ if (rotating != 0) {
 								activate_trigger("fake2");
 							}
 							
+							with (objMemoryController) {
+								if (memory_start) {
+									activate_trigger("ach1");
+								}
+							}
+							
 							audio_play_sound(sndBlockChange, 0, false);
 						}
 					} else {

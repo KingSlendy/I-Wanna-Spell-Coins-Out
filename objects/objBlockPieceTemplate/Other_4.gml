@@ -49,6 +49,7 @@ for (var i = 0; i < array_length(global.pieces_j); i++) {
 				y = other.y + obj.diff_y;
 			}
 		}
+		
 		break;
 	}
 }

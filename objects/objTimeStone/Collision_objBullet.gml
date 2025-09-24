@@ -13,3 +13,23 @@ if (x < 800) {
 		}
 	}
 }
+
+if (!active_before) {
+	activate_trigger(trigger_key);
+	var all_active = true;
+	
+	with (objTimeStone) {
+		if (x < 800 && !is_active_trigger(trigger_key)) {
+			all_active = false;
+			break;
+		}
+	}
+	
+	if (all_active) {
+		activate_trigger("ach0");
+	}
+	
+	active_before = true;
+} else {
+	deactivate_trigger(trigger_key);
+}

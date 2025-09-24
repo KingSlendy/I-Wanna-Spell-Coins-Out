@@ -108,7 +108,7 @@ function kill_player() {
 	if (instance_exists(objPlayer)) {
 		if (room == rStageJ) {
 			with (objPlayer) {
-				if (!place_meeting(x, y, objBlockPieceRegion)) {
+				if (!place_meeting(x, y, objBlockPieceRegion) && !is_active_trigger("spike1")) {
 					return;
 				}
 			}
