@@ -18,6 +18,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			activate_trigger("fake2");
 			deactivate_trigger("apple1");
 			deactivate_trigger("timer1");
+			activate_trigger("timer2");
 		} else {
 			kill_player();
 		}

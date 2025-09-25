@@ -5,6 +5,11 @@ if ((target_x != x || target_y != y) && point_distance(x, y, target_x, target_y)
     x = target_x;
     y = target_y;
 	active = true;
-	objPlayer.frozen = false;
+	
+	with (objPlayer) {
+		frozen = false;
+		still = false;
+	}
+	
 	objSlideController.changing = false;
 }

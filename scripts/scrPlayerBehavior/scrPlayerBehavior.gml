@@ -1,4 +1,8 @@
 function player_jump() {
+	if (room == rStageBoss5) {
+		deactivate_trigger("ach1");
+	}
+	
 	if (global.forms.vkid == 0) {
 		#region Jumping
 		var platform = p_instance_place(0, sign(global.grav), objPlatform);
@@ -25,6 +29,10 @@ function player_jump() {
 				}
 			} else {
 				reset_jumps();
+			}
+			
+			if (room == rStageBoss3) {
+				deactivate_trigger("ach1");
 			}
 			
 			audio_play_sound(sndDoubleJump, 0, false);

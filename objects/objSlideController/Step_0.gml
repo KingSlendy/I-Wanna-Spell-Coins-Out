@@ -9,7 +9,7 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
     var cr = my div slide_h;
     var cc = mx div slide_w;
 	
-	if (cr < 0 || cr >= slide_n || cc < 0 || cc >= slide_n || (cr == 1 && cc == 1)) {
+	if (cr < 0 || cr >= slide_n || cc < 0 || cc >= slide_n || (cr == 1 && cc == 1) || (cr == 2 && cc == 1)) {
 		exit;
 	}
 	
@@ -34,6 +34,20 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 	            total++;
 	        }
 	    }
+	}
+	
+	if (total == 0) {
+		with (objPlayer) {
+			frozen = false;
+			still = false;
+		}
+	}
+	
+	if (total == 1) {
+		with (objPlayer) {
+			frozen = true;
+			still = true;
+		}
 	}
 
 	if (total == 2) {
@@ -77,7 +91,12 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 	    }
     
 	    cells = [noone, noone];
-		objPlayer.frozen = true;
+		
+		with (objPlayer) {
+			frozen = true;
+			still = true;
+		}
+		
 		changing = true;
 		
 		if (++spawn_count > 7) {

@@ -261,6 +261,7 @@
     {"name":"inst_50CE88BE","path":"rooms/rStageR/rStageR.yy",},
     {"name":"inst_32173439","path":"rooms/rStageR/rStageR.yy",},
     {"name":"inst_24F02432","path":"rooms/rStageR/rStageR.yy",},
+    {"name":"inst_E9D452C","path":"rooms/rStageR/rStageR.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -732,6 +733,7 @@
             {"$GMRInstance":"v1","%Name":"inst_3CABA32","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CABA32","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":1008.0,},
             {"$GMRInstance":"v1","%Name":"inst_662E3788","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_662E3788","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":976.0,},
             {"$GMRInstance":"v1","%Name":"inst_143CB0E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_143CB0E8","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":1040.0,},
+            {"$GMRInstance":"v1","%Name":"inst_E9D452C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E9D452C","objectId":{"name":"objCherry","path":"objects/objCherry/objCherry.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":208.0,},
           ],"layers":[],"name":"Fruits","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Other","depth":1500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Other","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Killers","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

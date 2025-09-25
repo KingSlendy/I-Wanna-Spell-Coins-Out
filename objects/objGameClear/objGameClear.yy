@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprNothing",
-    "path":"sprites/sprNothing/sprNothing.yy",
+    "name":"sprTrigger",
+    "path":"sprites/sprTrigger/sprTrigger.yy",
   },
   "spriteMaskId":null,
   "visible":false,

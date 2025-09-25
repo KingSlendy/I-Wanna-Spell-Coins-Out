@@ -12,4 +12,4 @@ with (instance_create_layer(irandom_range(0, 800), 16, "Fruits", objCircleHandle
 	}
 }
 
-alarm[3] = 8;
+alarm[3] = 10;

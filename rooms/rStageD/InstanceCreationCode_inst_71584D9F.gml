@@ -9,4 +9,10 @@ field = function() {
 			return (cam.view_x > 0 || self.y > self.ystart);
 		})
 	});
+	
+	add_trigger_key("timer2", {
+		y: new TriggerVariable(self.ystart, 4,,, function() {
+			return (!is_active_trigger("ach1"));
+		})
+	});
 }

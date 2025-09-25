@@ -7,6 +7,10 @@ if (!invincibility) {
 			image_yscale = 2;
 			alarm[2] = seconds_to_frames(0.75);
 		}
+		
+		if ((objPlayer.x < x && image_xscale == 1) || (objPlayer.x > x && image_xscale == -1)) {
+			deactivate_trigger("ach1");
+		}
 	}
 	
 	image_xscale *= -1;

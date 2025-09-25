@@ -78,6 +78,7 @@ hit_x = x;
 hit_y = y;
 
 planet_current = noone;
+planet_change = true;
 planet_dist = 0;
 planet_dir = 0;
 #endregion

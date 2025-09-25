@@ -26,36 +26,3 @@ for (var i = 0; i < count; i++) {
 }
 
 ds_list_destroy(list);
-
-with (objBlockPieceRegion) {
-	other.min_x = bbox_left;
-	other.min_y = bbox_top;
-	other.max_x = bbox_right;
-	other.max_y = bbox_bottom;
-}
-
-for (var i = 0; i < array_length(global.pieces_j); i++) {
-	var piece_j = global.pieces_j[i];
-	
-	if (xstart == piece_j.xstart && ystart == piece_j.ystart) {
-		x = piece_j.x;
-		y = piece_j.y;
-		
-		for (var j = 0; j < array_length(objs); j++) {
-			var obj = objs[j];
-		
-			with (obj.id) {
-				x = other.x + obj.diff_x;
-				y = other.y + obj.diff_y;
-			}
-		}
-		
-		break;
-	}
-}
-
-pieces_all_placed(false);
-
-/*add_trigger_key("pieces", {
-	image_alpha: new TriggerVariable(0, 0.05)
-});*/

@@ -304,8 +304,9 @@ if (!global.forms.lunarkid) {
 			}
 		}
 		
-		if (planet_near != noone && (planet_current == noone || planet_current != planet_near)) {
+		if (planet_near != noone && planet_change && (planet_current == noone || planet_current != planet_near)) {
 			planet_current = planet_near;
+			planet_change = false;
 			planet_dist = point_distance(planet_current.x, planet_current.y, x, y);
 			planet_dir = point_direction(planet_current.x, planet_current.y, x, y);
 			vspd = 0;
@@ -319,6 +320,7 @@ if (!global.forms.lunarkid) {
 			
 			if (planet_dist <= planet_size) {
 				on_block = planet_current;
+				planet_change = true;
 				planet_dist = planet_size;
 				vspd = 0;
 				grav = 0;
@@ -436,7 +438,12 @@ if (!frozen || on_auto) {
 
 #region Physics and Collision
 if (still) {
-	player_sprite("Fall");
+	if (room == rStageI) {
+		player_sprite("Fall");
+	} else {
+		player_sprite("Idle");
+	}
+	
 	exit;
 }
 

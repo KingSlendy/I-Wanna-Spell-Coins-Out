@@ -17,6 +17,7 @@ if (is_pressed(global.controls.shoot)) {
 		cell_origin.selected = true;
 	} else {
 		if (cell.row == cell_origin.row && cell.col == cell_origin.col) {
+			cell_origin.selected = false;
 			cell_origin = null;
 		} else {
 			cell_target = cell;

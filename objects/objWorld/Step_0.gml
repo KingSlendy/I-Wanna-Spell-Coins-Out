@@ -58,7 +58,7 @@ if (global.game_started) {
 		restart_game();
 		
 		if (room == rHub) {
-			global.section = (section + 1) % (item_count(global.items.bosses) + 3);
+			global.section = (section + 1) % min(item_count(global.items.bosses) + 3, 7);
 			global.section = max(global.section, 1);
 		}
 		

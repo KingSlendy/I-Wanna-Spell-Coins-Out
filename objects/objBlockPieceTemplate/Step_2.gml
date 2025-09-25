@@ -44,7 +44,10 @@ if (mouse_check_button_pressed(mb_left)) {
 				frozen = false;
 			}
 			
-			pieces_all_placed(true);
+			with (objBlockPieceRegion) {
+				pieces_all_placed(true);
+			}
+			
 			save_game(false);
 		} else {
 			x = xstart;
@@ -64,6 +67,8 @@ if (mouse_check_button_pressed(mb_left)) {
 			with (objPlayer) {
 				frozen = false;
 			}
+			
+			save_game(false);
 		}
 		
 		selected = false;

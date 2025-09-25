@@ -9,7 +9,7 @@ if (mx >= 0 && mx <= display_get_gui_width() && my >= 0 && my <= display_get_gui
 	var cr = my div slide_h;
 	var cc = mx div slide_w;
 	
-	if (cr != 1 || cc != 1) {
+	if (!(cr == 1 && cc == 1) && !(cr == 2 && cc == 1)) {
 		var cx = cc * slide_w;
 		var cy = cr * slide_h;
 		var player = collision_rectangle(cx, cy, cx + (slide_w - 1), cy + (slide_h - 1), objPlayer, false, true);

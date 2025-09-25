@@ -17,6 +17,14 @@ for (var i = 0; i < global.total_saves; i++) {
 		clear: global.clear,
 		items: global.items
 	};
+	
+	datas[i].arrays = [
+		datas[i].items.letters,
+		datas[i].items.achievements,
+		datas[i].items.yellows,
+		datas[i].items.greens,
+		datas[i].items.reds
+	];
 }
 
 cleanup_game();
@@ -29,3 +37,11 @@ enum MENU_FILES {
 menu = MENU_FILES.DATA;
 select = array_create(2, 0);
 spacing = 16 * 10;
+
+icons = [
+	"AZ",
+	sprAchHub,
+	sprItemYellow,
+	sprItemGreen,
+	sprItemRed,
+];

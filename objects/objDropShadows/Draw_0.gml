@@ -9,6 +9,18 @@ surface_set_target(surf);
 draw_clear_alpha(c_black, 0);
 gpu_set_fog(true, c_black, 0, 0);
 
+with (objTitle) {
+	event_perform(ev_draw, 0);
+}
+
+with (objFiles) {
+	event_perform(ev_draw, 0);
+}
+
+with (objOptions) {
+	event_perform(ev_draw, 0);
+}
+
 with (objPlayer) {
 	event_perform(ev_draw, 0);
 }
