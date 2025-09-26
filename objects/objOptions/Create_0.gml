@@ -178,4 +178,4 @@ spacing = 50;
 changing_controls = false;
 
 x -= 60;
-y -= 40;
+y -= 30;

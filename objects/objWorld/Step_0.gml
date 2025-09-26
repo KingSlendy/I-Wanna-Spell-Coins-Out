@@ -3,7 +3,7 @@ audio_master_gain(global.display.master_volume * global.display.master_volume);
 audio_group_set_gain(audiogroup_BGM, global.display.bgm_volume * global.display.bgm_volume, 0);
 audio_group_set_gain(audiogroup_SFX, global.display.sfx_volume * global.display.sfx_volume, 0);
 
-if (global.game_started && !global.game_paused && (global.time_when_dead || instance_exists(objPlayer))) {
+if (global.game_started && !global.game_paused && (global.time_when_dead || instance_exists(objPlayer)) && room != rHubClearAny) {
     time_micro += delta_time;
     global.time += time_micro div 1000000;
     time_micro %= 1000000;

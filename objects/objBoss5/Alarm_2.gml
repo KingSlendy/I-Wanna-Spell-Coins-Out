@@ -4,7 +4,7 @@ with (instance_create_layer(origin_x + 150, origin_y - 32, "Fruits", objCircleHa
 	num = 7;
 	spd = 1;
 	dist = 96;
-	offset = 0;
+	offset = 90;
 	event_perform(ev_other, ev_room_start);
 	
 	for (var i = 0; i < array_length(objs); i++) {

@@ -1,5 +1,5 @@
 if (!invincibility) {
-	repeat (irandom_range(20, 30)) {
+	repeat (irandom_range(15, 25)) {
 		create_cherry(origin_x, origin_y, c_purple, irandom(359), irandom_range(4, 6));
 	}
 }

@@ -32,9 +32,14 @@ for (var i = 0; i < global.total_saves; i++) {
 	var items = data.arrays;
 	 
 	for (var j = 0; j < array_length(items); j++) {
-		var item_x = x + 250 + 160 * ((j < 2) ? 0 : 1);
-		var item_y = y + 10 + 34 * ((j < 2) ? j : j - 2) + spacing * i;
+		var item_x = x + 220 + 190 * ((j < 2) ? 0 : 1);
+		var item_y = y + 17 + 34 * ((j < 2) ? j : j - 2) + spacing * i;
 		var items_obtained = item_count(items[j]);
+		
+		if (j > 2 && items_obtained == 0) {
+			continue;
+		}
+		
 		var items_total = item_total(items[j]);
 		var icon = icons[j];
 		
@@ -52,6 +57,16 @@ for (var i = 0; i < global.total_saves; i++) {
 		}
 		
 		draw_text_outline(item_x + 34, item_y, $"[{items_obtained}/{items_total}]", c_black);
+	}
+	
+	for (var j = 0; j < array_length(data.items.platinums); j++) {
+		var color = c_white;
+	
+		if (!data.items.platinums[j]) {
+			color = c_black;
+		}
+	
+		draw_sprite_ext(sprItemPlatinum, 0, x + 220 + 32 * j, y + 17 + 34 * 2 + spacing * i, 0.5, 0.5, 0, color, 1);
 	}
 		
     if (select[0] == i) {

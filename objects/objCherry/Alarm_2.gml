@@ -2,7 +2,7 @@ switch (room) {
 	case rStageBoss3:
 		var rnd = irandom(359);
 	
-		for (var i = 0; i < 360; i += 360 / 12) {
+		for (var i = 0; i < 360; i += 360 / 10) {
 			create_cherry(x, y, c_aqua, i + rnd, 5);
 		}
 		

@@ -128,6 +128,10 @@ function load_game(position) {
 	global.clear = data.info.clear;
 	global.items = data.items;
 	
+	global.items.platinums = array_filter(global.items.platinums, function(x, i) {
+		return (i <= 3);
+	});
+	
 	global.section = data.section;
 	global.hidden_greens = data.hidden_greens;
 	global.pieces_j = data.pieces_j;
@@ -205,7 +209,7 @@ function cleanup_game() {
 		reds: array_create(26, false),
 		bosses: array_create(5, false),
 		achievements: array_create(40, false),
-		platinums: array_create(5, false)
+		platinums: array_create(4, false)
 	};
 	
 	global.section = -1;

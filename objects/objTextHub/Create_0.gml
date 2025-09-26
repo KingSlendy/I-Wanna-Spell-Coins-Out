@@ -1,1 +1,0 @@
-text = $"You can return here\n and cycle through these saves\nby pressing {control_bind(global.controls.warp)} key";

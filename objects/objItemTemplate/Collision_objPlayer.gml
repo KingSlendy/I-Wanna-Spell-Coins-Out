@@ -1,4 +1,4 @@
-if (!visible || image_alpha < 0.5) {
+if (!visible || image_alpha < 0.5 || image_blend == c_black) {
 	exit;
 }
 

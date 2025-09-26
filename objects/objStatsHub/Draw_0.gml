@@ -63,7 +63,7 @@ if (reds_obtained > 0) {
 	draw_text_outline(160 + 34, 448, $"[{reds_obtained}/{reds_total}]", c_black);
 }
 
-/*for (var i = 0; i < array_length(global.items.platinums); i++) {
+for (var i = 0; i < array_length(global.items.platinums); i++) {
 	var index = timer * sprite_get_speed(sprItemPlatinum) / game_get_speed(gamespeed_fps);
 	var color = c_white;
 	
@@ -72,8 +72,8 @@ if (reds_obtained > 0) {
 		color = c_black;
 	}
 	
-	draw_sprite_ext(sprItemPlatinum, index, 320 + 64 * i, 384, 1, 1, 0, color, 1);
-}*/
+	draw_sprite_ext(sprItemPlatinum, index, 384 + 64 * i, 384, 1, 1, 0, color, 1);
+}
 
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);

@@ -1,6 +1,10 @@
 if (outside_room()) {
 	if (other.x < 0) {
-        other.x += room_width;
+		if (room != rHubClearAny) {
+			other.x += room_width;
+		} else {
+			other.x += 6400;
+		}
     }
         
     if (other.x > room_width) {
