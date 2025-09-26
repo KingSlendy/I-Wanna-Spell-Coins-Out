@@ -42,7 +42,11 @@ if (room == rHub) {
 	
 		if (yellow) {
 			if (green) {
-				draw_sprite(sprItemYellow, yellow_index, x - 59, y - 33);
+				if (red) {
+					draw_sprite(sprItemYellow, yellow_index, x - 59, y - 33);
+				} else {
+					draw_sprite(sprItemYellow, yellow_index, x - 29, y - 33);
+				}
 			} else {
 				if (red) {
 					draw_sprite(sprItemYellow, yellow_index, x - 29, y - 33);
@@ -53,7 +57,11 @@ if (room == rHub) {
 		}
 	
 		if (green) {
-			draw_sprite(sprItemGreen, green_index, x, y - 32);
+			if (red) {
+				draw_sprite(sprItemGreen, green_index, x, y - 33);
+			} else {
+				draw_sprite(sprItemGreen, green_index, x + 29, y - 33);
+			}
 		}
 
 		if (red) {
@@ -67,8 +75,13 @@ if (room == rHub) {
 		draw_set_color((!yellow || !red || !green) ? c_white : c_yellow);
 	
 		if (green) {
-			draw_text_outline(x - 72, y, "[", c_black);
-			draw_text_outline(x + 100, y, "]", c_black);
+			if (red) {
+				draw_text_outline(x - 72, y, "[", c_black);
+				draw_text_outline(x + 100, y, "]", c_black);
+			} else {
+				draw_text_outline(x - 42, y, "[", c_black);
+				draw_text_outline(x + 70, y, "]", c_black);
+			}
 		} else {
 			if (red) {
 				draw_text_outline(x - 42, y, "[", c_black);
@@ -80,10 +93,16 @@ if (room == rHub) {
 		}
 	
 		if (green) {
-			draw_text_outline(x + 42, y, "|", c_black);
-			draw_text_outline(x - 16, y, "|", c_black);
-		} else if (red) {
-			draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
+			if (red) {
+				draw_text_outline(x + 42, y, "|", c_black);
+				draw_text_outline(x - 16, y, "|", c_black);
+			} else {
+				draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
+			}
+		} else {
+			if (red) {
+				draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
+			}
 		}
 	
 		draw_set_valign(fa_top);
