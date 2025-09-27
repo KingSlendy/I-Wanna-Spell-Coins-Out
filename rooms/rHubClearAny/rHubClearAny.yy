@@ -34,6 +34,7 @@
     {"name":"inst_4DE003E4","path":"rooms/rHubClearAny/rHubClearAny.yy",},
     {"name":"inst_28A40A1E","path":"rooms/rHubClearAny/rHubClearAny.yy",},
     {"name":"inst_3E2A9551","path":"rooms/rHubClearAny/rHubClearAny.yy",},
+    {"name":"inst_29D92321","path":"rooms/rHubClearAny/rHubClearAny.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -139,6 +140,9 @@
             {"$GMRInstance":"v1","%Name":"inst_28A40A1E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28A40A1E","objectId":{"name":"objTextHub","path":"objects/objTextHub/objTextHub.yy",},"properties":[
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTextHub","path":"objects/objTextHub/objTextHub.yy",},"propertyId":{"name":"text","path":"objects/objTextHub/objTextHub.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"AlejoFangamer\"",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":400.0,},
+            {"$GMRInstance":"v1","%Name":"inst_29D92321","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29D92321","objectId":{"name":"objTextHub","path":"objects/objTextHub/objTextHub.yy",},"properties":[
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTextHub","path":"objects/objTextHub/objTextHub.yy",},"propertyId":{"name":"text","path":"objects/objTextHub/objTextHub.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Kogami Takara\"",},
+              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":480.0,},
           ],"layers":[],"name":"Misc","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Shadows","depth":2200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v1","%Name":"inst_B67CDD1_1_1_12_1_12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B67CDD1_1_1_12_1_12","objectId":{"name":"objDropShadows","path":"objects/objDropShadows/objDropShadows.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},

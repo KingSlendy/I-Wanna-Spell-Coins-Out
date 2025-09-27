@@ -1,0 +1,7 @@
+add_trigger_key("fake1", {
+	attribute_event: new TriggerEvent(function() {
+		if (irandom(1) == 0) {
+			layer = layer_get_id("Fruits_Green");
+		}
+	}, 1)
+});

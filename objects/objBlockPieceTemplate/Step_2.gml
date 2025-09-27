@@ -1,4 +1,4 @@
-if (!instance_exists(objPlayer)) {
+if (!instance_exists(objPlayer) || is_active_trigger("pieces")) {
 	exit;
 }
 

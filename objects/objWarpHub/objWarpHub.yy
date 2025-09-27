@@ -34,7 +34,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"letter_level","filters":[],"listItems":[],"multiselect":false,"name":"letter_level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"null\"","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"yellows_need","filters":[],"listItems":[],"multiselect":false,"name":"yellows_need","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"coins_need","filters":[],"listItems":[],"multiselect":false,"name":"coins_need","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

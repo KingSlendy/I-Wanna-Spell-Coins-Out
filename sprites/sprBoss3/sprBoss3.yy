@@ -26,7 +26,7 @@
   ],
   "name":"sprBoss3",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Bosses",
     "path":"folders/Sprites/Objects/Game/Bosses.yy",
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":46,
     "yorigin":0,
   },
   "swatchColours":null,

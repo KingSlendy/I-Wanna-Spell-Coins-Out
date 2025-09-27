@@ -4,7 +4,11 @@ if (room == rHub) {
 	if (letter_level == "A") {
 		if (global.section != -1) {
 			with (objPlayer) {
-				x = 400 + 800 * global.section;
+				if (global.section > 0) {
+					x = 400 + 800 * global.section;
+				} else {
+					x = 736 + 16;
+				}
 			}
 		}
 	
@@ -15,9 +19,9 @@ if (room == rHub) {
 	}
 	
 	if (string_count("Boss", letter_level) > 0) {
-		var yellows_obtained = item_count(global.items.yellows);
+		var coins_obtained = item_count(global.items.yellows) + item_count(global.items.greens) + item_count(global.items.reds);
 		
-		if (yellows_obtained < yellows_need) {
+		if (coins_obtained < coins_need) {
 			image_alpha = 0.5;
 		}
 	}

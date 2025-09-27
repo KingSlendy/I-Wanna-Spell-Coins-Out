@@ -39,70 +39,56 @@ if (room == rHub) {
 			draw_text_outline(x + sprite_width / 2 + 15, y - 30, stage.secret, c_black);
 			draw_set_halign(fa_center);
 		}
-	
-		if (yellow) {
-			if (green) {
-				if (red) {
-					draw_sprite(sprItemYellow, yellow_index, x - 59, y - 33);
-				} else {
-					draw_sprite(sprItemYellow, yellow_index, x - 29, y - 33);
-				}
-			} else {
-				if (red) {
-					draw_sprite(sprItemYellow, yellow_index, x - 29, y - 33);
-				} else {
-					draw_sprite(sprItemYellow, yellow_index, x, y - 33);
-				}
-			}
-		}
-	
-		if (green) {
-			if (red) {
-				draw_sprite(sprItemGreen, green_index, x, y - 33);
-			} else {
-				draw_sprite(sprItemGreen, green_index, x + 29, y - 33);
-			}
-		}
-
-		if (red) {
-			if (green) {
-				draw_sprite(sprItemRed, red_index, x + 59, y - 33);
-			} else {
-				draw_sprite(sprItemRed, red_index, x + 29, y - 33);
-			}
-		}
-
-		draw_set_color((!yellow || !red || !green) ? c_white : c_yellow);
-	
-		if (green) {
-			if (red) {
-				draw_text_outline(x - 72, y, "[", c_black);
-				draw_text_outline(x + 100, y, "]", c_black);
-			} else {
-				draw_text_outline(x - 42, y, "[", c_black);
-				draw_text_outline(x + 70, y, "]", c_black);
-			}
-		} else {
-			if (red) {
-				draw_text_outline(x - 42, y, "[", c_black);
-				draw_text_outline(x + 70, y, "]", c_black);
-			} else {
+		
+		var coins_obtained_all = [
+			{ item: yellow, icon: sprItemYellow, index: yellow_index },
+			{ item: green, icon: sprItemGreen, index: green_index },
+			{ item: red, icon: sprItemRed, index: red_index }
+		];
+		
+		var coins_obtained_only = array_filter(coins_obtained_all, function(x) {
+			return (x.item);
+		});
+		
+		var coins_obtained_length = array_length(coins_obtained_only);
+		var coin_obtained_first, coin_obtained_second, coin_obtained_third;
+		draw_set_color((coins_obtained_length < 3) ? c_white : c_yellow);
+		
+		switch (coins_obtained_length) {
+			case 0:
 				draw_text_outline(x - 12, y, "[", c_black);
 				draw_text_outline(x + 40, y, "]", c_black);
-			}
-		}
-	
-		if (green) {
-			if (red) {
+				break;
+			
+			case 1:
+				coin_obtained_first = coins_obtained_only[0];
+				draw_sprite(coin_obtained_first.icon, coin_obtained_first.index, x, y - 33);
+				draw_text_outline(x - 12, y, "[", c_black);
+				draw_text_outline(x + 40, y, "]", c_black);
+				break;
+				
+			case 2:
+				coin_obtained_first = coins_obtained_only[0];
+				coin_obtained_second = coins_obtained_only[1];
+				draw_sprite(coin_obtained_first.icon, coin_obtained_first.index, x - 29, y - 33);
+				draw_sprite(coin_obtained_second.icon, coin_obtained_second.index, x + 29, y - 33);
+				draw_text_outline(x - 42, y, "[", c_black);
+				draw_text_outline(x + 70, y, "]", c_black);
+				draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
+				break;
+				
+			case 3:
+				coin_obtained_first = coins_obtained_only[0];
+				coin_obtained_second = coins_obtained_only[1];
+				coin_obtained_third = coins_obtained_only[2];
+				draw_sprite(coin_obtained_first.icon, coin_obtained_first.index, x - 59, y - 33);
+				draw_sprite(coin_obtained_second.icon, coin_obtained_second.index, x, y - 33);
+				draw_sprite(coin_obtained_third.icon, coin_obtained_third.index, x + 59, y - 33);
+				draw_text_outline(x - 72, y, "[", c_black);
+				draw_text_outline(x + 100, y, "]", c_black);
 				draw_text_outline(x + 42, y, "|", c_black);
 				draw_text_outline(x - 16, y, "|", c_black);
-			} else {
-				draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
-			}
-		} else {
-			if (red) {
-				draw_text_outline(x + sprite_width / 2 - 3, y, "|", c_black);
-			}
+				break;
 		}
 	
 		draw_set_valign(fa_top);
@@ -112,10 +98,29 @@ if (room == rHub) {
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		draw_set_color(c_white);
-		var yellows_obtained = item_count(global.items.yellows);
-		draw_sprite(sprItemYellow, yellow_index, x - 55, y - 33);
-		draw_set_color((yellows_obtained >= yellows_need) ? c_yellow : c_white);
-		draw_text_outline(x - 55 + 34, y - 33, $"[{yellows_obtained}/{yellows_need}]", c_black);
+		var coins_obtained = item_count(global.items.yellows) + item_count(global.items.greens) + item_count(global.items.reds);
+		var coins_icons = [
+			{icon: sprItemYellow, index: yellow_index},
+			{icon: sprItemGreen, index: green_index},
+			{icon: sprItemRed, index: red_index}
+		];
+		
+		if (item_count(global.items.greens) == 0) {
+			coins_icons[1] = null;
+		}
+		
+		if (item_count(global.items.reds) == 0) {
+			coins_icons[2] = null;
+		}
+		
+		coins_icons = array_filter(coins_icons, function(x) {
+			return (x != null);
+		});
+		
+		var coin_icon = coins_icons[(current_time div 2000) mod array_length(coins_icons)];
+		draw_sprite(coin_icon.icon, coin_icon.index, x - 55, y - 33);
+		draw_set_color((coins_obtained >= coins_need) ? c_yellow : c_white);
+		draw_text_outline(x - 55 + 34, y - 33, $"[{min(coins_obtained, coins_need)}/{coins_need}]", c_black);
 		
 		draw_set_valign(fa_top);
 		draw_set_halign(fa_left);

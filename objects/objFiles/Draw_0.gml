@@ -47,7 +47,7 @@ for (var i = 0; i < global.total_saves; i++) {
 			draw_set_color(c_white);
 			draw_text_outline(item_x, item_y, "AZ", c_black);
 		} else {
-			draw_sprite(icon, (icon == sprAchHub) ? 1 : 0, item_x, item_y);
+			draw_sprite(icon, 0, item_x, item_y);
 		}
 		
 		if (items_obtained == items_total) {
