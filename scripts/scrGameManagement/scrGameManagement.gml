@@ -129,8 +129,12 @@ function load_game(position) {
 	global.items = data.items;
 	
 	global.items.platinums = array_filter(global.items.platinums, function(x, i) {
-		return (i <= 3);
+		return (i <= 4);
 	});
+	
+	if (array_length(global.items.platinums) < 5) {
+		array_push(global.items.platinums, false);
+	}
 	
 	global.section = data.section;
 	global.hidden_greens = data.hidden_greens;
@@ -209,7 +213,7 @@ function cleanup_game() {
 		reds: array_create(26, false),
 		bosses: array_create(5, false),
 		achievements: array_create(40, false),
-		platinums: array_create(4, false)
+		platinums: array_create(5, false)
 	};
 	
 	global.section = -1;

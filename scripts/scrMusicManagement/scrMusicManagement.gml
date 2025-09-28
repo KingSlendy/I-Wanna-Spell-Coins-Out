@@ -28,6 +28,14 @@ function get_music() {
 				music = bgmHub;
 				break;
 				
+			case rHubClearAny:
+				music = bgmHubClearAny;
+				break;
+				
+			case rHubClearAll:
+				music = bgmHubClearAll;
+				break;
+				
 			case rStageA:
 			case rStageB:
 			case rStageC:
@@ -87,10 +95,6 @@ function get_music() {
 				
 			case rStageBoss5:
 				music = bgmBoss5;
-				break;
-				
-			case rHubClearAny:
-				music = bgmHubClearAny;
 				break;
 		}
 	} else {

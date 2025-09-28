@@ -1,3 +1,7 @@
+if (check == "") {
+	exit;
+}
+
 if ((check == "coins" && item_all(global.items.yellows) && item_all(global.items.greens) && item_all(global.items.reds)) || (check != "coins" && item_all(global.items[$ check]))) {
 	if (num > -1 && global.items[$ type][num]) {
 		image_speed = 0;

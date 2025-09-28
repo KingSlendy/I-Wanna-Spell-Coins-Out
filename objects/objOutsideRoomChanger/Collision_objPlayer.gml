@@ -1,9 +1,9 @@
 if (outside_room()) {
 	if (other.x < 0) {
-		if (room != rHubClearAny) {
-			other.x += room_width;
-		} else {
-			other.x += 6400;
+		switch (room) {
+			case rHub: other.x += 800; break;
+			case rHubClearAny: other.x += 6400; break;
+			default: other.x += room_width; break;
 		}
     }
         

@@ -1,6 +1,6 @@
 for (var i = 0; i < global.total_saves; i++) {
 	var data = datas[i];
-    draw_sprite(sprFilesBar, 0, x - 32, y + spacing * i);
+    draw_sprite(sprFilesBar, (data.items.platinums[4]) ? 1 : 0, x - 32, y + spacing * i);
 	
 	//Name
     draw_set_alpha(1);

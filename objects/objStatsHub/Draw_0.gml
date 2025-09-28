@@ -72,7 +72,7 @@ for (var i = 0; i < array_length(global.items.platinums); i++) {
 		color = c_black;
 	}
 	
-	draw_sprite_ext(sprItemPlatinum, index, 352 + 64 * i, 384, 1, 1, 0, color, 1);
+	draw_sprite_ext(sprItemPlatinum, index, 320 + 64 * i, 384, 1, 1, 0, color, 1);
 }
 
 draw_set_valign(fa_top);
