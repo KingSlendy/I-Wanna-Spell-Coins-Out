@@ -192,5 +192,5 @@ words_discover = [];
 words_solved = false;
 
 function word_start() {
-	alarm[0] = seconds_to_frames(60);
+	alarm[0] = seconds_to_frames(45);
 }

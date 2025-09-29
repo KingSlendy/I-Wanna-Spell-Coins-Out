@@ -2,9 +2,9 @@ if (!instance_exists(objPlayer) || words_solved) {
 	exit;
 }
 
-if (is_pressed(global.controls.shoot)) {
-	var cell_r = (objPlayer.y - y) div 32;
-	var cell_c = (objPlayer.x - x) div 32;
+if (mouse_check_button_pressed(mb_left)) {
+	var cell_r = (mouse_y - y) div 32;
+	var cell_c = (mouse_x - x) div 32;
 	
 	if (cell_r < 0 || cell_r >= size || cell_c < 0 || cell_c >= size) {
 		exit;

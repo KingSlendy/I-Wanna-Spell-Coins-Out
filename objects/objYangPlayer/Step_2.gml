@@ -5,7 +5,7 @@ if (!instance_exists(objPlayer)) {
 sprite_index = objPlayer.sprite_index;
 image_index = objPlayer.image_index;
 image_angle = 180 - objPlayer.image_angle;
-image_xscale = objPlayer.xscale;
+xscale = objPlayer.xscale;
 x = 1600 - (objPlayer.x - 800);
 y = 608 - objPlayer.y;
 

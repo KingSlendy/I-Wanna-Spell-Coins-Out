@@ -1,5 +1,5 @@
 event_inherited();
-hp = 20;
+hp = 25;
 max_hp = hp;
 origin_x = x + 38;
 origin_y = y + 58;

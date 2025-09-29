@@ -7,12 +7,16 @@ if (timer > -1 || words_solved) {
 	for (var r = 0; r < size; r++) {
 		for (var c = 0; c < size; c++) {
 			var cell = grid[# r, c];
+			var cell_r = (mouse_y - y) div 32;
+			var cell_c = (mouse_x - x) div 32;
 			var color = c_white;
 
 			if (cell.selected) {
 				color = c_lime;
 			} else if (cell.discover) {
 				color = c_yellow;
+			} else if (r == cell_r && c == cell_c) {
+				color = c_orange;
 			}
 		
 			draw_set_color(color);
