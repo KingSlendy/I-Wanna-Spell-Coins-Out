@@ -9,3 +9,5 @@ rotating = 1;
 with (objMemoryCard) {
 	rotateable = false;
 }
+
+audio_play_sound(sndCardFlip, 0, false);

@@ -68,14 +68,14 @@ options = [
 		
 		new Option("Change Controls", function() {
 			menu = MENU_OPTIONS.CONTROLS;
-			audio_play_sound(sndJump, 0, false);
+			audio_play_sound(sndSelect, 0, false);
 		}, function() {
 			return "";
 		}),
 		
 		new Option("Online Connection", function() {
 			menu = MENU_OPTIONS.ONLINE;
-			audio_play_sound(sndJump, 0, false);
+			audio_play_sound(sndSelect, 0, false);
 		}, function() {
 			return "";
 		})

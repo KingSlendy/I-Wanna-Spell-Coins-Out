@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndTimeStop",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.309297,
+  "name":"sndTimeStop",
+  "parent":{
+    "name":"T",
+    "path":"folders/Sounds/SFX/Game/Stages/T.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndTimeStop.wav",
+  "type":0,
+  "volume":0.75,
+}

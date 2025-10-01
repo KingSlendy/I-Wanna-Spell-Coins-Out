@@ -15,12 +15,6 @@ instance_destroy();
 
 if (object_index == objItemYellow) {
 	switch (room) {
-		case rStageF:
-			if (is_active_trigger("ach1")) {
-				activate_trigger("ach2");
-			}
-			break;
-			
 		case rStageJ:
 			activate_trigger("ach1");
 			break;

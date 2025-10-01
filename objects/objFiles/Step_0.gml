@@ -8,12 +8,12 @@ switch (menu) {
 	case MENU_FILES.DATA:
 	    if (is_pressed(global.controls_menu.up)) {
 	        select[menu]--;
-	        audio_play_sound(sndDoubleJump, 0, false);
+	        audio_play_sound(sndMoveMenu, 0, false);
 	    }
         
 	    if (is_pressed(global.controls_menu.down)) {
 	        select[menu]++;
-	        audio_play_sound(sndDoubleJump, 0, false);
+	        audio_play_sound(sndMoveMenu, 0, false);
 	    }
 
 	    select[menu] += global.total_saves;
@@ -33,12 +33,12 @@ switch (menu) {
 	case MENU_FILES.DIFFICULTY:
 	    if (is_pressed(global.controls_menu.left)) {
 	        select[menu]--;
-	        audio_play_sound(sndDoubleJump, 0, false);
+	        audio_play_sound(sndMoveMenu, 0, false);
 	    }
     
 	    if (is_pressed(global.controls_menu.right)) {
 	        select[menu]++;
-	        audio_play_sound(sndDoubleJump, 0, false);
+	        audio_play_sound(sndMoveMenu, 0, false);
 	    }
 		
 	    if (!file_exists($"Data{select[0] + 1}")) {

@@ -8,6 +8,10 @@ function toggle_light() {
 		return;
 	}
 	
+	if (light_current < 1) {
+		audio_play_sound(sndLightbulbON, 0, false);
+	}
+	
 	light_current = 1;
 	light_distance = 230;
 	light_active = false;
@@ -16,6 +20,7 @@ function toggle_light() {
 		alarm[0] = seconds_to_frames(1);
 	} else {
 		deactivate_trigger("ach1");
+		deactivate_trigger("ach2");
 	}
 	
 	var all_bulbs = true;

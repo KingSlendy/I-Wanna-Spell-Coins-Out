@@ -19,8 +19,10 @@ if (mouse_check_button_pressed(mb_left)) {
 			deactivate_trigger("apple1");
 			deactivate_trigger("timer1");
 			activate_trigger("timer2");
+			audio_play_sound(sndSelectCorrect, 0, false);
 		} else {
 			kill_player();
+			audio_play_sound(sndSelectWrong, 0, false);
 		}
 	}
 	

@@ -11,19 +11,19 @@ if (changing_controls && is_pressed(vk_anykey)) {
     
 	variable_struct_set(global.controls, string_lower(options[MENU_OPTIONS.CONTROLS][select[menu]]), key);
     save_config();
-    audio_play_sound(sndJump, 0, false);
+    audio_play_sound(sndSelect, 0, false);
     changing_controls = false;
 	exit;
 }
 
 if (is_pressed(global.controls_menu.up)) {
     select[menu]--;
-    audio_play_sound(sndDoubleJump, 0, false);
+    audio_play_sound(sndMoveMenu, 0, false);
 }
 
 if (is_pressed(global.controls_menu.down)) {
     select[menu]++;
-    audio_play_sound(sndDoubleJump, 0, false);
+    audio_play_sound(sndMoveMenu, 0, false);
 }
 
 var length = array_length(options[menu]);
@@ -52,12 +52,12 @@ switch (menu) {
 	            changing_controls = true;
 	        }
 		
-			audio_play_sound(sndJump, 0, false);
+			audio_play_sound(sndSelect, 0, false);
 	    }
 
 	    if (is_pressed(global.controls_menu.back)) {
 	        menu = MENU_OPTIONS.OPTIONS;
-	        audio_play_sound(sndJump, 0, false);
+	        audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 		
@@ -68,7 +68,7 @@ switch (menu) {
 		
 		if (is_pressed(global.controls_menu.back)) {
 	        menu = MENU_OPTIONS.OPTIONS;
-	        audio_play_sound(sndJump, 0, false);
+	        audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 }

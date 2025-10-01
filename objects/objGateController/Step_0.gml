@@ -24,6 +24,7 @@ if (!ask_accept && ask_spikes) {
 			activate_trigger("fake4");
 
 			objPlayer.frozen = false;
+			audio_play_sound(sndSelectWrong, 0, false);
 		} else {
 			if (real(number) == spike_gray) {
 				activate_trigger("ach1");
@@ -33,6 +34,7 @@ if (!ask_accept && ask_spikes) {
 				objPlayer.frozen = false;
 			} else {
 				kill_player();
+				audio_play_sound(sndSelectWrong, 0, false);
 			}
 		}
 		

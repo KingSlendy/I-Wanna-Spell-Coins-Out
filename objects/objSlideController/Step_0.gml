@@ -41,6 +41,8 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 			frozen = false;
 			still = false;
 		}
+		
+		audio_play_sound(sndSelect, 0, false);
 	}
 	
 	if (total == 1) {
@@ -48,6 +50,8 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 			frozen = true;
 			still = true;
 		}
+		
+		audio_play_sound(sndSelect, 0, false);
 	}
 
 	if (total == 2) {
@@ -98,6 +102,7 @@ if (!changing && mouse_check_button_pressed(mb_left)) {
 		}
 		
 		changing = true;
+		audio_play_sound(sndSwapPlace, 0, false);
 		
 		if (++spawn_count > 7) {
 			deactivate_trigger("ach1");

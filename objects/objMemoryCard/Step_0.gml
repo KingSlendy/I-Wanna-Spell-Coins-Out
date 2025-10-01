@@ -96,6 +96,8 @@ if (rotating != 0) {
 							}
 							
 							audio_play_sound(sndBlockChange, 0, false);
+						} else {
+							audio_play_sound(sndSelectCorrect, 0, false);
 						}
 					} else {
 						with (objMemoryCard) {
@@ -106,6 +108,8 @@ if (rotating != 0) {
 							rotateable = false;
 							alarm[0] = seconds_to_frames(1);
 						}
+						
+						audio_play_sound(sndWrong, 0, false);
 					}
 				}
 			}

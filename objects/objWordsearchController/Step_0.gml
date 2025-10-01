@@ -15,10 +15,12 @@ if (mouse_check_button_pressed(mb_left)) {
 	if (cell_origin == null) {
 		cell_origin = cell;
 		cell_origin.selected = true;
+		audio_play_sound(sndSelect, 0, false);
 	} else {
 		if (cell.row == cell_origin.row && cell.col == cell_origin.col) {
 			cell_origin.selected = false;
 			cell_origin = null;
+			audio_play_sound(sndSelect, 0, false);
 		} else {
 			cell_target = cell;
 			
@@ -63,6 +65,10 @@ if (mouse_check_button_pressed(mb_left)) {
 							activate_trigger("ach2");
 						}
 					}
+					
+					audio_play_sound(sndSelectCorrect, 0, false);
+				} else {
+					audio_play_sound(sndSelectWrong, 0, false);
 				}
 				
 				cell_origin.selected = false;

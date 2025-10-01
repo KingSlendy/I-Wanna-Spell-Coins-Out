@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndHueColorChange",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.079365,
+  "name":"sndHueColorChange",
+  "parent":{
+    "name":"H",
+    "path":"folders/Sounds/SFX/Game/Stages/H.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndHueColorChange.wav",
+  "type":0,
+  "volume":1.0,
+}

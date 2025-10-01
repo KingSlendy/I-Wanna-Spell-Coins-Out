@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndSelectWrong",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.377914,
+  "name":"sndSelectWrong",
+  "parent":{
+    "name":"Game",
+    "path":"folders/Sounds/SFX/Game.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndSelectWrong.wav",
+  "type":0,
+  "volume":1.0,
+}

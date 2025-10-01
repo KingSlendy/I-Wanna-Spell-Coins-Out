@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndLightbulbON",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.373288,
+  "name":"sndLightbulbON",
+  "parent":{
+    "name":"F",
+    "path":"folders/Sounds/SFX/Game/Stages/F.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndLightbulbON.wav",
+  "type":0,
+  "volume":1.0,
+}

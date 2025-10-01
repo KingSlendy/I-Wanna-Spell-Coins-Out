@@ -1,3 +1,13 @@
+if (image_index == 0) {
+	if (!audio_is_playing(sndTimeStop)) {
+		audio_play_sound(sndTimeStop, 0, false);
+	}
+} else {
+	if (!audio_is_playing(sndTimeResume)) {
+		audio_play_sound(sndTimeResume, 0, false);
+	}
+}
+
 image_index = (image_index == 0) ? 1 : 0;
 radius_target = (radius_target == radius_max) ? 0 : radius_max;
 instance_destroy(other);

@@ -32,6 +32,7 @@ if (mouse_check_button_pressed(mb_left)) {
 				}
 			
 				selected = true;
+				audio_play_sound(sndSelect, 0, false);
 			}
 		}
 	} else {
@@ -49,6 +50,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			}
 			
 			save_game(false);
+			audio_play_sound(sndSelect, 0, false);
 		} else {
 			x = xstart;
 			y = ystart;
@@ -69,6 +71,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			}
 			
 			save_game(false);
+			audio_play_sound(sndWrong, 0, false);
 		}
 		
 		selected = false;

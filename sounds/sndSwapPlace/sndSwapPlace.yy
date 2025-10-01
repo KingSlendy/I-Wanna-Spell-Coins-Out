@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndSwapPlace",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.465215,
+  "name":"sndSwapPlace",
+  "parent":{
+    "name":"S",
+    "path":"folders/Sounds/SFX/Game/Stages/S.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndSwapPlace.wav",
+  "type":0,
+  "volume":1.0,
+}
