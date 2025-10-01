@@ -7,7 +7,7 @@ for (var i = 0; i < global.total_saves; i++) {
 	draw_set_font(fntMenu);
     draw_set_color(c_white);
 	draw_set_halign(fa_left);
-    draw_text_outline(x, y - 6 + spacing * i, $"Data{i + 1}", c_black);
+    draw_text_outline(x, y - 6 + spacing * i, $"Data {i + 1}", c_black);
     
 	//Difficulty
 	draw_set_font(fntMenu2);
@@ -15,9 +15,13 @@ for (var i = 0; i < global.total_saves; i++) {
     
     var draw_diff = data.difficulty;
     
-    if (menu == 1 && select[0] == i) {
-        draw_diff = $"< {global.difficulties[select[menu]]} >";
-    }
+	if (select[MENU_FILES.DATA] == i) {
+	    if (menu == MENU_FILES.DIFFICULTY) {
+	        draw_diff = $"< {global.difficulties[select[menu]]} >";
+	    } else if (menu == MENU_FILES.CONFIRM) {
+			draw_diff = "Confirm?";
+		}
+	}
     
     draw_text_outline(x + 48, y + 40 + spacing * i, draw_diff, c_black);
     

@@ -31,11 +31,12 @@ cleanup_game();
 
 enum MENU_FILES {
 	DATA,
-	DIFFICULTY
+	DIFFICULTY,
+	CONFIRM
 }
 
 menu = MENU_FILES.DATA;
-select = array_create(2, 0);
+select = array_create(3, 0);
 spacing = 16 * 10;
 
 icons = [

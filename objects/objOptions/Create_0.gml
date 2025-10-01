@@ -179,3 +179,7 @@ changing_controls = false;
 
 x -= 60;
 y -= 30;
+
+if (room != rOptions) {
+	array_pop(options[MENU_OPTIONS.OPTIONS]);
+}

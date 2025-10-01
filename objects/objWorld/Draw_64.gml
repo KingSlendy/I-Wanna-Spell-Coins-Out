@@ -7,18 +7,23 @@ if (global.game_paused) {
 	draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
 	draw_set_alpha(1);
 	
-	draw_set_font(fntPause);
-	draw_set_color(c_white);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_text_outline(display_get_gui_width() / 2, display_get_gui_height() / 2, "PAUSED", c_black);
-	draw_set_valign(fa_top);
-	draw_set_halign(fa_left);
+	if (!instance_exists(objOptions)) {
+		draw_set_font(fntPause);
+		draw_set_color(c_white);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		draw_text_outline(display_get_gui_width() / 2, display_get_gui_height() / 2, "PAUSED", c_black);
+		draw_set_valign(fa_top);
+		draw_set_halign(fa_left);
 	
-	draw_set_font(fntPause2);
-    draw_text_outline(20, 516, $"Master Volume: {ceil(global.display.master_volume * 100)}%", c_black);
-    draw_text_outline(20, 541, $"Deaths: {global.deaths}", c_black);
-    draw_text_outline(20, 566, $"Time: {formatted_time(global.time)}", c_black);
+		draw_set_font(fntPause2);
+	    draw_text_outline(20, 516, $"Master Volume: {ceil(global.display.master_volume * 100)}%", c_black);
+	    draw_text_outline(20, 541, $"Deaths: {global.deaths}", c_black);
+	    draw_text_outline(20, 566, $"Time: {formatted_time(global.time)}", c_black);
+		draw_set_halign(fa_right);
+		draw_text_outline(display_get_gui_width() - 20, 566, $"[{control_bind(global.controls_menu.accept)}] Options", c_black);
+		draw_set_halign(fa_left);
+	}
 }
 #endregion
 

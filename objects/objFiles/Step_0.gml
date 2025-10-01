@@ -20,9 +20,9 @@ switch (menu) {
 	    select[menu] %= global.total_saves;
     
 	    if (is_pressed(global.controls_menu.accept)) {
-	        select[1] = (file_exists($"Data{select[menu] + 1}")) ? length - 1 : 0;
-	        menu = 1;
-	        audio_play_sound(sndJump, 0, false);
+			menu = MENU_FILES.DIFFICULTY;
+	        select[menu] = (file_exists($"Data{select[menu] + 1}")) ? length - 1 : 0;
+	        audio_play_sound(sndSelect, 0, false);
 	    }
     
 	    if (is_pressed(global.controls_menu.back)) {
@@ -49,12 +49,27 @@ switch (menu) {
 	    select[menu] %= length;
     
 	    if (is_pressed(global.controls_menu.accept)) {
-	        global.save_num = select[0];
-	        start_game(select[menu]);
+			if (select[menu] == length - 1) {
+				global.save_num = select[MENU_FILES.DATA];
+				start_game(select[menu]);
+			} else {
+				menu = MENU_FILES.CONFIRM;
+			}
 	    }
     
 	    if (is_pressed(global.controls_menu.back)) {
-	        menu = 0;
+	        menu = MENU_FILES.DATA;
+	    }
+		break;
+		
+	case MENU_FILES.CONFIRM:
+		if (is_pressed(global.controls_menu.accept)) {
+			global.save_num = select[MENU_FILES.DATA];
+		    start_game(select[MENU_FILES.DIFFICULTY]);
+		}
+		
+		if (is_pressed(global.controls_menu.back)) {
+	        menu = MENU_FILES.DIFFICULTY;
 	    }
 		break;
 }

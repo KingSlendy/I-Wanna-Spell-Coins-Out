@@ -24,6 +24,10 @@ if (global.game_started) {
 		}
 	} else {
 		change_volume();
+		
+		if (!instance_exists(objOptions) && is_pressed(global.controls_menu.accept)) {
+			instance_create_layer(192, 48, "Misc", objOptions);
+		}
 	}
 
 	if (pause_delay < global.total_pause_delay) {
@@ -42,7 +46,27 @@ if (global.game_started) {
 				sprite_delete(pause_screen);
 			}
 		
+			if (instance_exists(objOptions)) {
+				instance_destroy(objOptions);
+			}
+			
 			io_clear();
+			
+			switch (room) {
+				case rStageD:
+					if (is_active_trigger("timer1")) {
+						kill_player();
+					}
+					break;
+					
+				case rStageW:
+					if (instance_exists(objWordsearchController)) {
+						if (objWordsearchController.timer > -1 && !objWordsearchController.words_solved) {
+							kill_player();
+						}
+					}
+					break;
+			}
 		}
 	
 		pause_delay = 0;

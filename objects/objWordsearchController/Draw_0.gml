@@ -1,3 +1,7 @@
+if (!instance_exists(objPlayer)) {
+	exit;
+}
+
 if (timer > -1 || words_solved) {
 	draw_set_font(fntMenu2);
 	draw_set_color(c_white);

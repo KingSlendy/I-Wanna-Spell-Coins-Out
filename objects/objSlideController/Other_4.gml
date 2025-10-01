@@ -28,7 +28,7 @@ for (var r = 0; r < slide_n; r++) {
 		var slide_y = slide_h * r;
 		
 		with (instance_create_layer(slide_x, slide_y, "Blocks", objSlidePieceBlocks)) {
-			sprite_index = sprite_create_from_surface(surf_tiles, slide_x, slide_y, other.slide_w, other.slide_h, false, false, 0, 0);
+			sprite_index = sprite_create_from_surface(surf_tiles, slide_x, slide_y, (c < other.slide_n - 1) ? other.slide_w : other.slide_w + 2, (r < other.slide_n - 1) ? other.slide_h : other.slide_h + 2, false, false, 0, 0);
 			sprite_collision_mask(sprite_index, false, bboxmode_automatic, 0, 0, 0, 0, bboxkind_precise, 0);
 		}
 	}
@@ -55,7 +55,7 @@ for (var r = 0; r < slide_n; r++) {
 		var slide_y = slide_h * r;
 		
 		with (instance_create_layer(slide_x, slide_y, "Spikes", objSlidePieceSpikes)) {
-			sprite_index = sprite_create_from_surface(surf_spikes, slide_x, slide_y, other.slide_w, other.slide_h, false, false, 0, 0);
+			sprite_index = sprite_create_from_surface(surf_spikes, slide_x, slide_y, (c < other.slide_n - 1) ? other.slide_w : other.slide_w + 2, (r < other.slide_n - 1) ? other.slide_h : other.slide_h + 2, false, false, 0, 0);
 			sprite_collision_mask(sprite_index, false, bboxmode_automatic, 0, 0, 0, 0, bboxkind_precise, 0);
 		}
 	}
