@@ -21,6 +21,7 @@ function toggle_light() {
 	} else {
 		deactivate_trigger("ach1");
 		deactivate_trigger("ach2");
+		deactivate_trigger("ach3");
 	}
 	
 	var all_bulbs = true;
