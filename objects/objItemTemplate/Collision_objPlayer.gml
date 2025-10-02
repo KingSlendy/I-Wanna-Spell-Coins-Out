@@ -27,7 +27,7 @@ if (object_index == objItemYellow) {
 	}
 }
 
-if (object_index == objItemRed) {
+if (object_index == objItemGreen) {
 	switch (room) {
 		case rStageB: deactivate_trigger("ach1"); break;
 		

@@ -25,6 +25,7 @@ if (global.game_started) {
 	} else {
 		if (!instance_exists(objOptions) && is_pressed(global.controls_menu.accept)) {
 			instance_create_layer(192, 48, "Misc", objOptions);
+			audio_play_sound(sndSelectMenu, 0, false);
 		}
 	}
 
