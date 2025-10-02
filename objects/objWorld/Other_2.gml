@@ -1,3 +1,10 @@
+var param = parameter_string(1);
+
+if (param != "-game" && param != "-launch") {
+	game_end();
+	exit;
+}
+
 application_surface_draw_enable(false);
 audio_group_load(audiogroup_BGM);
 audio_group_load(audiogroup_SFX);
