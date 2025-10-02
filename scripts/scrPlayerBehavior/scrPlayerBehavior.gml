@@ -150,12 +150,16 @@ function kill_player() {
 	}
 }
 
-function outside_room() {
+function outside_room(lenient = true) {
 	if (!instance_exists(objPlayer)) {
 	    return false;
 	}
 	
-	return (objPlayer.bbox_right < 0 || objPlayer.bbox_left > room_width || objPlayer.bbox_bottom < 0 || objPlayer.bbox_top > room_height);
+	if (lenient) {
+		return (objPlayer.bbox_right < 0 || objPlayer.bbox_left > room_width || objPlayer.bbox_bottom < 0 || objPlayer.bbox_top > room_height);
+	} else {
+		return (objPlayer.x < 0 || objPlayer.x > room_width || objPlayer.y < 0 || objPlayer.y > room_height);
+	}
 }
 
 function set_mask() {

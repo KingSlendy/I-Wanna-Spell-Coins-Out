@@ -1,4 +1,4 @@
-if (outside_room()) {
+if (outside_room(false)) {
 	if (other.x < 0) {
 		switch (room) {
 			case rHub: other.x += 800; break;
