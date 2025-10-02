@@ -11,7 +11,7 @@ for (var i = 0; i < global.total_saves; i++) {
 	}
 	
 	datas[i] = {
-		difficulty: (exists) ? global.difficulties[global.difficulty] : "No Data",
+		difficulty: (exists) ? global.difficulties[global.difficulty] : "No Game",
 		deaths: global.deaths,
 		time: global.time,
 		clear: global.clear,

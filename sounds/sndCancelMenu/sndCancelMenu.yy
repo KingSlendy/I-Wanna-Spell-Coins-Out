@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndCancelMenu",
+  "audioGroupId":{
+    "name":"audiogroup_SFX",
+    "path":"audiogroups/audiogroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.272766,
+  "name":"sndCancelMenu",
+  "parent":{
+    "name":"Game",
+    "path":"folders/Sounds/SFX/Game.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndCancelMenu.wav",
+  "type":0,
+  "volume":0.6,
+}
