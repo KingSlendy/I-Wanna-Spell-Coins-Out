@@ -17,7 +17,6 @@ if (global.game_paused) {
 		draw_set_halign(fa_left);
 	
 		draw_set_font(fntPause2);
-	    draw_text_outline(20, 516, $"Master Volume: {ceil(global.display.master_volume * 100)}%", c_black);
 	    draw_text_outline(20, 541, $"Deaths: {global.deaths}", c_black);
 	    draw_text_outline(20, 566, $"Time: {formatted_time(global.time)}", c_black);
 		draw_set_halign(fa_right);

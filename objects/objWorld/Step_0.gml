@@ -23,8 +23,6 @@ if (global.game_started) {
 			}
 		}
 	} else {
-		change_volume();
-		
 		if (!instance_exists(objOptions) && is_pressed(global.controls_menu.accept)) {
 			instance_create_layer(192, 48, "Misc", objOptions);
 		}
