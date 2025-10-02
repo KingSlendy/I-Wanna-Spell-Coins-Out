@@ -6,32 +6,28 @@ draw_set_valign(fa_top);
 var letters_obtained = item_count(global.items.letters);
 var letters_total = item_total(global.items.letters);
 
-if (letters_obtained > 0) {
-	draw_text_outline(160, 352, "AZ", c_black);
+draw_text_outline(160, 352, "AZ", c_black);
 
-	if (letters_obtained == letters_total) {
-		draw_set_color(c_yellow);
-	} else {
-		draw_set_color(c_white);
-	}
-	
-	draw_text_outline(160 + 34, 352, $"[{letters_obtained}/{letters_total}]", c_black);
+if (letters_obtained == letters_total) {
+	draw_set_color(c_yellow);
+} else {
+	draw_set_color(c_white);
 }
+	
+draw_text_outline(160 + 34, 352, $"[{letters_obtained}/{letters_total}]", c_black);
 
 var yellows_obtained = item_count(global.items.yellows);
 var yellows_total = item_total(global.items.yellows);
 
-if (yellows_obtained > 0) {
-	draw_sprite(sprItemYellow, timer * sprite_get_speed(sprItemYellow) / game_get_speed(gamespeed_fps), 160, 384);
+draw_sprite(sprItemYellow, timer * sprite_get_speed(sprItemYellow) / game_get_speed(gamespeed_fps), 160, 384);
 	
-	if (yellows_obtained == yellows_total) {
-		draw_set_color(c_yellow);
-	} else {
-		draw_set_color(c_white);
-	}
-	
-	draw_text_outline(160 + 34, 384, $"[{yellows_obtained}/{yellows_total}]", c_black);
+if (yellows_obtained == yellows_total) {
+	draw_set_color(c_yellow);
+} else {
+	draw_set_color(c_white);
 }
+	
+draw_text_outline(160 + 34, 384, $"[{yellows_obtained}/{yellows_total}]", c_black);
 
 var greens_obtained = item_count(global.items.greens);
 var greens_total = item_total(global.items.greens);
