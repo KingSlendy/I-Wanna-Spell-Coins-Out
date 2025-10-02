@@ -27,6 +27,7 @@ switch (menu) {
     
 	    if (is_pressed(global.controls_menu.back)) {
 	        room_goto(rTitle);
+			audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 	
@@ -52,6 +53,7 @@ switch (menu) {
 			if (select[menu] == length - 1) {
 				global.save_num = select[MENU_FILES.DATA];
 				start_game(select[menu]);
+				audio_play_sound(sndSelect, 0, false);
 			} else {
 				menu = MENU_FILES.CONFIRM;
 			}
@@ -59,6 +61,7 @@ switch (menu) {
     
 	    if (is_pressed(global.controls_menu.back)) {
 	        menu = MENU_FILES.DATA;
+			audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 		
@@ -66,14 +69,17 @@ switch (menu) {
 		if (is_pressed(global.controls_menu.accept)) {
 			global.save_num = select[MENU_FILES.DATA];
 		    start_game(select[MENU_FILES.DIFFICULTY]);
+			audio_play_sound(sndSelect, 0, false);
 		}
 		
 		if (is_pressed(global.controls_menu.back)) {
 	        menu = MENU_FILES.DIFFICULTY;
+			audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 }
 
 if (is_pressed(global.controls_menu.options)) {
     room_goto(rOptions);
+	audio_play_sound(sndSelect, 0, false);
 }

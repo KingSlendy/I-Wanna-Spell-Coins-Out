@@ -46,6 +46,8 @@ switch (menu) {
 			} else {
 				instance_destroy();
 			}
+			
+			audio_play_sound(sndSelect, 0, false);
 	    }
 		break;
 		

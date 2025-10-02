@@ -370,7 +370,10 @@
     {"$GMFolder":"","%Name":"L","folderPath":"folders/Tilesets/Game/Stages/L.yy","name":"L","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"T","folderPath":"folders/Tilesets/Game/Stages/T.yy","name":"T","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"I Wanna Spell Coins Out.exe","CopyToMask":-1,"filePath":"datafiles","name":"I Wanna Spell Coins Out.exe","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"unzip.vbs","CopyToMask":-1,"filePath":"datafiles","name":"unzip.vbs","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
