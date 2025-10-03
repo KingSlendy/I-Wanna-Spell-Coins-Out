@@ -45,6 +45,10 @@ if (object_index == objItemGreen) {
 
 if (object_index == objItemRed) {
 	switch (room) {
+		case rStageB:
+			deactivate_trigger("ach1");
+			break;
+		
 		case rStageJ:
 			activate_trigger("ach3");
 			break;
