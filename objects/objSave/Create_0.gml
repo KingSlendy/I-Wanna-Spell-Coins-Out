@@ -1,6 +1,6 @@
 function active_save() {
 	if (room == rStageY && image_angle == 180) {
-		image_index = 1;
+		image_index = 2;
 		alarm[0] = 40;
 		activate_trigger("ach1");
 		return;

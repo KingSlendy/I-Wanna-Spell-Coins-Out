@@ -38,6 +38,7 @@ if (global.game_started) {
 			pause_screen = sprite_create_from_surface(application_surface, 0, 0, display_get_gui_width(), display_get_gui_height(), false, false, 0, 0);
 			instance_deactivate_all(true);
 			instance_activate_object(objOnlinePlayer);
+			audio_play_sound(sndSelectMenu, 0, false);
 		} else {
 			instance_activate_all();
 		
@@ -66,6 +67,8 @@ if (global.game_started) {
 					}
 					break;
 			}
+			
+			audio_play_sound(sndCancelMenu, 0, false);
 		}
 	
 		pause_delay = 0;
