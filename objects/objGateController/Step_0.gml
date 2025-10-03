@@ -3,12 +3,14 @@ if (!ask_accept && ask_spikes) {
 	
 	if (move != 0) {
 		ask_select = (ask_select + move + array_length(ask_number)) % array_length(ask_number);
+		audio_play_sound(sndSelect, 0, false);
 	}
 	
 	var scroll = (is_pressed(global.controls.up) - is_pressed(global.controls.down));
 	
 	if (scroll != 0) {
 		ask_number[ask_select] = (ask_number[ask_select] + scroll + 10) % 10;
+		audio_play_sound(sndSelect, 0, false);
 	}
 	
 	if (is_pressed(global.controls.jump)) {
