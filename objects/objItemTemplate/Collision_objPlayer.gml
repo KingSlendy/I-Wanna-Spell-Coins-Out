@@ -29,14 +29,6 @@ if (object_index == objItemYellow) {
 
 if (object_index == objItemGreen) {
 	switch (room) {
-		case rStageB: deactivate_trigger("ach1"); break;
-		
-		case rStageD:
-			if (is_active_trigger("ach1")) {
-				activate_trigger("ach2");
-			}
-			break;
-			
 		case rStageJ:
 			activate_trigger("ach2");
 			break;
@@ -47,6 +39,12 @@ if (object_index == objItemRed) {
 	switch (room) {
 		case rStageB:
 			deactivate_trigger("ach1");
+		break;
+		
+		case rStageD:
+			if (is_active_trigger("ach1")) {
+				activate_trigger("ach2");
+			}
 			break;
 		
 		case rStageJ:
