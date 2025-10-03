@@ -72,6 +72,10 @@ with (objSpikeController) {
 }
 
 with (objItemRedTrigger) {
+	if (x > 800) {
+		continue;
+	}
+	
 	var piece_x = x div other.slide_w * other.slide_w;
 	var piece_y = y div other.slide_h * other.slide_h;
 	piece = collision_rectangle(piece_x, piece_y, piece_x + (other.slide_w - 1), piece_y + (other.slide_h - 1), objSlidePieceBlocks, false, true);

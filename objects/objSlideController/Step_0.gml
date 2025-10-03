@@ -1,4 +1,4 @@
-if (!instance_exists(objPlayer) || objPlayer.on_block == null || objPlayer.hspd != 0) {
+if (!instance_exists(objPlayer) || objPlayer.on_block == null || objPlayer.hspd != 0 || objPlayer.x >= 800) {
 	exit;
 }
 
