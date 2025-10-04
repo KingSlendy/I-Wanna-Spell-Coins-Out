@@ -17,9 +17,7 @@ draw_sprite(sprite_tiles, 0, 0, 0);
 gpu_set_colorwriteenable(true, true, true, true);
 	
 with (objPlanetMask) {
-	if (has_ground) {
-		draw_sprite_ext(sprite_index, (!ground) ? 1 : 2, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-	}
+	draw_sprite_ext(sprite_index, (!ground && has_ground) ? 1 : 2, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
 
 surface_reset_target();
