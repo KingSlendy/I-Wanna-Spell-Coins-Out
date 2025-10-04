@@ -8,6 +8,7 @@ function save_game(position, save_x = -1, save_y = -1) {
 		global.save_player.sangle = global.player.angle;
 		global.save_player.sgrav = global.grav;
 		global.save_player.sforms = global.forms;
+		global.save_player.skin = global.skin;
 	}
 	
 	if (room == rStageJ) {
@@ -154,6 +155,10 @@ function load_game(position) {
 		global.grav = global.save_player.sgrav;
 		global.forms = global.save_player.sforms;
 		
+		try {
+			global.skin = global.save_player.skin;
+		} catch (_) {}
+		
 		var load_x = (position == 1) ? global.save_player.sx : global.save_player.snewx;
 		var load_y = (position == 1) ? global.save_player.sy : global.save_player.snewy;
 		instance_create_layer(load_x, load_y, "Player", objPlayer);
@@ -202,6 +207,8 @@ function cleanup_game() {
 		lunarkid: false,
 		linekid: false
 	};
+	
+	global.skin = "Normal";
 	
 	global.slippage = 0;
 	global.slowshot = false;

@@ -61,9 +61,43 @@ skins = {
 		"Dotkid": sprPlayerDotkid,
 		"Lunarkid": sprPlayerLunarkid,
 		"Linekid": sprPlayerLinekid
+	},
+	
+	"Kirby": {
+		"Idle": sprKirbyPlayerIdle,
+		"Run": sprKirbyPlayerRun,
+		"Jump": sprKirbyPlayerJump,
+		"Fall": sprKirbyPlayerFall
+	},
+	
+	"HatKid": {
+		"Idle": sprHatKidPlayerIdle,
+		"Run": sprHatKidPlayerRun,
+		"Jump": sprHatKidPlayerJump,
+		"Fall": sprHatKidPlayerFall
+	},
+	
+	"ShadowQueen": {
+		"Idle": sprShadowQueenPlayerIdle,
+		"Run": sprShadowQueenPlayerRun,
+		"Jump": sprShadowQueenPlayerJump,
+		"Fall": sprShadowQueenPlayerFall
+	},
+	
+	"Antasma": {
+		"Idle": sprAntasmaPlayerIdle,
+		"Run": sprAntasmaPlayerRun,
+		"Jump": sprAntasmaPlayerJump,
+		"Fall": sprAntasmaPlayerFall
+	},
+	
+	"Joker": {
+		"Idle": sprJokerPlayerIdle,
+		"Run": sprJokerPlayerRun,
+		"Jump": sprJokerPlayerJump,
+		"Fall": sprJokerPlayerFall
 	}
 };
-skin = "Normal";
 #endregion
 
 #region Actions

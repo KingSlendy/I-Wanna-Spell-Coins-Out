@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprHueButton_Blue",
-    "path":"sprites/sprHueButton_Blue/sprHueButton_Blue.yy",
+    "name":"sprHueButton",
+    "path":"sprites/sprHueButton/sprHueButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

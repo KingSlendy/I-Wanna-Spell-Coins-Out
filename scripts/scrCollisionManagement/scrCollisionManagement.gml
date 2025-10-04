@@ -1,5 +1,5 @@
 function tangible_collision(obj) {
-	return (obj.image_alpha == 1 && (obj.object_index != objSlidePieceBlocks || obj.active));
+	return (obj.image_alpha == 1 && !string_starts_with(sprite_get_name(obj.sprite_index), "sprClear") && (obj.object_index != objSlidePieceBlocks || obj.active));
 }
 
 /*function oriental_collision(obj) {

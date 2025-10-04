@@ -99,11 +99,11 @@ function player_sprite(action = null) {
 }
 
 function get_skin_sprite(action) {
-	if (!variable_struct_exists(skins, skin)) {
+	if (!variable_struct_exists(skins, global.skin)) {
 		return sprite_index;
 	}
 	
-	var sprites = skins[$ skin];
+	var sprites = skins[$ global.skin];
 	
 	if (!variable_struct_exists(sprites, action)) {
 		return sprite_index;

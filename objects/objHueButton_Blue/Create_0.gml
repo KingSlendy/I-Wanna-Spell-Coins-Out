@@ -1,2 +1,2 @@
 event_inherited();
-color = make_color_rgb(0, 0, 255);
+color = HUE_BLUE;

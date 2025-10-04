@@ -1,4 +1,4 @@
-var c = instance_create_layer(irandom_range(0, 800), 608, "Fruits", objFireworksCoinHub);
+var c = instance_create_layer(irandom_range(200, 600), 608, "Fruits", objFireworksCoinHub);
 c.sprite_index = choose(other.yellow_icon, other.green_icon, other.red_icon);
 c.direction = irandom_range(55, 125);
 c.speed = irandom_range(8, 12);

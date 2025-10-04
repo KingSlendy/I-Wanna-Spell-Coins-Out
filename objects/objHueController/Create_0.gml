@@ -1,74 +1,38 @@
-/*patterns = [];
-
-for (var r = 0; r < rows; r++) {
-	array_push(patterns, []);
-	
-	for (var c = 0; c < cols; c++) {
-		array_push(patterns[r], null);
-	}
-}
-
-pattern_colors = [c_red, c_orange, c_yellow, c_lime, c_blue, c_fuchsia, c_purple];
-
-patterns_chosen = [
-	new Pattern(pattern_a, pattern_b, pattern_colors),
-	new Pattern(pattern_a, pattern_b, pattern_colors),
-	new Pattern(pattern_a, pattern_b, pattern_colors),
-	new Pattern(pattern_a, pattern_b, pattern_colors)
-];
-
-pattern_chosen_r_a = irandom(rows - 2);
-pattern_chosen_c_a = irandom(cols - 2);
-
-patterns[pattern_chosen_r_a][pattern_chosen_c_a] = patterns_chosen[0];
-patterns[pattern_chosen_r_a][pattern_chosen_c_a + 1] = patterns_chosen[1];
-patterns[pattern_chosen_r_a + 1][pattern_chosen_c_a] = patterns_chosen[2];
-patterns[pattern_chosen_r_a + 1][pattern_chosen_c_a + 1] = patterns_chosen[3];
-
-while (true) {
-	pattern_chosen_r_b = irandom(rows - 2);
-	pattern_chosen_c_b = irandom(cols - 2);
-	
-	if (patterns[pattern_chosen_r_b][pattern_chosen_c_b] == null &&
-		patterns[pattern_chosen_r_b][pattern_chosen_c_b + 1] == null &&
-		patterns[pattern_chosen_r_b + 1][pattern_chosen_c_b] == null &&
-		patterns[pattern_chosen_r_b + 1][pattern_chosen_c_b + 1] == null) {
-		break;
-	}
-}
-
-patterns[pattern_chosen_r_b][pattern_chosen_c_b] = patterns_chosen[0];
-patterns[pattern_chosen_r_b][pattern_chosen_c_b + 1] = patterns_chosen[1];
-patterns[pattern_chosen_r_b + 1][pattern_chosen_c_b] = patterns_chosen[2];
-patterns[pattern_chosen_r_b + 1][pattern_chosen_c_b + 1] = patterns_chosen[3];
-
-function pattern_available(r, c) {
-	return (
-		patterns[r][c] != patterns_chosen[3] ||
-		patterns[r][c - 1] != patterns_chosen[2] ||
-		patterns[r - 1][c] != patterns_chosen[1] ||
-		patterns[r - 1][c - 1] != patterns_chosen[0]
-	);
-}
-
-for (var r = 0; r < rows; r++) {
-	for (var c = 0; c < cols; c++) {
-		if (patterns[r][c] != null) {
-			continue;
-		}
-		
-		while (true) {
-			pattern = new Pattern(pattern_a, pattern_b, pattern_colors)
-			patterns[r][c] = pattern;
-			
-			if (r == 0 || c == 0 || pattern_available(r, c)) {
-				break;
-			}
-		}
-	}
-}*/
+#macro HUE_RED   c_red
+#macro HUE_GREEN c_lime
+#macro HUE_BLUE  c_blue
 
 hue = c_white;
 layer_fx_background = layer_get_fx("Background");
 layer_fx_tiles = layer_get_fx("Tiles");
-layer_fx_fake = layer_get_fx("Fake"); 
+layer_fx_fake = layer_get_fx("Fake");
+
+var layer_fx_killers = [
+	"Spikes_Red",
+	"Spikes_Green",
+	"Spikes_Blue",
+	"Fruits_Red",
+	"Fruits_Green",
+	"Fruits_Blue"
+];
+
+for (var i = 0; i < array_length(layer_fx_killers); i++) {
+	var layer_fx_name = layer_fx_killers[i];
+	var layer_fx_killer = layer_get_fx(layer_fx_name);
+	
+	if (layer_fx_killer != -1) {
+	    if (fx_get_name(layer_fx_killer) == "_filter_tintfilter") {
+			var color = c_white;
+			
+			if (string_ends_with(layer_fx_name, "_Red")) {
+				color = HUE_RED;
+			} else if (string_ends_with(layer_fx_name, "_Green")) {
+				color = HUE_GREEN;
+			} else if (string_ends_with(layer_fx_name, "_Blue")) {
+				color = HUE_BLUE;
+			}
+			
+	        fx_set_parameter(layer_fx_killer, "g_TintCol", [color_get_red(color) / 255, color_get_green(color) / 255, color_get_blue(color) / 255, 1]);
+	    }
+	}
+}
