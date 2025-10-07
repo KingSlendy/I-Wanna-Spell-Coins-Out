@@ -452,7 +452,7 @@ if (room == rStageO) {
 }
 
 if (room == rStageZ && hspd < 0) {
-	deactivate_trigger("ach1");
+	deactivate_trigger("ach2");
 }
 
 //Storing the previous x and y

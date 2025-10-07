@@ -6,5 +6,5 @@ if (global.auto_save) {
 vine_mod.toggle = false;
 
 if (room == rStageZ) {
-	activate_trigger("ach1");
+	activate_trigger("ach2");
 }
