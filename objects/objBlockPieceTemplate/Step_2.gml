@@ -79,15 +79,5 @@ if (mouse_check_button_pressed(mb_left)) {
 }
 
 if (selected) {
-	x = (mouse_x - selected_x + 16) div 32 * 32;
-	y = (mouse_y - selected_y + 16) div 32 * 32;
-	
-	for (var i = 0; i < array_length(objs); i++) {
-		var obj = objs[i];
-		
-		with (obj.id) {
-			x = other.x + obj.diff_x;
-			y = other.y + obj.diff_y;
-		}
-	}
+	piece_move(mouse_x, mouse_y);
 }

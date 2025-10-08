@@ -1,3 +1,9 @@
+with (objBlockPieceTemplate) {
+	if (hint_x != -1 && hint_y != -1) {
+		piece_move(hint_x, hint_y);
+	}
+}
+
 min_x = bbox_left;
 min_y = bbox_top;
 max_x = bbox_right;
