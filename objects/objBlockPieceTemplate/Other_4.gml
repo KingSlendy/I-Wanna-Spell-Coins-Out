@@ -4,7 +4,7 @@ var count = instance_place_list(x, y, all, list, false);
 for (var i = 0; i < count; i++) {
 	var obj = list[| i];
 	
-	if (obj.id == id || obj.object_index == objFakeWall || obj.object_index == objTriggerField || obj.object_index == objItemRed) {
+	if (obj.id == id || obj.object_index == objFakeWall || obj.object_index == objTriggerField || obj.object_index == objItemRed || obj.object_index == objOnlinePlayer) {
 		continue;
 	}
 	

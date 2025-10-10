@@ -76,12 +76,18 @@ if (global.game_started) {
 	
 	if (instance_exists(objPlayer) && is_pressed(global.controls.warp)) {
 		var section = -1;
+		var skin = null;
 		
 		if (room == rHub) {
 			section = objPlayer.x div 800;
+			skin = global.skin;
 		}
 		
 		restart_game();
+		
+		if (skin != null) {
+			global.skin = skin;
+		}
 		
 		if (room == rHub) {
 			global.section = (section + 1) % min(item_count(global.items.bosses) + 3, 7);
