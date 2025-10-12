@@ -45,5 +45,7 @@ if (timer > -1 || words_solved) {
 if (timer > -1) {
 	draw_set_font(fntStageW_Timer);
 	draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	draw_text(1340, 500, string(ceil(timer / 50)));
 }
