@@ -328,3 +328,14 @@ function change_volume(type = "master") {
 	global.display[$ type + "_volume"] += 0.01 * dir;
 	global.display[$ type + "_volume"] = clamp(global.display[$ type + "_volume"], 0, 1);
 }
+
+function update_visuals() {
+    // Get layers
+    if layer_exists("Tiles")
+    {
+    var tile_layer = layer_get_id("Tiles");
+    var tilemap_id = layer_tilemap_get_id(tile_layer);
+        if layer_tilemap_exists(tile_layer, tilemap_id)
+            tilemap_tileset(tilemap_id, (global.display.classic_visuals) ? tlsDefaultOld : tlsDefault);
+    }   
+}

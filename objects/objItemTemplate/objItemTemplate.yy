@@ -27,8 +27,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"num","filters":[],"listItems":[],"multiselect":false,"name":"num","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"snd","filters":[
+    {"$GMObjectProperty":"v2","%Name":"num","filters":[],"listItems":[],"multiselect":false,"name":"num","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"snd","filters":[
         "GMSound",
       ],"listItems":[],"multiselect":false,"name":"snd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sndItem","path":"sounds/sndItem/sndItem.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sndItem","varType":5,},
   ],

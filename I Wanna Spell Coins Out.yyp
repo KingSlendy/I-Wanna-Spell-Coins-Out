@@ -1,10 +1,10 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"I Wanna Spell Coins Out",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"audiogroup_BGM","name":"audiogroup_BGM","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"audiogroup_SFX","name":"audiogroup_SFX","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_BGM","exportDir":"","name":"audiogroup_BGM","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_SFX","exportDir":"","name":"audiogroup_SFX","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -375,6 +375,7 @@
     {"$GMFolder":"","%Name":"L","folderPath":"folders/Tilesets/Game/Stages/L.yy","name":"L","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"T","folderPath":"folders/Tilesets/Game/Stages/T.yy","name":"T","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"I Wanna Spell Coins Out.exe","CopyToMask":-1,"filePath":"datafiles","name":"I Wanna Spell Coins Out.exe","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"unzip.vbs","CopyToMask":-1,"filePath":"datafiles","name":"unzip.vbs","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -382,7 +383,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"I Wanna Spell Coins Out",
   "resources":[
@@ -1261,6 +1262,8 @@
     {"id":{"name":"sprTlsDefaultLarge","path":"sprites/sprTlsDefaultLarge/sprTlsDefaultLarge.yy",},},
     {"id":{"name":"sprTlsDefaultLittle","path":"sprites/sprTlsDefaultLittle/sprTlsDefaultLittle.yy",},},
     {"id":{"name":"sprTlsDefaultOld","path":"sprites/sprTlsDefaultOld/sprTlsDefaultOld.yy",},},
+    {"id":{"name":"sprTlsDefaultOldLarge","path":"sprites/sprTlsDefaultOldLarge/sprTlsDefaultOldLarge.yy",},},
+    {"id":{"name":"sprTlsDefaultOldLittle","path":"sprites/sprTlsDefaultOldLittle/sprTlsDefaultOldLittle.yy",},},
     {"id":{"name":"sprTouchJumpRefresh","path":"sprites/sprTouchJumpRefresh/sprTouchJumpRefresh.yy",},},
     {"id":{"name":"sprTrigger","path":"sprites/sprTrigger/sprTrigger.yy",},},
     {"id":{"name":"sprTriggerButtonL","path":"sprites/sprTriggerButtonL/sprTriggerButtonL.yy",},},
@@ -1305,6 +1308,8 @@
     {"id":{"name":"tlsDefaultLarge","path":"tilesets/tlsDefaultLarge/tlsDefaultLarge.yy",},},
     {"id":{"name":"tlsDefaultLittle","path":"tilesets/tlsDefaultLittle/tlsDefaultLittle.yy",},},
     {"id":{"name":"tlsDefaultOld","path":"tilesets/tlsDefaultOld/tlsDefaultOld.yy",},},
+    {"id":{"name":"tlsDefaultOldLarge","path":"tilesets/tlsDefaultOldLarge/tlsDefaultOldLarge.yy",},},
+    {"id":{"name":"tlsDefaultOldLittle","path":"tilesets/tlsDefaultOldLittle/tlsDefaultOldLittle.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
