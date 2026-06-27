@@ -394,9 +394,6 @@ function update_visuals() {
                         sprite_background_id = sprBkgDefaultOld_2;
                         layer_background_change(background_id, sprite_background_id);
                     break
-                    //case sprBkgDefault:
-                        //sprite_background_id = sprBkgDefaultOld;
-                    //break
                 }
                 
                 
