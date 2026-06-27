@@ -333,9 +333,123 @@ function update_visuals() {
     // Get layers
     if layer_exists("Tiles")
     {
-    var tile_layer = layer_get_id("Tiles");
-    var tilemap_id = layer_tilemap_get_id(tile_layer);
+        var tile_layer = layer_get_id("Tiles");
+        var tilemap_id = layer_tilemap_get_id(tile_layer);
+        
+        // Change tileset
         if layer_tilemap_exists(tile_layer, tilemap_id)
             tilemap_tileset(tilemap_id, (global.display.classic_visuals) ? tlsDefaultOld : tlsDefault);
     }   
+    
+    if room == rStageL
+    {
+        var tile_layer_little = layer_get_id("Tiles_Little");
+        var tile_layer_large = layer_get_id("Tiles_Large");
+        
+        var tilemap_little_id = layer_tilemap_get_id(tile_layer_little);
+        var tilemap_large_id = layer_tilemap_get_id(tile_layer_large);
+        
+        if layer_tilemap_exists(tile_layer_little, tilemap_little_id)
+        {    
+            tilemap_tileset(tilemap_little_id, (global.display.classic_visuals) ? tlsDefaultOldLittle : tlsDefaultLittle);
+        }   
+        
+        if layer_tilemap_exists(tile_layer_large, tilemap_large_id)
+        {    
+            tilemap_tileset(tilemap_large_id, (global.display.classic_visuals) ? tlsDefaultOldLarge : tlsDefaultLarge);
+        } 
+        
+    }
+    
+    
+    
+    // Change fake blcoks
+    with objFakeWall
+    {
+        sprite_index = (global.display.classic_visuals) ? sprFakeWallOld : sprFakeWall;
+    }
+    
+    // Change background
+    var background_layer_id = layer_get_id("Background");
+    var background_id = layer_background_get_id(background_layer_id);
+    
+    if layer_background_exists(background_layer_id, background_id)
+    {
+        if global.display.classic_visuals
+        {
+            var background_used = layer_background_get_sprite(background_id);
+            print(background_used)
+            
+            if background_used != -1
+            {
+                var sprite_background_id;
+                
+                switch background_used
+                {
+                    case sprBkgDefault: 
+                        sprite_background_id = sprBkgDefaultOld;
+                        layer_background_change(background_id, sprite_background_id);
+                    break
+                    case sprBkgDefault_3:
+                        sprite_background_id = sprBkgDefaultOld_2;
+                        layer_background_change(background_id, sprite_background_id);
+                    break
+                    //case sprBkgDefault:
+                        //sprite_background_id = sprBkgDefaultOld;
+                    //break
+                }
+                
+                
+            }
+        }
+        
+        
+        
+        
+        //layer_background_change()
+    }
+
+    // Change save
+    with objSave
+    {
+        sprite_index = (global.display.classic_visuals) ? sprSaveOld : sprSave;
+    }
+    
+    with objWarp
+    {
+        sprite_index = (global.display.classic_visuals) ? sprWarpHubOld: sprWarpHub;
+    }
+    
+    with objWarpHub
+    {
+        sprite_index = (global.display.classic_visuals) ? sprWarpHubOld: sprWarpHub;
+    }
+    
+    // Change spikes
+    var spikes = [objSpikeDown, objSpikeLeft, objSpikeRight, objSpikeUp, objSpikeUpDestroy];
+    var total_spikes = array_length(spikes);
+    for (var i = 0; i < total_spikes; i++)
+    {
+        with spikes[i]
+        {
+            var spike_version = (!global.display.classic_visuals) ? sprite_get_name(sprite_index) : $"{sprite_get_name(sprite_index)}Old";
+            var sprite_name = asset_get_index(spike_version);
+            if sprite_name != -1
+                sprite_index = sprite_name;
+        }
+    }
+    
+    // Change fruits
+    var cherries = [objCherry, objCherryKill];
+    var total_cherries = array_length(cherries);
+    for (var i = 0; i < total_cherries; i++)
+    {
+        with cherries[i]
+        {
+            var cherry_version = (!global.display.classic_visuals) ? sprite_get_name(sprite_index) : $"{sprite_get_name(sprite_index)}Old";
+            var sprite_name = asset_get_index(cherry_version);
+            if sprite_name != -1
+                sprite_index = sprite_name;
+        }
+    }
 }

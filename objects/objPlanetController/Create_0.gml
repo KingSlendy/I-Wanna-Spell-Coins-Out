@@ -16,7 +16,8 @@ for (var tx = 0; tx < tilemap_w; tx++) {
         if (t != 0) {
 			var tile_pos_x = tx * tile_w;
 			var tile_pos_y = ty * tile_h;
-            draw_tile(tlsDefault, t, 0, tile_pos_x, tile_pos_y);
+            var tileset = global.display.classic_visuals ? tlsDefaultOld : tlsDefault;
+            draw_tile(tileset, t, 0, tile_pos_x, tile_pos_y);
         }
     }
 }
