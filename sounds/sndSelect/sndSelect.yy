@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.098776,
+  "duration":0.09877551,
   "exportDir":"",
   "name":"sndSelect",
   "parent":{

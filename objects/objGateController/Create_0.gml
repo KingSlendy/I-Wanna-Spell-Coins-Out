@@ -39,11 +39,15 @@ function gate_spawn(section) {
 	spawn_x = choose(spawn_x_min, spawn_x_max);
 	spawn_left = (spawn_x == spawn_x_min);
 	var hspd = irandom_range(3, 5) * ((spawn_left) ? 1 : -1);
+    
+    var sprite_spike_down = global.display.classic_visuals ? sprSpikeDownOld : sprSpikeDown;
+    var sprite_spike_up = global.display.classic_visuals ? sprSpikeUpOld : sprSpikeUp;
 	
 	with (instance_create_layer(spawn_x, spawn_y, "Spikes", objSpikeDown)) {
 		var is_red = (irandom(2) == 0);
 		image_blend = (is_red) ? c_red : c_white;
 		hspeed = hspd;
+        sprite_index = sprite_spike_down;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
 		other.spike_gray += (!is_red) ? 1 : 0;
@@ -53,6 +57,7 @@ function gate_spawn(section) {
 		var is_red = (irandom(2) == 0);
 		image_blend = (is_red) ? c_red :  c_white;
 		hspeed = hspd;
+        sprite_index = sprite_spike_up;
 		spawn_x_limit = (spawn_left) ? spawn_x_max : spawn_x_min;
 		other.spike_red += (is_red) ? 1 : 0;
 		other.spike_gray += (!is_red) ? 1 : 0;

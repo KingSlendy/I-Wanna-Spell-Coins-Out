@@ -361,6 +361,16 @@ function update_visuals() {
         
     }
     
+    if room == rStageS
+    {
+        var tile_layer_2 = layer_get_id("Tiles_2");
+        var tilemap_id_2 = layer_tilemap_get_id(tile_layer_2);
+        
+        // Change tileset
+        if layer_tilemap_exists(tile_layer_2, tilemap_id_2)
+            tilemap_tileset(tilemap_id_2, (global.display.classic_visuals) ? tlsDefaultOld : tlsDefault);
+    }
+    
     
     
     // Change fake blcoks
@@ -378,7 +388,6 @@ function update_visuals() {
         if global.display.classic_visuals
         {
             var background_used = layer_background_get_sprite(background_id);
-            print(background_used)
             
             if background_used != -1
             {
@@ -395,8 +404,53 @@ function update_visuals() {
                         layer_background_change(background_id, sprite_background_id);
                     break
                 }
+                switch room
+                {
+                    case rHub:
+                        var instances = layer_get_all_elements(layer_get_id("Background_2"));
+                        var total = array_length(instances);
+                        for (var i = 0; i < total; i++)
+                        {
+                            layer_sprite_change(instances[i], sprBkgDefaultOld);
+                        }
+                        
+                        
+                        instances = layer_get_all_elements(layer_get_id("Background_3"));
+                        total = array_length(instances);
+                        for (var i = 0; i < total; i++)
+                        {
+                            layer_sprite_change(instances[i], sprBkgDefaultOld_2);
+                        }
+                    break
+                    
+                    case rStageG:
+                        var instances = layer_get_all_elements(layer_get_id("Background_3"));
+                        
+                        layer_sprite_change(instances[0], sprBkgDefaultOld);
+                        
+                    break
                 
+                    case rStageI:
+                        var instances = layer_get_all_elements(layer_get_id("Background_2"));
+                        
+                        layer_sprite_change(instances[0], sprBkgDefaultOld);    
+                    break
                 
+                    case rStageL:
+                        layer_destroy(layer_get_id("Background_3"));
+                        layer_destroy(layer_get_id("Background_2"));
+                    break
+                
+                    case rStageY:
+                        var instances = layer_get_all_elements(layer_get_id("Background_2"));
+                        
+                        layer_sprite_change(instances[0], sprBkgDefaultOld_2);
+                        
+                        instances = layer_get_all_elements(layer_get_id("Background_3"));
+                        
+                        layer_sprite_change(instances[0], sprBkgDefaultOld);
+                    break
+                }
             }
         }
         

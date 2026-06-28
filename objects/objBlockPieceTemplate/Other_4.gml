@@ -1,6 +1,8 @@
 var list = ds_list_create();
 var count = instance_place_list(x, y, all, list, false);
 
+var block_sprite_selected = global.display.classic_visuals ? sprFakeWallOld : sprFakeWall;
+
 for (var i = 0; i < count; i++) {
 	var obj = list[| i];
 	
@@ -14,7 +16,7 @@ for (var i = 0; i < count; i++) {
 		}
 		
 		obj.visible = true;
-		obj.sprite_index = sprFakeWall;
+		obj.sprite_index = block_sprite_selected;
 		obj.image_index = 4;
 	}
 	

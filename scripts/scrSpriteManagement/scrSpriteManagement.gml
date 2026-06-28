@@ -177,6 +177,7 @@ function fruit_sprite(me = true) {
 	var fruit_alt = sprCherry;
 	var fruit_speed = 1;
 	var fruit_image = 0;
+    var fruit_visual = "";
 	#endregion
 	
 	#region Set the type
@@ -209,6 +210,8 @@ function fruit_sprite(me = true) {
 			type = "White";
 			fruit_speed = 1;
 			fruit_image = 0;
+            if global.display.classic_visuals
+                fruit_visual = "Old";
 			break;
 		
 		default: //Always keep this at the bottom
@@ -221,7 +224,7 @@ function fruit_sprite(me = true) {
 	
 	#region Detect valid sprite
 	var fruit = {
-		sprite: check_apply_asset($"sprCherry{type}", fruit_alt),
+		sprite: check_apply_asset($"sprCherry{type}{fruit_visual}", fruit_alt),
 		spd: fruit_speed,
 		image: fruit_image
 	}

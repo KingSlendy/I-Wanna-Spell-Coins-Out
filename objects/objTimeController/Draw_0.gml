@@ -18,6 +18,11 @@ gpu_set_colorwriteenable(true, true, true, false);
 draw_set_color(#C0C0C0);
 draw_rectangle(0, 0, room_width, room_height, false);
 
+if global.display.classic_visuals
+{
+    draw_sprite_tiled(sprBkgDefault, 0, 0, 0);
+}
+
 var draw_old = function() {
 	var name = sprite_get_name(sprite_index);
     var name_fix = string_delete(name, string_length(name) - 2, 3);
@@ -30,7 +35,6 @@ var draw_old = function() {
     {
         if asset != -1
         {
-            
             draw_sprite_ext(asset, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
         }
     }
