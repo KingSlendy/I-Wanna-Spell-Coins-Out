@@ -58,8 +58,11 @@ options = [
 			return (global.display.vsync) ? "Yes" : "No";
 		}),
         
-        new Option("Classic visuals: ", function() {
-            global.display.classic_visuals ^= true;
+        new Option("Classic Visuals: ", function() {
+            if (room == rOptions) {
+                global.display.classic_visuals ^= true;
+                update_visuals();
+            }
         }, function() {
             return (global.display.classic_visuals) ? "Yes" : "No";
         }),

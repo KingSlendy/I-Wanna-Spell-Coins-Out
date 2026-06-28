@@ -32,6 +32,13 @@ switch (menu) {
 		//Draws all the options
 		for (var i = index; i < length; i++) {
 			var curr_option = option[i];
+            
+            if (room != rOptions && curr_option.label == "Classic Visuals: ") {
+                draw_set_color(c_gray);
+            } else {
+                draw_set_color(c_white);
+            }
+            
 			draw_text_outline(x, y + spacing * i, curr_option.label + curr_option.get_value(), c_black);
 		}
 		break;

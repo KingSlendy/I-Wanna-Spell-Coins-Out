@@ -307,6 +307,13 @@ function load_config() {
 	var data = json_parse(json);
 	
 	global.display = data.display;
+    
+    try {
+        var classic_visuals = global.display.classic_visuals;
+    } catch (_) {
+        global.display.classic_visuals = false;
+    }
+    
 	global.controls = data.controls;
 	global.online = data.online;
 	
@@ -339,7 +346,20 @@ function update_visuals() {
         // Change tileset
         if layer_tilemap_exists(tile_layer, tilemap_id)
             tilemap_tileset(tilemap_id, (global.display.classic_visuals) ? tlsDefaultOld : tlsDefault);
-    }   
+    }
+    
+    if room == rStageK
+    {
+        with objCherryKillAll
+        {
+            sprite_index = (global.display.classic_visuals) ? sprCherryKillAllOld : sprCherryKillAll;
+        }
+        
+        with objCherryKillNone
+        {
+            sprite_index = (global.display.classic_visuals) ? sprCherryKillNoneOld : sprCherryKillNone;
+        }
+    }
     
     if room == rStageL
     {
@@ -370,8 +390,6 @@ function update_visuals() {
         if layer_tilemap_exists(tile_layer_2, tilemap_id_2)
             tilemap_tileset(tilemap_id_2, (global.display.classic_visuals) ? tlsDefaultOld : tlsDefault);
     }
-    
-    
     
     // Change fake blcoks
     with objFakeWall
@@ -453,11 +471,6 @@ function update_visuals() {
                 }
             }
         }
-        
-        
-        
-        
-        //layer_background_change()
     }
 
     // Change save
@@ -474,6 +487,11 @@ function update_visuals() {
     with objWarpHub
     {
         sprite_index = (global.display.classic_visuals) ? sprWarpHubOld: sprWarpHub;
+    }
+    
+    with objWarpBlockHub
+    {
+        sprite_index = (global.display.classic_visuals) ? sprWarpBlockHubOld: sprWarpBlockHub;
     }
     
     // Change spikes
@@ -502,5 +520,11 @@ function update_visuals() {
             if sprite_name != -1
                 sprite_index = sprite_name;
         }
+    }
+    
+    // Disable water effect
+    if global.display.classic_visuals
+    {
+        layer_enable_fx("Water", false);
     }
 }
