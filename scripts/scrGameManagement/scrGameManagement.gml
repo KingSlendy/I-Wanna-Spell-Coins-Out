@@ -413,12 +413,16 @@ function update_visuals() {
                 
                 switch background_used
                 {
-                    case sprBkgDefault: 
+                    case sprBkgDefault:
                         sprite_background_id = sprBkgDefaultOld;
                         layer_background_change(background_id, sprite_background_id);
                     break
                     case sprBkgDefault_3:
                         sprite_background_id = sprBkgDefaultOld_2;
+                        layer_background_change(background_id, sprite_background_id);
+                    break
+                    case sprBkgDefault_6:
+                        sprite_background_id = sprBkgDefaultOld_6;
                         layer_background_change(background_id, sprite_background_id);
                     break
                 }
@@ -471,6 +475,23 @@ function update_visuals() {
                 }
             }
         }
+        else
+        {
+            var background_used = layer_background_get_sprite(background_id);
+            
+            if background_used != -1
+            {
+                var sprite_background_id;
+                
+                switch background_used
+                {
+                    case sprBkgDefaultOld_6:
+                        sprite_background_id = sprBkgDefault_6;
+                        layer_background_change(background_id, sprite_background_id);
+                    break
+                }
+            }
+        }
     }
 
     // Change save
@@ -489,9 +510,16 @@ function update_visuals() {
         sprite_index = (global.display.classic_visuals) ? sprWarpHubOld: sprWarpHub;
     }
     
-    with objWarpBlockHub
+    with objBlockHub
     {
-        sprite_index = (global.display.classic_visuals) ? sprWarpBlockHubOld: sprWarpBlockHub;
+        if sprite_index == sprWarpBlockHub
+        {
+            sprite_index = (global.display.classic_visuals) ? sprWarpBlockHubOld: sprWarpBlockHub;
+        }
+        else if sprite_index == sprPlatinumBlockHub
+        {
+            sprite_index = (global.display.classic_visuals) ? sprPlatinumBlockHubOld: sprPlatinumBlockHub;
+        }
     }
     
     // Change spikes

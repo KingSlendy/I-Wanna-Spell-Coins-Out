@@ -44,7 +44,7 @@ switch (menu) {
 		break;
 }
 
-draw_sprite(sprCherry, 0, x - 20, y + 30 + spacing * selected);
+draw_sprite((global.display.classic_visuals) ? sprCherryOld : sprCherry, 0, x - 20, y + 30 + spacing * selected);
 
 draw_set_font(fntMenu3);
 draw_set_halign(fa_center);

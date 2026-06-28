@@ -74,8 +74,8 @@ for (var i = 0; i < global.total_saves; i++) {
 	}
 		
     if (select[0] == i) {
-        draw_sprite(sprCherry, 0, 52, y + 60 + spacing * i);
-        draw_sprite(sprCherry, 0, room_width - 56, y + 60 + spacing * i);
+        draw_sprite((global.display.classic_visuals) ? sprCherryOld : sprCherry, 0, 52, y + 60 + spacing * i);
+        draw_sprite((global.display.classic_visuals) ? sprCherryOld : sprCherry, 0, room_width - 56, y + 60 + spacing * i);
     }
 }
 
