@@ -8,9 +8,12 @@ with (objCherry) {
 	}
 }
 
+var cherry_sprite = global.display.classic_visuals ? sprCherryOld : sprCherry;
+
 repeat (70) {
 	with (instance_create_layer(0, 0, "Fruits", objCherry)) {
 		image_alpha = 0.4;
+        sprite_index = cherry_sprite;
 		
 		do {
 			x = irandom_range(2448, 3152);

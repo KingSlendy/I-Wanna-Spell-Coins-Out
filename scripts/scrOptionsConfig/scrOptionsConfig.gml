@@ -6,5 +6,6 @@ global.display = {
 	sfx_volume: 1,
 	fullscreen: false,
 	vsync: false,
-	grav_control: 0
+	grav_control: 0,
+    classic_visuals: false
 };

@@ -1,5 +1,10 @@
 var cam = camera_properties(0);
 
+if global.display.classic_visuals
+    exit;
+
+
+
 if (!surface_exists(surf)) {
 	surf = surface_create(cam.view_w, cam.view_h);
 }

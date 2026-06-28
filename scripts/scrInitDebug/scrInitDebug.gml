@@ -1,5 +1,5 @@
 //Debug variables
-global.debug_enable = false; //Sets if the debug options should be enabled
+global.debug_enable = true; //Sets if the debug options should be enabled
 global.debug_coloring = true; //Enables debug player coloring
 global.debug_hitbox = 0; //Enables debug player hitbox display
 global.debug_hit_time = 50; //Sets max time for the player to be intangible when hit

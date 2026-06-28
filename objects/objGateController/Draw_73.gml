@@ -7,9 +7,12 @@ if (timer > -1) {
 	draw_text(640, 32, string(ceil(timer / 50)));
 }
 
+var sprite_spike_down = global.display.classic_visuals ? sprSpikeDownOld : sprSpikeDown;
+var sprite_spike_up = global.display.classic_visuals ? sprSpikeUpOld : sprSpikeUp;
+
 draw_text(16, 385, (ask_spikes) ? "How many" : "     Count");
-draw_sprite_ext(sprSpikeUp, 0, 300, 384, 2, 2, 0, c_red, 1);
-draw_sprite_ext(sprSpikeDown, 0, 364, 384, 2, 2, 0, c_red, 1);
+draw_sprite_ext(sprite_spike_up, 0, 300, 384, 2, 2, 0, c_red, 1);
+draw_sprite_ext(sprite_spike_down, 0, 364, 384, 2, 2, 0, c_red, 1);
 draw_text(440, 385, (ask_spikes) ? "?" : "");
 
 if (ask_spikes) {

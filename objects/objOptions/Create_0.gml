@@ -57,6 +57,12 @@ options = [
 		}, function() {
 			return (global.display.vsync) ? "Yes" : "No";
 		}),
+        
+        new Option("Classic visuals: ", function() {
+            global.display.classic_visuals ^= true;
+        }, function() {
+            return (global.display.classic_visuals) ? "Yes" : "No";
+        }),
 		
 		new Option("Reset Defaults", function() {
 			scrOptionsConfig();
